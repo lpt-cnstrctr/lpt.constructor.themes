@@ -1,0 +1,33 @@
+.theme-canvas .achievement {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  i {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  &.dark h2 {
+    color: #fff;
+  }
+
+  &.dark h3 {
+    color: #999;
+  }
+
+  &.dark i {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}

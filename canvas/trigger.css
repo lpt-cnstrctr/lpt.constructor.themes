@@ -1,0 +1,27 @@
+.theme-canvas .trigger {
+  h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #999;
+  }
+
+  i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 4px 11px 15px 0;
+    color: var(--accent-color);
+  }
+
+  .featured h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.4rem 0;
+  }
+}

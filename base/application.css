@@ -1,0 +1,17 @@
+@import 'reset-css/reset.css';
+@import './typography.css';
+@import './layout.css';
+
+:root {
+  --accent-color: #00bcd4;
+  --base-color: #333;
+
+  /* WORKAROUND prevent hide scroll then dialog open */
+  overflow-y: scroll !important;
+}
+
+::selection {
+  color: white;
+  background: var(--accent-color);
+}
+

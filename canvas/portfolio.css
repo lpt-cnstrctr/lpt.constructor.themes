@@ -1,0 +1,55 @@
+.theme-canvas .portfolio {
+  .additional {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: -2rem;
+  }
+
+  .repeater-item-wrapper {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+
+    /* WORKAROUND fix lug after hover */
+    margin-top: -1px;
+  }
+
+  .repeater-item-wrapper:hover .additional {
+    height: 5rem;
+    margin-bottom: 0;
+  }
+
+  .repeater-item-wrapper:hover img {
+    margin-top: -5rem;
+    opacity: .3;
+  }
+
+  .repeater {
+    padding: 1rem 0 0;
+  }
+
+  .repeater h2 {
+    font-size: 19px;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+    transition: .3s;
+  }
+
+  &>div {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .pillow {
+    padding-bottom: 0 !important;
+  }
+}

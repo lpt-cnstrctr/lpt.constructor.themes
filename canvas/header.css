@@ -1,0 +1,78 @@
+.theme-canvas .header {
+  &.dark {
+    color: #eee;
+  }
+
+  a:hover {
+    color: var(--accent-color);
+  }
+
+  .logo {
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid transparent;
+    max-height: 7rem;
+    max-width: 13rem;
+  }
+
+  &.block > div {
+    padding: 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  &.block > div > .container {
+    padding: 0 5rem;
+    margin-bottom: 0;
+  }
+
+  .bordered {
+    border: 0;
+  }
+
+  .bordered .logo {
+    border-right-color: rgba(0,0,0,0.1);
+    margin-bottom: -3px;
+  }
+
+  &.light .bordered .logo {
+    border-right-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &.dark .bordered .logo {
+    border-right-color: rgba(255, 255, 255, 0.2);
+  }
+
+  p {
+    font-size: 10px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .button {
+    padding: 0 14px;
+    font-size: 11px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+
+  @media (max-width: 960px) {
+    .logo {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

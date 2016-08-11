@@ -1,0 +1,85 @@
+.theme-canvas .footer {
+  &.light {
+    background-color: #eee;
+  }
+
+  &.block > div {
+    padding: 0;
+  }
+
+  .copyright {
+    padding: 2rem 0;
+    background-color: #ddd;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .copyright p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  &.light .copyright {
+    background-color: #ddd;
+  }
+
+  &.dark .copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 2px;
+  }
+
+  .social a {
+    width: 2rem;
+    height: 2rem;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--accent-color);
+    text-align: center;
+  }
+
+  .social a i {
+    font-size: 14px;
+  }
+
+  &.light.social a i {
+    color: #000;
+  }
+  &.dark.social a i {
+    color: #fff;
+  }
+
+  .repeater-item-wrapper {
+    padding: .3rem;
+  }
+
+  .social.poor a {
+    background-color: transparent;
+  }
+
+  .contact i {
+    margin: 0 8px 0 16px;
+  }
+
+  .copyright-text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}

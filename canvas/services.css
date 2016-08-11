@@ -1,0 +1,102 @@
+.theme-canvas .services {
+  .repeater {
+    margin-top: 2rem;
+  }
+
+  .repeater h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+
+  .repeater-item-wrapper {
+    padding: 0;
+  }
+
+  .repeater .title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+  }
+
+  .repeater > div {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    padding-bottom: 6rem;
+    position: relative;
+  }
+
+  .repeater > div .action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+  }
+
+  .repeater > div .action .button {
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .repeater > div:first-child .action .button,
+  .repeater > div:last-child .action .button {
+    background-color: var(--danger-color)
+  }
+
+  .repeater > div:first-child,
+  .repeater > div:last-child {
+    background-color: #f5f5f5;
+    margin: 1rem 0;
+  }
+
+  .repeater > div:first-child .title h2,
+  .repeater > div:last-child .title h2 {
+    margin-bottom: 0;
+  }
+
+  .repeater > div:first-child .title,
+  .repeater > div:last-child .title {
+    background-color: #f9f9f9;
+  }
+
+  .repeater > div:first-child .title p,
+  .repeater > div:last-child .title p {
+    display: none;
+  }
+
+  .price-container {
+    font-size: 4rem;
+    padding: 1rem 0;
+  }
+
+  .price-container p {
+    color: var(--accent-color);
+  }
+
+  .repeater > div:first-child .price-container p,
+  .repeater > div:last-child .price-container p {
+    color: var(--base-color);
+  }
+
+  .price-container > div:first-child {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 1.2rem 0.3rem;
+  }
+
+  .price-container > div:last-child {
+    font-size: 1.5rem;
+    align-self: flex-end;
+    margin: 1rem 0.3rem;
+  }
+
+  .price-container > div:last-child p {
+    color: #999;
+  }
+
+  .repeater hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100px;
+  }
+}

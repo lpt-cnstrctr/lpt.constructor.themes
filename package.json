@@ -1,0 +1,14 @@
+{
+  "name": "lpt.constructor.themes",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpt-cnstrctr/lpt.constructor.themes.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

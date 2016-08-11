@@ -1,0 +1,10 @@
+.theme-canvas .testimonials {
+  .repeater h3 {
+    color: var(--accent-color);
+    font-weight: 400;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}

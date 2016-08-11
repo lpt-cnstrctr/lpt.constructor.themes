@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300,100);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--base-color);
+}
+
+main .icon-class {
+  font-size: 1.5rem;
+}
+
+main h2,
+main h3 {
+  font-weight: 300;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+main h2 {
+  font-size: 1.75rem;
+}
+
+main h3 {
+  font-size: 1.5rem;
+}
+
+main p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+main hr {
+  width: 3rem;
+}
