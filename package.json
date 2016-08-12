@@ -2,13 +2,20 @@
   "name": "lpt.constructor.themes",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lpt-cnstrctr/lpt.constructor.themes.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "postcss-import": "^8.1.2",
+    "postcss-nested": "^1.0.0",
+    "stylelint": "^7.0.1",
+    "stylelint-config-standard": "^11.0.0",
+    "cssnano": "^3.7.3",
+    "reset-css": "^2.0.20160720"
+  }
 }
