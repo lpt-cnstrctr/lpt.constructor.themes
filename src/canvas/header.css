@@ -15,6 +15,10 @@
     max-width: 13rem;
   }
 
+  .logo img {
+    width: 100%;
+  }
+
   &.block > div {
     padding: 0;
     border-bottom: 1px solid transparent;
