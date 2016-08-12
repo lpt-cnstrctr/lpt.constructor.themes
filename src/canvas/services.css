@@ -79,20 +79,16 @@
     color: var(--base-color);
   }
 
-  .price-container > div:first-child {
+  .price-container > *:first-child {
     font-size: 1.5rem;
     align-self: flex-start;
     margin: 1.2rem 0.3rem;
   }
 
-  .price-container > div:last-child {
+  .price-container > *:last-child {
     font-size: 1.5rem;
     align-self: flex-end;
     margin: 1rem 0.3rem;
-  }
-
-  .price-container > div:last-child p {
-    color: #999;
   }
 
   .repeater hr {

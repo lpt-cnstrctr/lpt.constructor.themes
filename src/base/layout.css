@@ -8,6 +8,7 @@ section.block > div {
 section.block {
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .boxed {

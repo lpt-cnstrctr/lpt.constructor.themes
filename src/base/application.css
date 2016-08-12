@@ -1,6 +1,7 @@
 @import 'reset-css/reset.css';
 @import './typography.css';
 @import './layout.css';
+@import './font-icons.css';
 
 :root {
   --accent-color: #00bcd4;
