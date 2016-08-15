@@ -15,12 +15,24 @@
     font-size: 18px;
   }
 
+  &.dark {
+    color: #fff;
+  }
+
   .faq-container h2 {
     border-color: #CCC;
     line-height: 44px;
     padding: 0 6px 0 15px;
     margin: 0;
     font-size: 14px;
+  }
+
+  &.dark .faq-container {
+    background: transparent;
+  }
+
+  &.dark .faq-container h2 {
+    color: #fff;
   }
 
   .faq-container p {
