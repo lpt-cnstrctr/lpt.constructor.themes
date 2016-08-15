@@ -288,3 +288,23 @@ form.wrapped button {
     margin-bottom: 2rem;
   }
 }
+
+/* settings specific */
+@media (max-width: 960px) {
+  .hide_on_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .hide_on_desktop {
+    display: none;
+  }
+}
+
+.header_sticky {
+  position: fixed !important;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
