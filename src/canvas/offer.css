@@ -27,7 +27,7 @@
     background-color: #444;
     color: #fff;
     border-color: transparent !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   }
 
   &.dark .action {
@@ -35,7 +35,7 @@
     color: #fff;
   }
 
-  &.dark .action:hover  {
+  &.dark .action:hover {
     background-color: #fff;
     color: #444;
   }
@@ -46,12 +46,12 @@
     font-weight: 600;
   }
 
-  &.dark .strong  {
+  &.dark .strong {
     color: #fff;
   }
 
   a.container {
-    transition: .3s;
+    transition: 0.3s;
   }
 
   a.container:hover {
@@ -60,10 +60,10 @@
 
   a.container:hover .strong,
   a.container:hover p {
-    color: #FFF;
+    color: #fff;
   }
 
-  a.container:hover .strong{
-      border-bottom: 1px solid #fff;
+  a.container:hover .strong {
+    border-bottom: 1px solid #fff;
   }
 }

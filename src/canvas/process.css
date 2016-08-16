@@ -9,16 +9,15 @@
     height: 96px;
     display: inline-block;
     margin-bottom: 2rem;
-    transition: .3s;
+    transition: 0.3s;
   }
-
 
   &.dark .iconed-text {
     background: #333;
   }
 
   hr {
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .repeater-item-wrapper:hover .iconed-text {
@@ -29,8 +28,6 @@
   .repeater-item-wrapper:hover hr {
     width: 5rem;
   }
-
-
 
   &.dark .repeater-item-wrapper:hover .iconed-text {
     background: #999;

@@ -41,7 +41,7 @@
 
   .repeater > div:first-child .action .button,
   .repeater > div:last-child .action .button {
-    background-color: var(--danger-color)
+    background-color: var(--danger-color);
   }
 
   .repeater > div:first-child,

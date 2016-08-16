@@ -62,12 +62,13 @@
   &.light.social a i {
     color: #000;
   }
+
   &.dark.social a i {
     color: #fff;
   }
 
   .repeater-item-wrapper {
-    padding: .3rem;
+    padding: 0.3rem;
   }
 
   .social.poor a {

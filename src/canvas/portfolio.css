@@ -2,7 +2,7 @@
   .additional {
     height: 0;
     overflow: hidden;
-    transition: .3s;
+    transition: 0.3s;
     box-sizing: border-box;
     padding: 1rem;
     margin-bottom: -2rem;
@@ -25,7 +25,7 @@
 
   .repeater-item-wrapper:hover img {
     margin-top: -5rem;
-    opacity: .3;
+    opacity: 0.3;
   }
 
   .repeater {
@@ -40,10 +40,10 @@
     width: 100%;
     vertical-align: middle;
     height: auto;
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  &>div {
+  & > div {
     padding-right: 0 !important;
     padding-left: 0 !important;
     padding-bottom: 0 !important;

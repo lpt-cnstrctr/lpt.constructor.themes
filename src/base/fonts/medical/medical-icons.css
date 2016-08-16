@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @font-face {
 	font-family: "webfont-medical-icons";
 	src:url("./fonts/webfont-medical-icons.eot");
@@ -454,3 +455,5 @@
 .icon-medical-dermatology:before {
 	content: "\e68f";
 }
+
+/* stylelint-enable */

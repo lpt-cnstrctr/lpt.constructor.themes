@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @font-face {
 	font-family: "et-line";
 	src:url("./et-line/et-line.eot");
@@ -341,3 +342,4 @@ you can use the generic selector below, but it's slower:
 .icon-et-dribbble:before {
 	content: "\e063";
 }
+/* stylelint-enable */

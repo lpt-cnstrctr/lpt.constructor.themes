@@ -2,7 +2,7 @@
 section.block > div {
   width: 960px;
   margin: 0 auto;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 section.block {
@@ -75,10 +75,12 @@ section.block {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .container.row-left {
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .container.row.between {
   justify-content: space-between;
 }
@@ -153,7 +155,7 @@ section.block {
 
 button,
 .button {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   display: inline-block;
   border: 1px solid var(--base-color);
 }
@@ -163,11 +165,11 @@ form input,
 form select,
 form textarea {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
   border: 1px solid #ccc;
   min-width: 240px;
-  margin: .3rem 0 .5rem;
+  margin: 0.3rem 0 0.5rem;
   box-sizing: border-box;
   appearance: none;
 }
@@ -211,7 +213,7 @@ form.wrapped button {
   text-align: center;
   line-height: 3rem;
   width: 3rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .dark .round-box-icons.container:hover i {
