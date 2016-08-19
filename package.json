@@ -19,7 +19,7 @@
     "postcss-nested": "^1.0.0",
     "postcss-url": "^5.1.2",
     "reset-css": "^2.0.20160720",
-    "stylelint": "^7.0.1",
+    "stylelint": "^7.1.0",
     "stylelint-config-standard": "^11.0.0"
   }
 }
