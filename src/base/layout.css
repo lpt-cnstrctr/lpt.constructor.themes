@@ -320,7 +320,9 @@ form.wrapped button {
 .accordion.column {
     flex-direction: column;
 }
-
+.accordion .accordion-title{
+    cursor:pointer;
+}
 .accordion .accordion-body {
     max-height: 0;
     overflow: hidden;
