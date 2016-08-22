@@ -40,7 +40,7 @@
     font-size: 14px;
   }
 
-  .repeater-item-wrapper:not(:last-child) {
+  .faq-container > div:not(:last-child) {
     border-bottom: 1px dotted #ddd;
   }
 
