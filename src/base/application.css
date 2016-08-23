@@ -1,6 +1,9 @@
 @import 'reset-css/reset.css';
+@import './typography-old.css';
 @import './typography.css';
+@import './layout-old.css';
 @import './layout.css';
+@import './slyling.css';
 @import './font-icons.css';
 
 :root {

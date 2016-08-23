@@ -16,6 +16,18 @@ section.block.old {
     padding: 0.5rem 0;
   }
 
+  .full-height {
+    min-height: 100vh;
+  }
+
+  .half-height {
+    min-height: 50vh;
+  }
+
+  .quarter-height {
+    min-height: 25vh;
+  }
+
   .boxed {
     max-width: 1170px;
     margin: 0 auto;
