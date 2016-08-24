@@ -4,6 +4,9 @@
 @import './layout-old.css';
 @import './layout.css';
 @import './slyling.css';
+@import './styling-dark.css';
+@import './styling-light.css';
+@import './styling-gray.css';
 @import './font-icons.css';
 
 :root {

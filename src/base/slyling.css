@@ -17,7 +17,6 @@ section.block {
 }
 
 .lpt-container {
-  color: #fff;
 
   h2 {
     font-size: 1.35rem;
@@ -30,12 +29,11 @@ section.block {
 
   form {
     margin-top: 1.5rem;
-    width: 100%;
     padding-right: 20%;
 
     label {
       display: block;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.6rem;
       font-size: 0.8rem;
       font-weight: 700;
     }
@@ -47,6 +45,10 @@ section.block {
       padding: 2px 7px;
       margin: 0 0 1.2rem;
       min-width: 15rem;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     input {
@@ -63,6 +65,12 @@ section.block {
       padding: 0.625rem 1.25rem;
       transition: 0.3s;
       font-size: 0.8rem;
+      display: block;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -72,43 +80,6 @@ section.block {
 
   .text-additional {
     font-size: 0.7rem;
-    margin-top: 2rem;
-  }
-}
-
-.dark {
-
-  .lpt-container {
-
-    p {
-      color: #f2f2f2;
-    }
-
-    form {
-
-      label {
-        color: #e6e3e3;
-      }
-
-      input,
-      textarea {
-        background-color: #fff;
-        color: #333;
-      }
-
-      .button-form {
-        border: 2px solid #fff;
-        color: #fff;
-        background-color: transparent;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-      }
-    }
-
-    .text-additional {
-      color: #fff;
-    }
+    margin-top: 1.2rem;
   }
 }
