@@ -46,7 +46,7 @@ section.block {
       border: 0;
       padding: 2px 7px;
       margin: 0 0 1.2rem;
-      width: 50%;
+      min-width: 15rem;
     }
 
     input {
