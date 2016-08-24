@@ -34,68 +34,71 @@ body.theme-canvas {
   --base-color: #333;
   --danger-color: #d9534f;
 
-  section.block > div {
-    width: 100%;
-    padding: 0.6vw 5vw;
-    box-sizing: border-box;
-  }
+  section.block.old {
 
-  p {
-    margin: 8px 0 0;
-    color: #999;
-  }
+    & > div {
+      width: 100%;
+      padding: 0.6vw 5vw;
+      box-sizing: border-box;
+    }
 
-  hr {
-    border: 0;
-    border-top: 2px solid #444;
-  }
+    p {
+      margin: 8px 0 0;
+      color: #999;
+    }
 
-  button,
-  .button {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    padding: 0 22px;
-    font-size: 14px;
-    height: 40px;
-    line-height: 40px;
-    background-color: var(--accent-color);
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  }
+    hr {
+      border: 0;
+      border-top: 2px solid #444;
+    }
 
-  button:hover,
-  .button:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+    button,
+    .button {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      white-space: nowrap;
+      padding: 0 22px;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px;
+      background-color: var(--accent-color);
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
 
-  .title hr {
-    margin-top: 2rem;
-  }
+    button:hover,
+    .button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
 
-  .title h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+    .title hr {
+      margin-top: 2rem;
+    }
 
-  form.danger button {
-    background-color: var(--danger-color);
+    .title h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    form.danger button {
+      background-color: var(--danger-color);
+    }
   }
 
   @media (max-width: 960px) {
-    form.wrapped input {
+    .old form.wrapped input {
       margin: 0 0 1rem;
     }
 
-    .button {
+    .old .button {
       margin: 0 !important;
     }
   }

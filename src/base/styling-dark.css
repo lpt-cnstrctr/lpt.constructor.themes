@@ -1,0 +1,37 @@
+.dark {
+  --header-color: #fff;
+  --text-color: #f2f2f2;
+  --label-color: #e6e3e3;
+
+  .lpt-container {
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    h2 {
+      color: var(--header-color);
+    }
+
+    form {
+
+      label {
+        color: var(--label-color);
+      }
+
+      input,
+      textarea {
+        background-color: #fff;
+        color: #333;
+      }
+
+      .button-form {
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}

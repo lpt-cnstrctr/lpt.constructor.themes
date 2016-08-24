@@ -1,4 +1,4 @@
-.theme-canvas .header {
+.theme-canvas .header.old {
   &.dark {
     color: #eee;
   }

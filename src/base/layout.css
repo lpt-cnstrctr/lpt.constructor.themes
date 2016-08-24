@@ -1,364 +1,57 @@
-/* section */
-section.block > div {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0.5rem 0;
+@define-mixin flex-for-name $name: '' {
+  @for $index from 1 to 100 {
+    .flex$(name)-$(index) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
 }
 
-section.block {
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
+.lpt-layout {
 
-.boxed {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.light {
-  background-color: #fff;
-  color: var(--base-color);
-}
-
-.dark {
-  background-color: var(--base-color);
-  color: #ccc;
-}
-
-.gray {
-  background-color: #f9f9f9;
-  color: var(--base-color);
-}
-
-.dark button svg {
-  color: #fff !important;
-}
-
-.full-height {
-  min-height: 100vh;
-}
-
-.half-height {
-  min-height: 50vh;
-}
-
-.quarter-height {
-  min-height: 25vh;
-}
-
-/* repeater */
-.repeater.column {
-  padding: 1rem 0;
-}
-
-.repeater.row {
-  padding: 0 1rem;
-}
-
-.repeater-item-wrapper {
-  padding: 1rem;
-}
-
-/* containers */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container.align-clear {
-  align-items: initial;
-}
-
-.container.row {
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.container.row-left {
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.container.row.between {
-  justify-content: space-between;
-}
-
-.container.column {
-  flex-direction: column;
-}
-
-.container.start {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.container.end {
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.container.stretch {
-  align-items: stretch;
-  align-content: stretch;
-}
-
-.container.bordered {
-  border: 1px solid var(--base-color);
-  padding: 3rem;
-}
-
-.container.bordered {
-  margin-bottom: 1rem;
-  background-color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
-}
-
-.container.bordered h2 {
-  font-size: 1rem !important;
-}
-
-.container.bordered h3 {
-  font-size: 14px;
-  margin-bottom: 2rem;
-}
-
-.dark .container.bordered {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* staff */
-.half-right-offset {
-  margin-right: 50%;
-}
-
-.offset-1 {
-  margin-left: 1rem;
-}
-
-.offset-2 {
-  margin-left: 2rem;
-}
-
-.centered {
-  text-align: center;
-}
-
-.container.pillow {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-}
-
-button,
-.button {
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  border: 1px solid var(--base-color);
-}
-
-/* form */
-form input,
-form select,
-form textarea {
-  display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  min-width: 240px;
-  margin: 0.3rem 0 0.5rem;
-  box-sizing: border-box;
-  appearance: none;
-}
-
-form button {
-  margin-top: 1rem;
-  border-radius: 3px;
-  border: 1px solid rgba(30, 30, 30, 0.4);
-  color: rgba(30, 30, 30, 0.5);
-  background-color: transparent;
-}
-
-form.wrapped {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 2rem;
-  border-radius: 3px;
-  margin-top: 2rem;
-}
-
-form.wrapped input {
-  font-size: 18px;
-  margin: 0;
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-}
-
-form.wrapped button {
-  margin: 0 0 0 1rem;
-}
-
-.dark form button {
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.round-box-icons.container i {
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  color: #fff !important;
-  font-style: normal;
-  font-size: 1.5rem !important;
-  text-align: center;
-  line-height: 3rem;
-  width: 3rem;
-  transition: 0.3s;
-}
-
-.dark .round-box-icons.container:hover i {
-  background: #999;
-  box-shadow: 0 0 0 3px #333, 0 0 0 5px #999;
-}
-
-.light .round-box-icons.container:hover i {
-  background: #333;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #333;
-}
-
-.constructor-container {
-  /* workaround, needed for scrollTo to last carousel */
-  padding-bottom: 350px;
-}
-
-.three-columns {
-  flex-wrap: wrap;
-}
-
-.three-columns > div {
-  width: 33%;
-  box-sizing: border-box;
-}
-
-.four-columns {
-  flex-wrap: wrap;
-}
-
-.four-columns > div {
-  width: 25%;
-  box-sizing: border-box;
-}
-
-.five-columns {
-  flex-wrap: wrap;
-}
-
-.five-columns > div {
-  width: 20%;
-  box-sizing: border-box;
-}
-
-@media (max-width: 960px) {
-  .no-columns-sm > div {
-    width: 100%;
+  &,
+  &-column,
+  &-row {
+    @mixin flex-for-name -lpt;
+    display: flex;
   }
 
-  .container.row-sm {
+  &-column {
+    flex-direction: column;
+  }
+
+  &-row {
     flex-direction: row;
   }
 
-  .container.column-sm {
-    flex-direction: column;
+  &-align-end {
+    justify-content: flex-end;
   }
 
-  .centered-sm {
-    text-align: center;
+  &-vertical-center {
     align-items: center;
-    justify-content: center !important;
   }
 
-  .no-offset-sm {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .bottom-offset-sm {
-    margin-bottom: 1rem;
-  }
-
-  .bottom-offset-2-sm {
-    margin-bottom: 2rem;
+  &-padding {
+    padding: 16px;
   }
 }
 
-/* settings specific */
+@for $index from 5 to 95 by 5 {
+  .flex-offset-$(index) {
+    margin-left: $(index)%;
+  }
+}
+
 @media (max-width: 960px) {
-  .hide_on_mobile {
-    display: none;
+  .lpt-layout {
+
+    &,
+    &-column,
+    &-row {
+      @mixin flex-for-name -lpt-sm;
+    }
   }
-}
-
-@media (min-width: 960px) {
-  .hide_on_desktop {
-    display: none;
-  }
-}
-
-.header_sticky {
-  position: fixed !important;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-}
-
-/* accordion */
-.accordion {
-    display: flex;
-    flex: 1;
-}
-
-.accordion.column {
-    flex-direction: column;
-}
-.accordion .accordion-title{
-    cursor:pointer;
-}
-.accordion .accordion-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.accordion-body.expand {
-    max-height: 1000px;
-    overflow: visible;
-    transition: max-height 0.5s ease;
-}
-
-/*popup*/
-.lpt-dialog-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.lpt-dialog-overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
 }

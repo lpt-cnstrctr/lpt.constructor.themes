@@ -1,0 +1,38 @@
+.old {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .icon-class {
+    font-size: 1.5rem;
+  }
+
+  h2,
+  h3 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+
+  hr {
+    width: 3rem;
+  }
+}
+

@@ -1,0 +1,85 @@
+section.block {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.half-height {
+  min-height: 50vh;
+}
+
+.quarter-height {
+  min-height: 25vh;
+}
+
+.lpt-container {
+  padding-right: 5%;
+
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  form {
+    margin-top: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    input,
+    textarea {
+      border-radius: 3px;
+      border: 0;
+      padding: 2px 7px;
+      margin: 0 0 1.2rem;
+      min-width: 15rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input {
+      height: 1.6rem;
+    }
+
+    textarea {
+      height: 3.2rem;
+    }
+
+    .button-form {
+      border-radius: 40px;
+      text-transform: none;
+      padding: 0.625rem 1.25rem;
+      transition: 0.3s;
+      font-size: 0.8rem;
+      display: block;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .text-italic {
+    font-style: italic;
+  }
+
+  .text-additional {
+    font-size: 0.7rem;
+    margin-top: 1.2rem;
+  }
+}
