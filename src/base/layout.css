@@ -1,3 +1,14 @@
+@define-mixin flex-for-name $name: '' {
+  @for $index from 1 to 100 {
+    .flex$(name)-$(index) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
 .lpt-layout {
 
   &,
@@ -31,17 +42,6 @@
 @for $index from 5 to 95 by 5 {
   .flex-offset-$(index) {
     margin-left: $(index)%;
-  }
-}
-
-@define-mixin flex-for-name $name: '' {
-  @for $index from 1 to 100 {
-    .flex$(name)-$(index) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
-      max-height: 100%;
-      box-sizing: border-box;
-    }
   }
 }
 
