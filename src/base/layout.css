@@ -1,21 +1,27 @@
 .lpt-layout {
   display: flex;
 
-  &-column, &-row {
+  &-column,
+  &-row {
     display: flex;
   }
+
   &-column {
     flex-direction: column;
   }
+
   &-row {
     flex-direction: row;
   }
+
   &-align-end {
     justify-content: flex-end;
   }
+
   &-vertical-center {
     align-items: center;
   }
+
   &-padding {
     padding: 16px;
   }

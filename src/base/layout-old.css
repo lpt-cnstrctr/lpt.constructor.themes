@@ -9,7 +9,7 @@ section.block.old {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  
+
   & > div {
     width: 960px;
     margin: 0 auto;

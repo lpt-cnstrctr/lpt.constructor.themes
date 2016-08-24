@@ -6,9 +6,10 @@ module.exports = dep => {
       addDependencyTo: dep
     }),
     require('postcss-url'),
-    require('postcss-nested'),
     require('postcss-mixins'),
     require('postcss-for'),
+    require('postcss-nested'),
+    require('postcss-simple-vars'),
     require('postcss-each'),
     require('cssnano')()
   ];
