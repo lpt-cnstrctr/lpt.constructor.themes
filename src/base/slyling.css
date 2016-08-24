@@ -17,6 +17,7 @@ section.block {
 }
 
 .lpt-container {
+  padding-right: 5%;
 
   h2 {
     font-size: 1.35rem;
@@ -29,7 +30,6 @@ section.block {
 
   form {
     margin-top: 1.5rem;
-    padding-right: 20%;
 
     label {
       display: block;

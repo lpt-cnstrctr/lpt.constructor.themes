@@ -1,8 +1,9 @@
 .lpt-layout {
-  display: flex;
 
+  &,
   &-column,
   &-row {
+    @mixin flex-for-name -lpt;
     display: flex;
   }
 
@@ -27,17 +28,30 @@
   }
 }
 
-@for $index from 1 to 100 {
-  .flex-$(index) {
-    flex: 1 1 $(index).$(index)%;
-    max-width: $(index).$(index)%;
-    max-height: 100%;
-    box-sizing: border-box;
-  }
-}
-
 @for $index from 5 to 95 by 5 {
   .flex-offset-$(index) {
     margin-left: $(index)%;
+  }
+}
+
+@define-mixin flex-for-name $name: '' {
+  @for $index from 1 to 100 {
+    .flex$(name)-$(index) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .lpt-layout {
+
+    &,
+    &-column,
+    &-row {
+      @mixin flex-for-name -lpt-sm;
+    }
   }
 }
