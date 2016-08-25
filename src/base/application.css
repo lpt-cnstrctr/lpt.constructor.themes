@@ -8,6 +8,7 @@
 @import './styling-light.css';
 @import './styling-gray.css';
 @import './font-icons.css';
+@import './popup.css';
 
 :root {
   --accent-color: #00bcd4;
