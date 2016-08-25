@@ -68,13 +68,25 @@
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
+  margin: 2rem auto !important;
+  padding: 3rem 8rem !important;
   background: #fff;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  width: 30% !important;
+  width: auto !important;
   position: relative;
   transition: all 5s ease-in-out;
+}
+
+.popup .popup-subheader {
+  margin-bottom: 0.5rem !important;
+}
+
+.popup form input,
+.popup form select,
+.popup form textarea {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.8rem !important;
 }
 
 @for $index from 5 to 95 by 5 {
