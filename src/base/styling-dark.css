@@ -3,6 +3,34 @@
   --text-color: #f2f2f2;
   --label-color: #e6e3e3;
 
+  .usp {
+
+    &-2 {
+      
+     .lpt-container {
+        color: #cacaca;
+
+        form {
+
+          input,
+          select,
+          textarea {
+            color: #aba9a9;
+          }
+        }
+      }
+
+      .bottom-line {
+        background-color: #333;
+        color: #f2f2f2;
+
+        h2 {
+          color: #fff;
+        }
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.5);
@@ -18,6 +46,7 @@
       }
 
       input,
+      select,
       textarea {
         background-color: #fff;
         color: #333;
@@ -31,6 +60,10 @@
         &:hover {
           background-color: rgba(255, 255, 255, 0.2);
         }
+      }
+      .button-form-2 {
+        color: #fff;
+        background-color: #5cb85c;
       }
     }
   }
