@@ -23,15 +23,15 @@ section.block {
   }
 
   &-2 {
-    
-   .lpt-container {
+
+    .lpt-container {
       max-width: 20rem;
       margin-right: 5%;
       margin-top: 2%;
       z-index: 1;
       font-size: 1.1rem;
       font-family: Arial;
-      
+
       h2 {
         font-size: 1.5rem;
         text-transform: uppercase;
@@ -129,23 +129,26 @@ section.block {
       padding: 0 0.125rem;
     }
 
+    .button-form,
+    .button-form-2 {
+      display: block;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+
     .button-form {
       border-radius: 40px;
       text-transform: none;
       padding: 0.625rem 1.25rem;
-      transition: 0.3s;
       font-size: 0.8rem;
-      display: block;
-      cursor: pointer;
     }
+
     .button-form-2 {
       border-radius: 5px;
       text-transform: uppercase;
       border: 0;
-      text-align: center;
       font-weight: 700;
-      display: block;
-      cursor: pointer;
     }
   }
 
@@ -161,7 +164,7 @@ section.block {
 
 @media (max-width: 960px) {
   .usp-2 {
-    
+
     .lpt-container {
       margin: 0;
     }
@@ -175,7 +178,7 @@ section.block {
       top: auto;
       width: 100%;
       text-align: center;
-      padding: 2.1rem 0 1.5rem 0;
+      padding: 2.1rem 0 1.5rem;
     }
   }
 }

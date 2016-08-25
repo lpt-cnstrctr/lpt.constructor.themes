@@ -6,8 +6,8 @@
   .usp {
 
     &-2 {
-        
-     .lpt-container {
+
+      .lpt-container {
 
         form {
 
@@ -65,6 +65,10 @@
       .button-form-2 {
         color: #fff;
         background-color: #5cb85c;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
       }
     }
   }
