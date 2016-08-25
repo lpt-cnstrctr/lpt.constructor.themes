@@ -1,53 +1,53 @@
 /* popup */
 .lpt-dialog-overlay {
-    position: fixed !important;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7) !important;
-    transition: opacity 500ms;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    overflow: auto;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7) !important;
+  transition: opacity 500ms;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
 }
 
 .lpt-dialog-overlay:target {
-    visibility: visible !important;
-    opacity: 1 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .popup {
-    margin: 2rem auto !important;
-    padding: 3rem 8rem !important;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: auto !important;
-    position: relative;
-    transition: all 5s ease-in-out;
+  margin: 2rem auto !important;
+  padding: 3rem 8rem !important;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: auto !important;
+  position: relative;
+  transition: all 5s ease-in-out;
 }
 
 .popup .popup-subheader {
-    margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .popup form label {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #555;
-    margin-bottom: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
