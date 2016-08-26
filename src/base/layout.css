@@ -43,6 +43,10 @@
     justify-content: flex-end;
   }
 
+  &-align-center {
+    justify-content: center;
+  }
+
   &-vertical-center {
     align-items: center;
   }
@@ -52,7 +56,7 @@
   }
 
   &-padding {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 
@@ -85,6 +89,10 @@
 
     &-row-sm {
       flex-direction: row;
+    }
+
+    &-padding-sm {
+      padding: 1rem;
     }
   }
 }

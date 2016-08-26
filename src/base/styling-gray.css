@@ -9,7 +9,6 @@
 
       .lpt-container {
         color: #f2f2f2;
-        background-color: rgba(125, 125, 125, 0.4);
 
         h2 {
           color: #fff;
@@ -34,11 +33,58 @@
         }
       }
     }
+
+    &-3 {
+      --header-color: #333;
+      --text-color: #525252;
+      --label-color: #3a3a3a;
+
+      .lpt-container {
+
+        .left-side {
+          color: var(--text-color);
+
+          h3 {
+            color: var(--header-color);
+          }
+
+          .author {
+            color: #272727;
+
+            .company {
+              color: #444;
+            }
+          }
+        }
+
+        .right-side {
+          background-color: #fff;
+        }
+
+        form {
+
+          input,
+          select,
+          textarea {
+            border: 1px solid var(--text-color);
+          }
+
+          .button-form {
+            border-color: var(--text-color);
+            color: var(--text-color);
+
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+    }
   }
 
   .lpt-container {
     color: var(--text-color);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(125, 125, 125, 0.4);
 
     form {
 
@@ -69,7 +115,7 @@
         background-color: #5cb85c;
 
         &:hover {
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: #525252;
         }
       }
     }
