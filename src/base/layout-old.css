@@ -289,6 +289,7 @@ section.block.old {
 
 @media (max-width: 960px) {
   .old {
+
     .no-columns-sm > div {
       width: 100%;
     }

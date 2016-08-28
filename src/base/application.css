@@ -3,7 +3,7 @@
 @import './typography.css';
 @import './layout-old.css';
 @import './layout.css';
-@import './slyling.css';
+@import './styling.css';
 @import './styling-dark.css';
 @import './styling-light.css';
 @import './styling-gray.css';
@@ -23,4 +23,3 @@
   color: white;
   background: var(--accent-color);
 }
-

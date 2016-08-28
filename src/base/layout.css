@@ -1,6 +1,19 @@
+/* Переделаю эти два миксина, когда разберусь, почему если не указывать аргумент,
+  класс не отрабатывает */
 @define-mixin flex-for-name $name: '' {
   @for $index from 1 to 100 {
-    .flex$(name)-$(index) {
+    .lpt-flex-$(index)$(name) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@define-mixin flex {
+  @for $index from 1 to 100 {
+    .lpt-flex-$(index) {
       flex: 1 1 $(index).$(index)%;
       max-width: $(index).$(index)%;
       max-height: 100%;
@@ -14,7 +27,7 @@
   &,
   &-column,
   &-row {
-    @mixin flex-for-name -lpt;
+    @mixin flex;
     display: flex;
   }
 
@@ -30,12 +43,20 @@
     justify-content: flex-end;
   }
 
+  &-align-center {
+    justify-content: center;
+  }
+
   &-vertical-center {
     align-items: center;
   }
 
+  &-vertical-end {
+    align-items: flex-end;
+  }
+
   &-padding {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 
@@ -51,7 +72,27 @@
     &,
     &-column,
     &-row {
-      @mixin flex-for-name -lpt-sm;
+      @mixin flex-for-name -sm;
+    }
+
+    &-align-center-sm {
+      justify-content: center;
+    }
+
+    &-vertical-center-sm {
+      align-items: center;
+    }
+
+    &-column-sm {
+      flex-direction: column;
+    }
+
+    &-row-sm {
+      flex-direction: row;
+    }
+
+    &-padding-sm {
+      padding: 1rem;
     }
   }
 }

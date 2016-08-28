@@ -11,6 +11,13 @@ a {
   text-decoration: none;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .icon-class {
   font-size: 1.5rem;
 }
