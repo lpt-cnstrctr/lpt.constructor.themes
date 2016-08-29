@@ -270,6 +270,10 @@ section.block.old {
     flex: 1;
   }
 
+  .accordion-title {
+    cursor: pointer;
+  }
+
   .accordion.column {
     flex-direction: column;
   }
