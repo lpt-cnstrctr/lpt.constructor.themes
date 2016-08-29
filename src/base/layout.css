@@ -1,6 +1,6 @@
 /* Переделаю эти два миксина, когда разберусь, почему если не указывать аргумент,
   класс не отрабатывает */
-@define-mixin flex-for-name $name: '' {
+/* @define-mixin flex-for-name $name: '' {
   @for $index from 1 to 100 {
     .lpt-flex-$(index)$(name) {
       flex: 1 1 $(index).$(index)%;
@@ -95,4 +95,95 @@
       padding: 1rem;
     }
   }
+}
+ */
+
+@define-mixin layout-for-name $name {
+  .lpt-layout$(name),
+  .lpt-layout-column$(name),
+  .lpt-layout-row$(name) {
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .lpt-layout-column$(name) {
+    flex-direction: column;
+  }
+
+  .lpt-layout-row$(name) {
+    flex-direction: row;
+  }
+}
+
+@define-mixin flex-for-name $name {
+  @for $index from 1 to 100 {
+    .lpt-flex-$(index)$(name) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@define-mixin layout-align-for-name $suffix {
+  $name: lpt-layout-align;
+  
+  .qwe {
+    display: $(name)-center$(suffix);
+  }
+
+  .$(name)-start$(suffix) {
+    justify-content: flex-start;
+  }
+
+  .$(name)-center$(suffix) {
+    justify-content: center;
+  }
+
+  .$(name)-end$(suffix) {
+    justify-content: flex-end;
+  }
+
+  .$(name)-space-around$(suffix) {
+    justify-content: space-around;
+  }
+
+  .$(name)-space-between$(suffix) {
+    justify-content: space-between;
+  }
+
+  .$(name)-flex-start$(suffix) {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .$(name)-start-center$(suffix) {
+    align-items: center;
+    align-content: center;
+  }
+  
+  .$(name)-start-end$(suffix) {
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .$(name)-start-stretch$(suffix) {
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+.lpt-layout-padding {
+  padding: 1rem;
+}
+
+@mixin layout-for-name;
+@mixin flex-for-name;
+@mixin layout-align-for-name;
+
+@media (max-width: 960px) {
+  @mixin layout-for-name -sm;
+  @mixin flex-for-name -sm;
+  @mixin layout-align-for-name -sm;
 }

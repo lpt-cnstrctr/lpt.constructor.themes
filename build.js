@@ -9,6 +9,8 @@ module.exports = dep => {
     require('postcss-for'),
     require('postcss-mixins'),
     require('postcss-nested'),
+    require('postcss-simple-vars'),
+    require('postcss-conditionals'),
     require('postcss-each'),
     require('cssnano')()
   ];

@@ -141,6 +141,7 @@ section.block {
   }
 
   form {
+    box-sizing: border-box;
     margin-top: 1.5rem;
 
     label {
