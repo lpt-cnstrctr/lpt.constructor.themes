@@ -6,9 +6,12 @@
 }
 
 section.block.old {
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
+
+  .fixed-background {
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   & > div {
     width: 960px;
@@ -268,6 +271,10 @@ section.block.old {
   .accordion {
     display: flex;
     flex: 1;
+  }
+
+  .accordion-title {
+    cursor: pointer;
   }
 
   .accordion.column {

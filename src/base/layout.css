@@ -1,103 +1,3 @@
-/* Переделаю эти два миксина, когда разберусь, почему если не указывать аргумент,
-  класс не отрабатывает */
-/* @define-mixin flex-for-name $name: '' {
-  @for $index from 1 to 100 {
-    .lpt-flex-$(index)$(name) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
-      max-height: 100%;
-      box-sizing: border-box;
-    }
-  }
-}
-
-@define-mixin flex {
-  @for $index from 1 to 100 {
-    .lpt-flex-$(index) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
-      max-height: 100%;
-      box-sizing: border-box;
-    }
-  }
-}
-
-.lpt-layout {
-
-  &,
-  &-column,
-  &-row {
-    @mixin flex;
-    display: flex;
-  }
-
-  &-column {
-    flex-direction: column;
-  }
-
-  &-row {
-    flex-direction: row;
-  }
-
-  &-align-end {
-    justify-content: flex-end;
-  }
-
-  &-align-center {
-    justify-content: center;
-  }
-
-  &-vertical-center {
-    align-items: center;
-  }
-
-  &-vertical-end {
-    align-items: flex-end;
-  }
-
-  &-padding {
-    padding: 1rem;
-  }
-}
-
-@for $index from 5 to 95 by 5 {
-  .flex-offset-$(index) {
-    margin-left: $(index)%;
-  }
-}
-
-@media (max-width: 960px) {
-  .lpt-layout {
-
-    &,
-    &-column,
-    &-row {
-      @mixin flex-for-name -sm;
-    }
-
-    &-align-center-sm {
-      justify-content: center;
-    }
-
-    &-vertical-center-sm {
-      align-items: center;
-    }
-
-    &-column-sm {
-      flex-direction: column;
-    }
-
-    &-row-sm {
-      flex-direction: row;
-    }
-
-    &-padding-sm {
-      padding: 1rem;
-    }
-  }
-}
- */
-
 @define-mixin layout-for-name $name {
   .lpt-layout$(name),
   .lpt-layout-column$(name),
@@ -128,7 +28,7 @@
 
 @define-mixin layout-align-for-name $suffix {
   $name: lpt-layout-align;
-  
+
   .qwe {
     display: $(name)-center$(suffix);
   }
@@ -162,7 +62,7 @@
     align-items: center;
     align-content: center;
   }
-  
+
   .$(name)-start-end$(suffix) {
     align-items: flex-end;
     align-content: flex-end;
