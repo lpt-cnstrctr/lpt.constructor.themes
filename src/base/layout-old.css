@@ -6,9 +6,12 @@
 }
 
 section.block.old {
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
+
+  .fixed-background {
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   & > div {
     width: 960px;
@@ -329,13 +332,13 @@ section.block.old {
 
 /* settings specific */
 @media (max-width: 960px) {
-  .old .hide_on_mobile {
+  .old.hide_on_mobile {
     display: none;
   }
 }
 
 @media (min-width: 960px) {
-  .old .hide_on_desktop {
+  .old.hide_on_desktop {
     display: none;
   }
 }
