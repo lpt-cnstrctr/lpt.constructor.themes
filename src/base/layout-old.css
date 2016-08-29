@@ -6,9 +6,12 @@
 }
 
 section.block.old {
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
+
+  .fixed-background {
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   & > div {
     width: 960px;
