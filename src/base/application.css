@@ -23,3 +23,11 @@
   color: white;
   background: var(--accent-color);
 }
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
