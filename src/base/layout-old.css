@@ -322,17 +322,3 @@ section.block.old {
     }
   }
 }
-
-/* settings specific */
-@media (max-width: 960px) {
-  .old .hide_on_mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 960px) {
-  .old .hide_on_desktop {
-    display: none;
-  }
-}
-
