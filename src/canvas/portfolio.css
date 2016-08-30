@@ -10,6 +10,7 @@ body.theme-canvas section.block.portfolio.old {
     left: 0;
     bottom: -5rem;
     background-color: #fff;
+    z-index: 2;
 
     p {
       margin: 0;
@@ -34,16 +35,17 @@ body.theme-canvas section.block.portfolio.old {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: 0.3s;
     opacity: 0;
+    z-index: 1;
+    pointer-events: none;
   }
 
   .repeater-item-wrapper:hover {
 
     img {
-      trasform: translateY(-2rem);
-      opacity: 0.3;
+      transform: translateY(-1rem);
     }
 
     .additional {
