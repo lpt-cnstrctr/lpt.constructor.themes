@@ -57,6 +57,7 @@ section.block {
       margin: 0 0 1.2rem;
       min-width: 15rem;
       box-sizing: border-box;
+      display: block;
 
       &:focus {
         outline: none;
