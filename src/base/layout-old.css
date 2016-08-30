@@ -260,7 +260,7 @@ section.block.old {
     box-sizing: border-box;
   }
 
-  .header_sticky {
+  &.header_sticky {
     position: fixed !important;
     top: 0;
     z-index: 99;
