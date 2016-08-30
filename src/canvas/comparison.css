@@ -19,4 +19,9 @@
     letter-spacing: 1px;
     margin: 0.4rem 0;
   }
+
+  .repeater-item-wrapper {
+    /* WORKAROUND чтобы левые и правые блоки были на одном уровне */
+    height: 8rem;
+  }
 }
