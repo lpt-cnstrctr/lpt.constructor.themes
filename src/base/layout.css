@@ -29,10 +29,6 @@
 @define-mixin layout-align-for-name $suffix {
   $name: lpt-layout-align;
 
-  .qwe {
-    display: $(name)-center$(suffix);
-  }
-
   .$(name)-start$(suffix) {
     justify-content: flex-start;
   }
