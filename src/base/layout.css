@@ -1,3 +1,22 @@
+@define-mixin flex-for-name $name {
+  @for $index from 1 to 100 {
+    .lpt-flex-$(index)$(name) {
+      flex: 1 1 $(index).$(index)%;
+      max-width: $(index).$(index)%;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@define-mixin offset-for-name $name {
+  @for $index from 5 to 95 by 5 {
+    .lpt-offset-$(index)$(name) {
+      margin-left: $index%;
+    }
+  }
+}
+
 @define-mixin layout-for-name $name {
   .lpt-layout$(name),
   .lpt-layout-column$(name),
@@ -13,16 +32,17 @@
   .lpt-layout-row$(name) {
     flex-direction: row;
   }
-}
 
-@define-mixin flex-for-name $name {
-  @for $index from 1 to 100 {
-    .lpt-flex-$(index)$(name) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
-      max-height: 100%;
-      box-sizing: border-box;
-    }
+  .lpt-layout-padding$(name) {
+    padding: 1rem;
+  }
+
+  .lpt-layout-wrap$(name) {
+    flex-wrap: wrap;
+  }
+
+  .lpt-layout-nowrap$(name) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -70,16 +90,14 @@
   }
 }
 
-.lpt-layout-padding {
-  padding: 1rem;
-}
-
-@mixin layout-for-name;
 @mixin flex-for-name;
+@mixin offset-for-name;
+@mixin layout-for-name;
 @mixin layout-align-for-name;
 
 @media (max-width: 960px) {
-  @mixin layout-for-name -sm;
   @mixin flex-for-name -sm;
+  @mixin layout-for-name -sm;
+  @mixin offset-for-name -sm;
   @mixin layout-align-for-name -sm;
 }
