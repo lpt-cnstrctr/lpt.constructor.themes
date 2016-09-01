@@ -12,6 +12,7 @@ module.exports = dep => {
     require('postcss-simple-vars'),
     require('postcss-conditionals'),
     require('postcss-each'),
-    require('cssnano')()
+    require('cssnano')(),
+    require('postcss-reporter')()
   ];
 }
