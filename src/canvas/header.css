@@ -40,6 +40,11 @@
     }
   }
 
+  .container.bordered {
+    margin-bottom: 0;
+    padding: 0 2rem;
+  }
+
   .bordered {
     border: 0;
   }
