@@ -1,11 +1,20 @@
-.theme-canvas .portfolio.old {
+body.theme-canvas section.block.portfolio.old {
   .additional {
-    height: 0;
+    height: 5rem;
     overflow: hidden;
     transition: 0.3s;
     box-sizing: border-box;
     padding: 1rem;
-    margin-bottom: -2rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -5rem;
+    background-color: #fff;
+    z-index: 2;
+
+    p {
+      margin: 0;
+    }
   }
 
   .repeater-item-wrapper {
@@ -16,16 +25,36 @@
 
     /* WORKAROUND fix lug after hover */
     margin-top: -1px;
+    margin-right: -1px;
   }
 
-  .repeater-item-wrapper:hover .additional {
-    height: 5rem;
-    margin-bottom: 0;
+  .repeater-item-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
   }
 
-  .repeater-item-wrapper:hover img {
-    margin-top: -5rem;
-    opacity: 0.3;
+  .repeater-item-wrapper:hover {
+
+    img {
+      transform: translateY(-1rem);
+    }
+
+    .additional {
+      bottom: 0;
+    }
+
+    &:before {
+      opacity: 1;
+    }
   }
 
   .repeater {
@@ -33,7 +62,7 @@
   }
 
   .repeater h2 {
-    font-size: 19px;
+    font-size: 1rem;
   }
 
   img {

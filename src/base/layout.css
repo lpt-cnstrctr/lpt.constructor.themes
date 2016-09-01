@@ -1,6 +1,4 @@
-/* Переделаю эти два миксина, когда разберусь, почему если не указывать аргумент,
-  класс не отрабатывает */
-@define-mixin flex-for-name $name: '' {
+@define-mixin flex-for-name $name {
   @for $index from 1 to 100 {
     .lpt-flex-$(index)$(name) {
       flex: 1 1 $(index).$(index)%;
@@ -11,88 +9,95 @@
   }
 }
 
-@define-mixin flex {
-  @for $index from 1 to 100 {
-    .lpt-flex-$(index) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
-      max-height: 100%;
-      box-sizing: border-box;
+@define-mixin offset-for-name $name {
+  @for $index from 5 to 95 by 5 {
+    .lpt-offset-$(index)$(name) {
+      margin-left: $index%;
     }
   }
 }
 
-.lpt-layout {
-
-  &,
-  &-column,
-  &-row {
-    @mixin flex;
+@define-mixin layout-for-name $name {
+  .lpt-layout$(name),
+  .lpt-layout-column$(name),
+  .lpt-layout-row$(name) {
+    box-sizing: border-box;
     display: flex;
   }
 
-  &-column {
+  .lpt-layout-column$(name) {
     flex-direction: column;
   }
 
-  &-row {
+  .lpt-layout-row$(name) {
     flex-direction: row;
   }
 
-  &-align-end {
-    justify-content: flex-end;
+  .lpt-layout-padding$(name) {
+    padding: 1rem;
   }
 
-  &-align-center {
+  .lpt-layout-wrap$(name) {
+    flex-wrap: wrap;
+  }
+
+  .lpt-layout-nowrap$(name) {
+    flex-wrap: nowrap;
+  }
+}
+
+@define-mixin layout-align-for-name $suffix {
+  $name: lpt-layout-align;
+
+  .$(name)-start$(suffix) {
+    justify-content: flex-start;
+  }
+
+  .$(name)-center$(suffix) {
     justify-content: center;
   }
 
-  &-vertical-center {
+  .$(name)-end$(suffix) {
+    justify-content: flex-end;
+  }
+
+  .$(name)-space-around$(suffix) {
+    justify-content: space-around;
+  }
+
+  .$(name)-space-between$(suffix) {
+    justify-content: space-between;
+  }
+
+  .$(name)-flex-start$(suffix) {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .$(name)-start-center$(suffix) {
     align-items: center;
+    align-content: center;
   }
 
-  &-vertical-end {
+  .$(name)-start-end$(suffix) {
     align-items: flex-end;
+    align-content: flex-end;
   }
 
-  &-padding {
-    padding: 1rem;
+  .$(name)-start-stretch$(suffix) {
+    align-items: stretch;
+    align-content: stretch;
   }
 }
 
-@for $index from 5 to 95 by 5 {
-  .flex-offset-$(index) {
-    margin-left: $(index)%;
-  }
-}
+@mixin flex-for-name;
+@mixin offset-for-name;
+@mixin layout-for-name;
+@mixin layout-align-for-name;
 
 @media (max-width: 960px) {
-  .lpt-layout {
-
-    &,
-    &-column,
-    &-row {
-      @mixin flex-for-name -sm;
-    }
-
-    &-align-center-sm {
-      justify-content: center;
-    }
-
-    &-vertical-center-sm {
-      align-items: center;
-    }
-
-    &-column-sm {
-      flex-direction: column;
-    }
-
-    &-row-sm {
-      flex-direction: row;
-    }
-
-    &-padding-sm {
-      padding: 1rem;
-    }
-  }
+  @mixin flex-for-name -sm;
+  @mixin layout-for-name -sm;
+  @mixin offset-for-name -sm;
+  @mixin layout-align-for-name -sm;
 }

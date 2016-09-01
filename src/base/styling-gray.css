@@ -82,6 +82,10 @@
     }
   }
 
+  &.header .lpt-container {
+    color: #eee;
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(125, 125, 125, 0.4);

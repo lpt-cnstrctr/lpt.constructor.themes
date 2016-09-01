@@ -29,6 +29,22 @@
     margin-bottom: 0;
   }
 
+  .container {
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 3px 0 0;
+    }
+  }
+
+  .container.bordered {
+    margin-bottom: 0;
+    padding: 0 2rem;
+  }
+
   .bordered {
     border: 0;
   }

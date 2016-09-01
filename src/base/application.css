@@ -2,8 +2,10 @@
 @import './typography-old.css';
 @import './typography.css';
 @import './layout-old.css';
+@import './settings-specific.css';
 @import './layout.css';
-@import './styling.css';
+@import './styling-main.css';
+@import './styling-blocks.css';
 @import './styling-dark.css';
 @import './styling-light.css';
 @import './styling-gray.css';
