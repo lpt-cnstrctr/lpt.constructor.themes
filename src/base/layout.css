@@ -1,18 +1,35 @@
 @define-mixin flex-for-name $name {
   @for $index from 1 to 100 {
     .lpt-flex-$(index)$(name) {
-      flex: 1 1 $(index).$(index)%;
-      max-width: $(index).$(index)%;
+      flex: 1 1 $(index)%;
+      max-width: $(index)%;
       max-height: 100%;
       box-sizing: border-box;
     }
   }
 }
 
+@define-mixin width-for-name $name {
+  @for $index from 1 to 100 {
+    .lpt-width-$(index)$(name) {
+      width: $(index)%;
+
+      &.lpt-max-width {
+        max-width: 960px;
+      }
+    }
+  }
+}
+
 @define-mixin offset-for-name $name {
-  @for $index from 5 to 95 by 5 {
+  @for $index from 1 to 10 {
     .lpt-offset-$(index)$(name) {
-      margin-left: $index%;
+      margin-left: $(index)rem;
+    }
+
+    .lpt-offset-clear$(name) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -37,12 +54,25 @@
     padding: 1rem;
   }
 
+
+  .lpt-layout-padding-2$(name) {
+    padding: 2rem;
+  }
+
   .lpt-layout-wrap$(name) {
     flex-wrap: wrap;
   }
 
   .lpt-layout-nowrap$(name) {
     flex-wrap: nowrap;
+  }
+
+  .lpt-nogrow$(name) {
+    flex-grow: 0;
+  }
+
+  .lpt-auto-width$(name) {
+    width: auto;
   }
 }
 
@@ -91,12 +121,14 @@
 }
 
 @mixin flex-for-name;
+@mixin width-for-name;
 @mixin offset-for-name;
 @mixin layout-for-name;
 @mixin layout-align-for-name;
 
 @media (max-width: 960px) {
   @mixin flex-for-name -sm;
+  @mixin width-for-name -sm;
   @mixin layout-for-name -sm;
   @mixin offset-for-name -sm;
   @mixin layout-align-for-name -sm;

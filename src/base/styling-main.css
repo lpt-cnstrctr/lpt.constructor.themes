@@ -16,7 +16,31 @@ section.block {
   min-height: 25vh;
 }
 
+.no-background-color {
+  background-color: transparent !important;
+}
+
 .lpt-container {
+
+  .lpt-content-box {
+    box-sizing: content-box;
+  }
+
+  .lpt-title-1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .lpt-title-2 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 80%;
+  }
 
   h2 {
     font-size: 1.35rem;
@@ -44,6 +68,8 @@ section.block {
     background-color: #1abc9c;
     transition: 0.3s;
     letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.3);
@@ -54,67 +80,87 @@ section.block {
     box-sizing: border-box;
     margin-top: 1.5rem;
 
-    label {
-      display: block;
-      margin-bottom: 0.6rem;
-      font-size: 0.8rem;
-      font-weight: 700;
+    &.lpt-layout-row {
+      input,
+      select,
+      textarea {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 2.5rem;
+        font-size: 1rem;
+        max-width: 20rem;
 
-      &:empty {
-        display: none;
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+
+      .lpt-button {
+        font-size: 0.9rem;
       }
     }
+  }
 
-    input,
-    textarea,
-    select {
-      border-radius: 3px;
-      border: 0;
-      padding: 2px 7px;
-      margin: 0 0 1.2rem;
-      min-width: 15rem;
-      box-sizing: border-box;
-      display: block;
+  label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
 
-      &:focus {
-        outline: none;
-      }
+    &:empty {
+      display: none;
     }
+  }
 
-    input,
-    select {
-      height: 1.8rem;
-    }
+  input,
+  textarea,
+  select {
+    border-radius: 3px;
+    border: 0;
+    padding: 2px 7px;
+    margin: 0 0 1.2rem;
+    min-width: 10rem;
+    box-sizing: border-box;
+    display: block;
 
-    textarea {
-      height: 3.2rem;
+    &:focus {
+      outline: none;
     }
+  }
 
-    select {
-      padding: 0 0.125rem;
-    }
+  input,
+  select {
+    height: 1.8rem;
+  }
 
-    .button-form,
-    .button-form-2 {
-      display: block;
-      cursor: pointer;
-      transition: 0.3s;
-      text-align: center;
-    }
+  textarea {
+    height: 3.2rem;
+  }
 
-    .button-form {
-      border-radius: 40px;
-      text-transform: none;
-      padding: 0.625rem 1.25rem;
-      font-size: 0.8rem;
-    }
+  select {
+    padding: 0 0.125rem;
+  }
 
-    .button-form-2 {
-      border-radius: 5px;
-      text-transform: uppercase;
-      border: 0;
-      font-weight: 700;
-    }
+  .button-form,
+  .button-form-2 {
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .button-form {
+    border-radius: 40px;
+    text-transform: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8rem;
+  }
+
+  .button-form-2 {
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: 700;
   }
 
   .text-italic {
@@ -136,6 +182,18 @@ section.block {
 
     p {
       font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .lpt-container form {
+    &.lpt-layout-row {
+      input,
+      select,
+      textarea {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
