@@ -205,6 +205,7 @@
       font-size: 0.9rem;
       margin-top: 3px;
       text-transform: uppercase;
+      display: none;
     }
 
     .price-block {
@@ -238,6 +239,10 @@
       z-index: 9;
       background-color: #fff;
 
+      .popular-block {
+        display: block;
+      }
+
       .header-container {
         background-color: #fff !important;
       }
@@ -245,6 +250,90 @@
 
     .repeater {
       margin-top: 2rem;
+    }
+  }
+}
+
+.portfolio {
+  &-1 {
+
+    .lpt-title-1 {
+      margin-bottom: 2rem;
+    }
+
+    /* WORKAROUND for preview */
+    .editable.repeater-item-wrapper {
+      flex: 1 1 25%;
+      max-width: 25%;
+      max-height: 100%;
+      box-sizing: border-box;
+
+      & > .portfolio-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    .repeater {
+      margin-top: 3rem;
+    }
+
+    .portfolio-container {
+      height: 16rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      /* WORKAROUND fix lug after hover */
+      margin-right: -1px;
+
+      &:hover {
+        img {
+          transform: translateY(-2rem);
+        }
+
+        &:before {
+          opacity: 1;
+        }
+
+        .portfolio-tooltip {
+          bottom: 0;
+        }
+      }
+
+      img {
+        transition: 0.4s;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.4s;
+        z-index: 2;
+      }
+    }
+
+    .portfolio-tooltip {
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: -5rem;
+      width: 100%;
+      height: 5rem;
+      transition: 0.4s;
+      overflow: hidden;
+      font-size: 0.9rem;
+      z-index: 3;
+
+      h2 {
+        font-size: 1.1875rem;
+      }
     }
   }
 }

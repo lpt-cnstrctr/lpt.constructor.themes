@@ -134,6 +134,11 @@
     align-items: stretch;
     align-content: stretch;
   }
+
+  .$(name)-start-clear$(suffix) {
+    align-items: initial;
+    align-content: initial;
+  }
 }
 
 @mixin flex-for-name;
