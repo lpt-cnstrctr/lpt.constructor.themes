@@ -82,6 +82,13 @@
     }
   }
 
+  .lpt-container.achievement {
+    &-1 {
+      background-color: gray;
+      color: #fff;
+    }
+  }
+
   &.header .lpt-container {
     color: #eee;
   }
@@ -89,14 +96,6 @@
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(125, 125, 125, 0.4);
-
-    .lpt-title-1 {
-      color: #fff;
-    }
-
-    .lpt-title-2 {
-      color: #fff;
-    }
 
     form {
 

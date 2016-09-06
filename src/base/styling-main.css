@@ -28,8 +28,6 @@ section.block {
 
   .lpt-title-1,
   .lpt-title-2 {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     letter-spacing: 1px;
     max-width: 80%;
@@ -106,6 +104,7 @@ section.block {
 
       .lpt-button {
         font-size: 0.9rem;
+        white-space: nowrap;
       }
     }
   }

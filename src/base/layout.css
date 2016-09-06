@@ -73,6 +73,23 @@
   .lpt-auto-width$(name) {
     width: auto;
   }
+
+  .lpt-text-center$(name) {
+    text-align: center;
+  }
+
+  .lpt-text-right$(name) {
+    text-align: right;
+  }
+
+  .lpt-text-left$(name) {
+    text-align: left;
+  }
+
+  .lpt-margin-center$(name) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @define-mixin layout-align-for-name $suffix {
