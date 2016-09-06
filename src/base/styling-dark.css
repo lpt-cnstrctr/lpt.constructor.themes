@@ -98,6 +98,12 @@
     }
   }
 
+  .lpt-container.trigger {
+    &-1 {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.5);

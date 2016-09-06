@@ -234,7 +234,7 @@ section.block.old {
     box-shadow: 0 0 0 3px #fff, 0 0 0 5px #333;
   }
   .three-columns {
-    flex-wrap: wrap;
+    fealex-wrap: wrap;
   }
 
   .three-columns > div {

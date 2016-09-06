@@ -77,6 +77,21 @@
     }
   }
 
+  .lpt-container.trigger {
+    &-1 {
+      background-color: #fff;
+      color: #777;
+
+      h2 {
+        color: var(--header-color);
+      }
+
+      .lpt-title-2 {
+        color: #777;
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(255, 255, 255, 0.7);

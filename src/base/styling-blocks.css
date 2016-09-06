@@ -1,3 +1,12 @@
+.header {
+  &.header_sticky {
+    position: fixed !important;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+  }
+}
+
 .usp {
 
   &-1 .lpt-container {
@@ -129,12 +138,42 @@
   }
 }
 
-.header {
-  &.header_sticky {
-    position: fixed !important;
-    top: 0;
-    z-index: 99;
-    width: 100%;
+.trigger {
+  &-1 {
+    /* WORKAROUND чтобы элементы репитера корректно отображались в редакторе */
+    .editable.repeater-item-wrapper {
+      flex: 1 1 33%;
+      max-width: 33%;
+      max-height: 100%;
+      box-sizing: border-box;
+
+      & > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    .icon-class {
+      font-size: 3rem;
+      text-align: center;
+      color: var(--accent-color);
+    }
+
+    .repeater {
+      margin-top: 2rem;
+      padding: 0 2rem;
+
+      h2 {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        letter-spacing: 0;
+      }
+    }
   }
 }
 
@@ -169,6 +208,16 @@
 
       .right-side .text-additional {
         padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .trigger {
+    &-1 {
+      /* WORKAROUND */
+      .editable.repeater-item-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
       }
     }
   }
