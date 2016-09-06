@@ -12,14 +12,6 @@
   float: left;
 }
 
-.first-slide .slider-arrow-left {
-  display: none;
-}
-
-.last-slide .slider-arrow-right {
-  display: none;
-}
-
 .slider:hover {
   .slider-arrow-right,
   .slider-arrow-left {
@@ -27,11 +19,11 @@
   }
 
   .slider-arrow-right {
-    right: 0;
+    right: 2rem;
   }
 
   .slider-arrow-left {
-    left: 0;
+    left: 2rem;
   }
 }
 
