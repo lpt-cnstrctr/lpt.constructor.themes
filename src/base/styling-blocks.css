@@ -338,6 +338,16 @@
   }
 }
 
+.offer {
+  &-1 {
+    form {
+      width: 90%;
+      max-width: 750px;
+      margin: 2rem auto 0;
+    }
+  }
+}
+
 @media (max-width: 960px) {
   .usp {
 
@@ -405,6 +415,21 @@
       /* WORKAROUND for preview */
       .editable.repeater-item-wrapper {
         max-width: 100%;
+      }
+    }
+  }
+
+  .offer {
+    &-1 {
+      form {
+        width: 20rem;
+      }
+
+      input,
+      select,
+      textarea,
+      .lpt-button {
+        width: 100%;
       }
     }
   }

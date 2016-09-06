@@ -132,6 +132,19 @@
     }
   }
 
+  .lpt-container.offer {
+    &-1 {
+      .lpt-title-1 {
+        margin-bottom: 1.2rem;
+      }
+
+      .lpt-title-2 {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        color: #eee;
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.5);

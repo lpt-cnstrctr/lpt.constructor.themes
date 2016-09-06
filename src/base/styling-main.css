@@ -40,7 +40,7 @@ section.block {
   }
 
   .lpt-title-1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     max-width: 80%;
@@ -89,6 +89,10 @@ section.block {
     &.lpt-button-3d {
       border-radius: 3px;
       border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+    }
+
+    &.lpt-button-danger {
+      background-color: var(--danger-color);
     }
 
     &:hover {
