@@ -397,4 +397,15 @@
       }
     }
   }
+
+  .portfolio {
+    &-1 {
+      padding-bottom: 2rem;
+
+      /* WORKAROUND for preview */
+      .editable.repeater-item-wrapper {
+        max-width: 100%;
+      }
+    }
+  }
 }
