@@ -16,6 +16,10 @@ section.block {
   min-height: 25vh;
 }
 
+.lpt-radius-3 {
+  border-radius: 3px;
+}
+
 .no-background-color {
   background-color: transparent !important;
 }
@@ -27,10 +31,10 @@ section.block {
   }
 
   .lpt-title-1,
-  .lpt-title-2 {
+  .lpt-title-2,
+  .lpt-title-3 {
     text-align: center;
     letter-spacing: 1px;
-    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -39,11 +43,18 @@ section.block {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    max-width: 80%;
   }
 
   .lpt-title-2 {
     font-size: 1.3rem;
     font-weight: 100;
+    max-width: 80%;
+  }
+
+  .lpt-title-3 {
+    font-size: 1.375rem;
+    font-weight: bold;
   }
 
   h2 {
@@ -98,10 +109,6 @@ section.block {
         height: 2.5rem;
         font-size: 1rem;
         max-width: 20rem;
-
-        &:first-of-type {
-          margin-left: 0;
-        }
       }
 
       .lpt-button {

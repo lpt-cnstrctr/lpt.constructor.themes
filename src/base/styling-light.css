@@ -92,6 +92,58 @@
     }
   }
 
+  .lpt-container.staff {
+    &-1 {
+      background-color: #fff;
+
+      .lpt-title-1 {
+        color: var(--header-color);
+      }
+
+      hr {
+        border-color: var(--header-color);
+      }
+    }
+  }
+
+  .lpt-container.services {
+    &-1 {
+      background-color: #fff;
+
+      .header-container {
+        color: #999;
+      }
+
+      .lpt-title-1 {
+        color: #333;
+      }
+
+      .lpt-title-2 {
+        color: #777;
+      }
+
+      .lpt-title-3 {
+        color: #555;
+      }
+
+      .text-from {
+        color: var(--accent-color);
+      }
+
+      .text-price {
+        color: var(--accent-color);
+      }
+
+      .text-info {
+        color: #999;
+      }
+
+      .text-multiline {
+        color: #555;
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(255, 255, 255, 0.7);
