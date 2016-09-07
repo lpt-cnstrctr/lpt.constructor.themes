@@ -112,6 +112,20 @@
       }
     }
   }
+
+  &-4 {
+    .lpt-title-2 {
+      margin-bottom: 0;
+    }
+
+    hr {
+      margin: 2rem 0;
+    }
+
+    .lpt-button {
+      margin: 0 1rem;
+    }
+  }
 }
 
 .achievement {
