@@ -160,6 +160,18 @@
     }
   }
 
+  .lpt-container.offer {
+    &-2 {
+      .lpt-title-1 {
+        color: #444;
+      }
+
+      .lpt-title-2 {
+        color: #777;
+      }
+    }
+  }
+
   .lpt-container.process {
     &-1 {
       background-color: #fff;

@@ -365,6 +365,13 @@
       margin: 2rem auto 0;
     }
   }
+
+  &-2 {
+    .lpt-title-2 {
+      letter-spacing: 0;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .lpt-container.testimonials {
