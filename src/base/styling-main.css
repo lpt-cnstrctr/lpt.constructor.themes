@@ -38,6 +38,10 @@
   border-radius: 3px;
 }
 
+.lpt-radius-6 {
+  border-radius: 6px;
+}
+
 .no-background-color {
   background-color: transparent !important;
 }

@@ -149,6 +149,18 @@
     }
   }
 
+  .lpt-container.faq {
+    &-1 {
+      h2 {
+        color: #444;
+      }
+
+      .accordion-body {
+        color: #555;
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.5);
