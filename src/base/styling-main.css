@@ -42,6 +42,10 @@
   border-radius: 6px;
 }
 
+.lpt-shadow-10 {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
 .no-background-color {
   background-color: transparent !important;
 }
@@ -140,6 +144,7 @@
       .lpt-button {
         font-size: 0.9rem;
         white-space: nowrap;
+        height: 100%;
       }
     }
   }
@@ -149,6 +154,8 @@
     margin-bottom: 0.6rem;
     font-size: 0.8rem;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
     &:empty {
       display: none;

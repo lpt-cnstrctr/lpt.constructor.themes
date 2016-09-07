@@ -179,37 +179,34 @@
       color: #444;
     }
 
-    form {
+    label {
+      color: var(--label-color);
+    }
 
-      label {
-        color: var(--label-color);
+    input,
+    select,
+    textarea {
+      background-color: #fff;
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+    }
+
+    .button-form {
+      border: 2px solid var(--text-color);
+      color: var(--text-color);
+      background-color: transparent;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
       }
+    }
 
-      input,
-      select,
-      textarea {
-        background-color: #fff;
-        color: var(--text-color);
-        border: 1px solid var(--text-color);
-      }
+    .button-form-2 {
+      color: #fff;
+      background-color: #5cb85c;
 
-      .button-form {
-        border: 2px solid var(--text-color);
-        color: var(--text-color);
-        background-color: transparent;
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.1);
-        }
-      }
-
-      .button-form-2 {
-        color: #fff;
-        background-color: #5cb85c;
-
-        &:hover {
-          background-color: #525252;
-        }
+      &:hover {
+        background-color: #525252;
       }
     }
   }

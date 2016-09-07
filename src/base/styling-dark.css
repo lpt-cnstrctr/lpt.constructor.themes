@@ -161,6 +161,20 @@
     }
   }
 
+  .contacts {
+    &-1 {
+      .lpt-container {
+        .lpt-title-1 {
+          color: #444;
+        }
+
+        form label {
+          color: #555;
+        }
+      }
+    }
+  }
+
   .lpt-container {
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.5);
