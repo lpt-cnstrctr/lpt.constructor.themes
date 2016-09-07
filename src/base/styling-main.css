@@ -1,7 +1,25 @@
-section.block {
+.block {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+
+  hr {
+    width: 3rem;
+    height: 2px;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #444;
+    }
+  }
 }
 
 .full-height {
