@@ -8,8 +8,14 @@
   }
 
   &-2 {
+    .lpt-title-1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
     .lpt-title-2 {
       letter-spacing: 0;
+      font-weight: 100;
       font-size: 1.5rem;
     }
   }
