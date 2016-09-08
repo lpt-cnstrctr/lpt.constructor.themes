@@ -35,4 +35,17 @@
       }
     }
   }
+
+  &-2 {
+    h2 {
+      font-weight: 100;
+      line-height: 1.25;
+      font-size: 1.5rem;
+    }
+
+    p {
+      letter-spacing: 0;
+      font-weight: 100;
+    }
+  }
 }
