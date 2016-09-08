@@ -1,0 +1,21 @@
+.dark .lpt-container.comparison {
+  &-1 {
+    background-color: #282828;
+
+    .lpt-title-2 {
+      color: #eee;
+    }
+
+    .lpt-title-3 {
+      color: #ccc;
+    }
+
+    hr:after {
+      background-color: #888;
+    }
+
+    .container-item p {
+      color: #888;
+    }
+  }
+}
