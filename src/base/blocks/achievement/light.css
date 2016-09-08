@@ -1,0 +1,7 @@
+.light .lpt-container.achievement {
+  &-2 {
+    h3 {
+      color: #777;
+    }
+  }
+}
