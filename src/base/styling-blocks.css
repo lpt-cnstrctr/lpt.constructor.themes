@@ -372,6 +372,27 @@
       font-size: 1.5rem;
     }
   }
+
+  &-3 {
+    transition: 0.3s;
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      font-weight: 100;
+
+      &.strong {
+        font-weight: 900;
+        border-bottom: 2px solid;
+        margin: 0 0.8rem 0 0.5rem;
+      }
+    }
+
+    .icon-class {
+      margin-top: 0.4rem;
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .lpt-container.testimonials {

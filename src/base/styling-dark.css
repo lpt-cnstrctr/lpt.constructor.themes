@@ -147,6 +147,16 @@
         color: #eee;
       }
     }
+
+    &-3 {
+      background-color: #444;
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: #444;
+      }
+    }
   }
 
   .lpt-container.faq {

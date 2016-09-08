@@ -104,6 +104,18 @@
     }
   }
 
+  .lpt-container.offer {
+    &-3 {
+      background-color: #eee;
+      color: #333;
+
+      &:hover {
+        background-color: #444;
+        color: #fff;
+      }
+    }
+  }
+
   &.header .lpt-container {
     color: #eee;
   }
