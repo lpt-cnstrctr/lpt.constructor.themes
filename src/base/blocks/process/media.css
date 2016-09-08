@@ -1,0 +1,9 @@
+@media (max-width: 960px) {
+  .process {
+    &-1 {
+      .repeater-item-wrapper {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.dark .contacts {
+  &-1 {
+    .lpt-container {
+      .lpt-title-1 {
+        color: #444;
+      }
+
+      form label {
+        color: #555;
+      }
+    }
+  }
+}

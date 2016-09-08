@@ -1,0 +1,37 @@
+.offer {
+  &-1 {
+    form {
+      width: 90%;
+      max-width: 750px;
+      margin: 2rem auto 0;
+    }
+  }
+
+  &-2 {
+    .lpt-title-2 {
+      letter-spacing: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-3 {
+    transition: 0.3s;
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      font-weight: 100;
+
+      &.strong {
+        font-weight: 700;
+        border-bottom: 2px solid;
+        margin: 0 0.8rem 0 0.5rem;
+      }
+    }
+
+    .icon-class {
+      margin-top: 0.4rem;
+      font-size: 1.8rem;
+    }
+  }
+}

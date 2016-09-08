@@ -1,0 +1,5 @@
+.dark .lpt-container.trigger {
+  &-1 {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

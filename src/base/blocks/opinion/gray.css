@@ -1,0 +1,11 @@
+.gray .opinion {
+  &-1 {
+    .lpt-title-2 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.dark .lpt-container.offer {
+  &-1 {
+    .lpt-title-1 {
+      margin-bottom: 1.2rem;
+    }
+
+    .lpt-title-2 {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      color: #eee;
+    }
+  }
+
+  &-3 {
+    background-color: #444;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #444;
+    }
+  }
+}

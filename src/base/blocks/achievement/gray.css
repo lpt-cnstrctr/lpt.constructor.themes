@@ -1,0 +1,6 @@
+.gray .lpt-container.achievement {
+  &-1 {
+    background-color: gray;
+    color: #fff;
+  }
+}

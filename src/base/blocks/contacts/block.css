@@ -1,0 +1,45 @@
+.contacts {
+  &-1 .lpt-container {
+    margin-right: 3rem !important;
+
+    .lpt-title-1 {
+      text-transform: none;
+      font-size: 1.5rem;
+      text-align: left;
+      max-width: 100%;
+    }
+
+    form {
+      input,
+      select,
+      textarea {
+        border: 2px solid #ddd;
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        color: #555;
+        font-size: 0.9rem;
+        padding: 5px;
+
+        &:focus {
+          border-color: #aaa;
+        }
+      }
+
+      input,
+      select {
+        height: 2.5625rem;
+      }
+
+      textarea {
+        height: 9.125rem;
+      }
+
+      .lpt-button {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

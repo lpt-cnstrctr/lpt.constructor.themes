@@ -1,0 +1,35 @@
+@media (max-width: 960px) {
+  .usp {
+
+    &-2 {
+
+      .lpt-container {
+        margin: 0;
+      }
+
+      .bottom-line {
+        position: relative;
+        display: block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        width: 100%;
+        text-align: center;
+        padding: 2.1rem 0 1.5rem;
+      }
+    }
+
+    &-3 {
+
+      .lpt-container .left-side {
+        margin: 0;
+        text-align: center;
+      }
+
+      .right-side .text-additional {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

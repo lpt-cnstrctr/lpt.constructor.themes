@@ -1,0 +1,13 @@
+.light .lpt-container.staff {
+  &-1 {
+    background-color: #fff;
+
+    .lpt-title-1 {
+      color: #222;
+    }
+
+    hr {
+      border-color: #222;
+    }
+  }
+}

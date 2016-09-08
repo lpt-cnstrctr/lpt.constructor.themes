@@ -1,0 +1,27 @@
+.dark .lpt-container.services {
+  &-1 {
+    .header-container {
+      color: #afafaf;
+    }
+
+    .lpt-title-3 {
+      color: #555;
+    }
+
+    .text-from {
+      color: #555;
+    }
+
+    .text-price {
+      color: #444;
+    }
+
+    .text-info {
+      color: #888;
+    }
+
+    .text-multiline {
+      color: #6d6d6d;
+    }
+  }
+}

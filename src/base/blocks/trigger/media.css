@@ -1,0 +1,11 @@
+@media (max-width: 960px) {
+  .trigger {
+    &-1 {
+      /* WORKAROUND */
+      .editable.repeater-item-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

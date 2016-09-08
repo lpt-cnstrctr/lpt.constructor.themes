@@ -1,0 +1,71 @@
+.dark .usp {
+
+  &-2 {
+
+    .lpt-container {
+      color: #cacaca;
+
+      form {
+
+        input,
+        select,
+        textarea {
+          color: #aba9a9;
+        }
+      }
+    }
+
+    .bottom-line {
+      background-color: #333;
+      color: #f2f2f2;
+
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+
+  &-3 {
+
+    .lpt-container {
+
+      .left-side {
+        color: #eaeaea;
+
+        h3 {
+          color: #f2f2f2;
+        }
+
+        .author {
+          color: #d4d4d4;
+
+          .company {
+            color: #c1c1c1;
+          }
+        }
+      }
+
+      .right-side {
+        background-color: #fff;
+      }
+
+      form {
+
+        input,
+        select,
+        textarea {
+          border: 1px solid #525252;
+        }
+
+        .button-form {
+          border-color: #525252;
+          color: #525252;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

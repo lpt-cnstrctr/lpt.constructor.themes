@@ -1,0 +1,66 @@
+.faq {
+  &-1 {
+    padding: 3rem 0 3rem 2rem;
+
+    h2 {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+    }
+
+    .faq-container {
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+
+      /* WORKAROUND for preview */
+      & > div:last-of-type h2,
+      & > div:last-of-type .accordion-title,
+      & > div:last-of-type .accordion-body.expand {
+        border-bottom: 0;
+      }
+
+      /* WORKAROUND for preview */
+      h2,
+      .accordion-title {
+        margin: 0;
+        font-size: 0.9rem;
+        text-transform: none;
+        padding: 1rem;
+        cursor: pointer;
+        border-bottom: 1px dashed #ccc;
+        line-height: 1.25;
+
+        &.expand {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .accordion-body {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+      padding: 0 1rem 1rem;
+      margin-bottom: 0;
+      padding: 0 1rem 1rem;
+      display: none;
+      color: #555;
+
+      &.expand {
+        border-bottom: 1px dashed #ccc;
+        display: block;
+      }
+    }
+
+    .lpt-button {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-top: 2rem;
+      padding: 0.8rem;
+      text-transform: none;
+
+      /* WORKAROUND for preview */
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

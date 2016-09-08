@@ -1,0 +1,23 @@
+.achievement {
+  &-1 {
+    padding: 3.5vw 5vw;
+
+    .icon-class {
+      width: 4rem;
+      height: 4rem;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-family: inherit;
+    }
+
+    h3 {
+      font-size: 0.68rem;
+      font-family: inherit;
+      letter-spacing: 1px;
+    }
+  }
+}

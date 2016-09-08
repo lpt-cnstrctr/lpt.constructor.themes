@@ -1,0 +1,11 @@
+.dark .lpt-container.faq {
+  &-1 {
+    h2 {
+      color: #444;
+    }
+
+    .accordion-body {
+      color: #555;
+    }
+  }
+}

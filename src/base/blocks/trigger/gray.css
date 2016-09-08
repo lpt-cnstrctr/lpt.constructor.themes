@@ -1,0 +1,14 @@
+.gray .lpt-container.trigger {
+  &-1 {
+    background-color: gray;
+    color: #fff;
+
+    h2 {
+      color: #fff;
+    }
+
+    .lpt-title-2 {
+      color: #fff;
+    }
+  }
+}

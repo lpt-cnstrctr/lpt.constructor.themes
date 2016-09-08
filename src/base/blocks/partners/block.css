@@ -1,0 +1,24 @@
+.partners {
+  &-1 {
+
+    hr {
+      margin: 2rem auto;
+    }
+
+    .repeater {
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .image-wrapper {
+      position: relative;
+      opacity: 0.6;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
