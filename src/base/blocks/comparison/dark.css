@@ -8,6 +8,8 @@
 
     .lpt-title-3 {
       color: #ccc;
+      text-align: left;
+      line-height: 1.5;
     }
 
     hr:after {

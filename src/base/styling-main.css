@@ -121,6 +121,7 @@
 
     &.lpt-button-danger {
       background-color: var(--danger-color);
+      color: #fff;
     }
 
     &:hover {
