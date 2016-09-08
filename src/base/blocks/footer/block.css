@@ -1,0 +1,23 @@
+.footer {
+  &-1 {
+    .social {
+      .icon-class {
+        padding: 0 1rem;
+      }
+    }
+
+    .contact {
+      .icon-class {
+        margin-right: 0.4rem;
+      }
+    }
+
+    .icon-class {
+      font-size: 0.9rem;
+    }
+
+    p {
+      letter-spacing: 0;
+    }
+  }
+}
