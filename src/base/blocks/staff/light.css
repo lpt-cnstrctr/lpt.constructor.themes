@@ -10,4 +10,8 @@
       border-color: #222;
     }
   }
+
+  &-2 {
+    background-color: #fff;
+  }
 }
