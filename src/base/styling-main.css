@@ -151,13 +151,6 @@
     margin-top: 1.5rem;
 
     &.lpt-layout-row {
-      /* WORKAROUND for preview */
-      & > div {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-      }
-
       input,
       select,
       textarea {
@@ -168,6 +161,13 @@
         max-width: 20rem;
       }
 
+      /* WORKAROUND for preview */
+      & > div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+
       .lpt-button {
         font-size: 0.9rem;
         white-space: nowrap;
@@ -176,11 +176,32 @@
     }
   }
 
-  .margin-form {
-    input,
-    select,
-    textarea {
+  form.margin-form {
+    & > input,
+    & > select,
+    & > textarea {
       margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    /* WORKAROUND for preview */
+    & > div {
+      input,
+      textarea,
+      select {
+        margin-right: 1rem;
+
+        &:last-child {
+          input,
+          textarea,
+          select {
+            margin-right: 0;
+          }
+        }
+      }
     }
   }
 
@@ -278,6 +299,7 @@
       select,
       textarea {
         margin-bottom: 1rem;
+        margin-right: 0;
         width: 100%;
       }
 
