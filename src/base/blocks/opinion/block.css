@@ -1,0 +1,19 @@
+.opinion {
+  &-1 {
+    .lpt-title-3 {
+      color: #fff;
+    }
+
+    .lpt-title-2 {
+      color: #ccc;
+    }
+
+    .author {
+      color: #fff;
+
+      .company {
+        color: #ccc;
+      }
+    }
+  }
+}
