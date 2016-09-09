@@ -15,7 +15,7 @@
       width: $(index)%;
 
       &.lpt-max-width {
-        max-width: 960px;
+        max-width: 920px;
       }
     }
   }
