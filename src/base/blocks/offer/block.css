@@ -1,8 +1,6 @@
 .offer {
   &-1 {
     form {
-      width: 90%;
-      max-width: 750px;
       margin: 2rem auto 0;
     }
   }

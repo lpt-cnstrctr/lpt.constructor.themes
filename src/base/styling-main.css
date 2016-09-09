@@ -108,7 +108,7 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
-    background-color: #1abc9c;
+    background-color: var(--accent-color);
     transition: 0.3s;
     letter-spacing: 1px;
     border: 0;
@@ -151,6 +151,13 @@
     margin-top: 1.5rem;
 
     &.lpt-layout-row {
+      /* WORKAROUND for preview */
+      & > div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+
       input,
       select,
       textarea {
@@ -166,6 +173,14 @@
         white-space: nowrap;
         height: 2.5rem;
       }
+    }
+  }
+
+  .margin-form {
+    input,
+    select,
+    textarea {
+      margin-right: 1rem;
     }
   }
 
@@ -263,6 +278,22 @@
       select,
       textarea {
         margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      & > input:last-child,
+      & > select:last-child,
+      & > textarea:last-child {
+        margin-bottom: 0;
+      }
+
+      /* WORKAROUNT for preview */
+      & > div:last-child {
+        input,
+        select,
+        textarea {
+          margin-bottom: 0;
+        }
       }
     }
   }

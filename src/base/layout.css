@@ -13,10 +13,6 @@
   @for $index from 1 to 100 {
     .lpt-width-$(index)$(name) {
       width: $(index)%;
-
-      &.lpt-max-width {
-        max-width: 920px;
-      }
     }
   }
 }
