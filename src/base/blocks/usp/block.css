@@ -117,4 +117,25 @@
       margin: 0 1rem;
     }
   }
+
+  &-5 {
+    .lpt-title-2 {
+      font-family: 'Open Sans';
+    }
+
+    form {
+      width: 100%;
+
+      input,
+      select,
+      textarea {
+        height: 2rem;
+        width: 100%;
+      }
+
+      .lpt-button {
+        width: 100%;
+      }
+    }
+  }
 }

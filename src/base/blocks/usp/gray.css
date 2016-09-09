@@ -72,4 +72,19 @@
       }
     }
   }
+
+  &-5 {
+    .lpt-title-1 {
+      color: #fff;
+    }
+
+    .lpt-title-2 {
+      color: #fff;
+    }
+
+    .right-block h2,
+    .right-block p {
+      color: #fff;
+    }
+  }
 }

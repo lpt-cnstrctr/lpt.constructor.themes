@@ -67,4 +67,14 @@
       }
     }
   }
+
+  &-5 {
+    .lpt-title-1 {
+      color: #fff;
+    }
+
+    .lpt-title-2 {
+      color: #fff;
+    }
+  }
 }

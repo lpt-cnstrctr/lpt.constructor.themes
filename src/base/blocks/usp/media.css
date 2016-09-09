@@ -31,5 +31,11 @@
         padding-bottom: 1rem;
       }
     }
+
+    &-5 {
+      .right-block {
+        margin-top: 2rem;
+      }
+    }
   }
 }
