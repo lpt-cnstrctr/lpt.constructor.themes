@@ -1,3 +1,7 @@
 .gray.header .lpt-container {
   color: #ccc;
 }
+
+.gray .header-2 .repeater a {
+  color: #fff;
+}

@@ -5,4 +5,18 @@
     z-index: 99;
     width: 100%;
   }
+
+  &-2.lpt-container {
+    .logo {
+      border-right: 1px solid;
+    }
+
+    .repeater a {
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
 }
