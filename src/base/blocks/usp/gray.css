@@ -34,17 +34,17 @@
     .lpt-container {
 
       .left-side {
-        color: #525252;
+        color: #eee;
 
         h3 {
-          color: #333;
+          color: #fff;
         }
 
         .author {
-          color: #272727;
+          color: #fff;
 
           .company {
-            color: #444;
+            color: #cecece;
           }
         }
       }

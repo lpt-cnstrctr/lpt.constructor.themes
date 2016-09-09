@@ -61,6 +61,10 @@
 
     .lpt-container {
 
+      p {
+        letter-spacing: 0;
+      }
+
       .left-side {
         font-family: Arial;
         font-size: 1.2rem;
