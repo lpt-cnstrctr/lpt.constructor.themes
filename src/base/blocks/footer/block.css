@@ -20,4 +20,40 @@
       letter-spacing: 0;
     }
   }
+
+  &-2 {
+    &.lpt-container {
+      color: #d0d0d0;
+    }
+
+    .social {
+      .icon-class {
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--accent-color);
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.4rem;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 100;
+      letter-spacing: 1px;
+      font-size: .7rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .bottom-line {
+      color: #fff;
+    }
+  }
 }
