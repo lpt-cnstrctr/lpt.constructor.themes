@@ -1,0 +1,5 @@
+.light .lpt-container.testimonials {
+  &-1 {
+    background-color: #fff;
+  }
+}
