@@ -60,6 +60,7 @@
         opacity: 0;
         transition: 0.4s;
         z-index: 2;
+        pointer-events: none;
       }
     }
 
