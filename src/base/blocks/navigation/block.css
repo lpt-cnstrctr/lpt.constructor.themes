@@ -1,0 +1,12 @@
+.navigation {
+  &-1 {
+    .nav-link {
+      transition: 0.3s;
+      padding: 6px 13px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
