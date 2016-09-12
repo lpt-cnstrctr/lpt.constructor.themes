@@ -150,6 +150,16 @@
     box-sizing: border-box;
     margin-top: 1.5rem;
 
+    &.max-width {
+      width: 100%;
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+    }
+
     &.lpt-layout-row {
       input,
       select,
@@ -267,6 +277,21 @@
     text-transform: uppercase;
     border: 0;
     font-weight: 700;
+  }
+
+  .button-form-3 {
+    border: 2px solid #444;
+    padding: 10px 27px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #444;
+    transition: 0.3s;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #444;
+      color: #fff;
+    }
   }
 
   .text-italic {

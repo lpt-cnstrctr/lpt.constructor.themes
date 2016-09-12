@@ -21,7 +21,7 @@
         color: var(--label-color);
       }
 
-      input,
+      input:not([type='submit']),
       select,
       textarea {
         background-color: #fff;
