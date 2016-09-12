@@ -32,7 +32,7 @@
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: auto!important;
+  width: auto !important;
   position: relative;
   transition: all 5s ease-in-out;
   max-width: 20rem;
