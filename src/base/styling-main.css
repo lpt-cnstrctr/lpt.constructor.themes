@@ -257,6 +257,10 @@
     padding: 0 0.125rem;
   }
 
+  input[type='submit'] {
+    border: 0;
+  }
+
   .button-form,
   .button-form-2 {
     display: block;
