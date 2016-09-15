@@ -1,0 +1,13 @@
+@media (max-width: 960px) {
+  .comparison {
+    &-1 {
+      .container-item {
+        max-width: 22rem;
+      }
+
+      .repeater-item-wrap.add-next-column {
+        bottom: 0;
+      }
+    }
+  }
+}
