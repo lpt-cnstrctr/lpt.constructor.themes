@@ -1,5 +1,6 @@
 .faq {
   &-1 {
+    min-height: 815px;
     padding: 3rem 0 3rem 2rem;
 
     h2 {
