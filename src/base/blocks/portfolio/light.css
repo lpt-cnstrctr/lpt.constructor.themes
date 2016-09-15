@@ -1,0 +1,5 @@
+.light .lpt-container.portfolio {
+  &-1 {
+    background-color: #fff;
+  }
+}

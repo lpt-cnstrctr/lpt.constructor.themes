@@ -1,0 +1,5 @@
+.light .lpt-container.comparison {
+  &-1 {
+    background-color: #fff;
+  }
+}
