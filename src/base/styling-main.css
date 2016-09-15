@@ -30,6 +30,10 @@
   min-height: 50vh;
 }
 
+.lpt-auto-width {
+  width: auto !important;
+}
+
 .quarter-height {
   min-height: 25vh;
 }
@@ -48,6 +52,10 @@
 
 .no-background-color {
   background-color: transparent !important;
+}
+
+.background-white {
+  background-color: #fff !important;
 }
 
 .lpt-container {
