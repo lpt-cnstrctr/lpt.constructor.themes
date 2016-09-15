@@ -2,7 +2,8 @@
   &-1 {
     .nav-link {
       transition: 0.3s;
-      padding: 6px 13px;
+      padding: 8px 10px;
+      white-space: nowrap;
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.15);
