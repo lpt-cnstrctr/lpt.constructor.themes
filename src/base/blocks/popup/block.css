@@ -1,6 +1,8 @@
 .popup {
   &-1 {
     max-width: 20rem;
+    position: relative;
+    z-index: 999;
 
     .lpt-title-1,
     .lpt-title-2 {
