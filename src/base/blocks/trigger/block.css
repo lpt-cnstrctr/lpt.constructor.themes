@@ -1,5 +1,9 @@
 .trigger {
   &-1 {
+    hr {
+      margin: 2rem auto;
+    }
+
     /* WORKAROUND чтобы элементы репитера корректно отображались в редакторе */
     .editable.repeater-item-wrapper {
       flex: 1 1 33%;
