@@ -71,15 +71,15 @@
   }
 
   .lpt-text-center$(name) {
-    text-align: center;
+    text-align: center !important;
   }
 
   .lpt-text-right$(name) {
-    text-align: right;
+    text-align: right !important;
   }
 
   .lpt-text-left$(name) {
-    text-align: left;
+    text-align: left !important;
   }
 
   .lpt-margin-center$(name) {
