@@ -10,3 +10,18 @@
     }
   }
 }
+
+/* WORKAROUND */
+@media (min-width: 1440px) {
+  .portfolio {
+    &-1 {
+      .portfolio-container {
+        display: flex;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
