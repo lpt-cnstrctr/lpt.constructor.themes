@@ -28,9 +28,6 @@
       overflow: hidden;
       z-index: 1;
 
-      /* WORKAROUND fix lug after hover */
-      margin-right: -1px;
-
       &:hover {
         img {
           transform: translateY(-2rem);
@@ -45,8 +42,21 @@
         }
       }
 
+      /* WORKAROUND for editor */
+      & > div:not(.portfolio-tooltip) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       img {
         transition: 0.4s;
+
+        /* WORKAROUND fix lug after hover */
+        margin-right: -2px;
+
+        /* WORKAROUND for editor */
+        max-width: 150%;
       }
 
       &:before {
