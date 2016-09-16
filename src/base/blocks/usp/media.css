@@ -41,5 +41,11 @@
         margin-top: 2rem;
       }
     }
+
+    &-6 {
+      .right-block {
+        margin-top: 2rem;
+      }
+    }
   }
 }

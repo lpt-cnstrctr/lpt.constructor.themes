@@ -77,7 +77,6 @@
 
   p {
     font-size: 1rem;
-    letter-spacing: 1px;
   }
 
   .lpt-title-1,
@@ -87,6 +86,11 @@
     letter-spacing: 1px;
     margin-left: auto;
     margin-right: auto;
+
+    &.clear {
+      max-width: 100%;
+      text-align: left;
+    }
   }
 
   .lpt-title-1 {
@@ -147,16 +151,24 @@
     letter-spacing: 2px;
     border-radius: 2px;
     white-space: nowrap;
+    background-color: transparent;
 
     &:hover {
       background-color: #333;
       color: #fff;
     }
+
+    &.small {
+      text-transform: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 0.6rem 1.2rem;
+    }
   }
 
   form {
     box-sizing: border-box;
-    margin-top: 1.5rem;
+    margin-top: 0.9rem;
 
     &.max-width {
       width: 100%;
@@ -165,6 +177,21 @@
       select,
       textarea {
         width: 100%;
+      }
+    }
+
+    &.label-none-transform {
+      label {
+        text-transform: none;
+      }
+    }
+
+    &.inputs-2 {
+      select,
+      textarea,
+      input:not([type=submit]) {
+        height: 2.125rem;
+        border: 1px solid #ccc;
       }
     }
 
@@ -313,6 +340,7 @@
   .text-additional {
     font-size: 0.7rem;
     margin-top: 1.2rem;
+    letter-spacing: 0;
   }
 
   .author {
