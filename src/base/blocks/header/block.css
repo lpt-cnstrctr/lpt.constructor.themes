@@ -6,6 +6,13 @@
     width: 100%;
   }
 
+  /* WORKAROUND for editor */
+  &-1.lpt-container > div,
+  &-1.lpt-container > div > a,
+  &-1.lpt-container > div > a > div {
+    height: 100%;
+  }
+
   &-2.lpt-container {
     .logo {
       border-right: 1px solid;
