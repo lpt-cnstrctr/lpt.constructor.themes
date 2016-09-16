@@ -52,4 +52,10 @@
       font-weight: 100;
     }
   }
+
+  &-3 {
+    hr {
+      margin: 1.5rem auto;
+    }
+  }
 }
