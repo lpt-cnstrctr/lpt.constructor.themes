@@ -8,8 +8,8 @@
 
   /* WORKAROUND for editor */
   &-1.lpt-container > div,
-  &-1.lpt-container > div > a,
-  &-1.lpt-container > div > a > div {
+  &-1.lpt-container > div > a.logo,
+  &-1.lpt-container > div > a.logo > div {
     height: 100%;
   }
 
