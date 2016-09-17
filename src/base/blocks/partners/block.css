@@ -11,7 +11,11 @@
       margin: 0 auto;
     }
 
-    .no-editor.repeater-item-wrapper:nth-of-type(5n + 1) {
+    .repeater-item-wrapper:nth-of-type(5n + 1) {
+      &:before {
+        display: none;
+      }
+
       .image-wrapper:before {
         display: none;
       }
