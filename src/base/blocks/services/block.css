@@ -64,6 +64,14 @@
       .header-container {
         background-color: #fff !important;
       }
+
+      .lpt-button {
+        background-color: var(--accent-color);
+      }
+    }
+
+    .lpt-button {
+      background-color: var(--danger-color);
     }
 
     .repeater {
