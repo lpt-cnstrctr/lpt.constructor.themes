@@ -10,7 +10,7 @@
     }
 
     form {
-      input,
+      input:not([type=submit]),
       select,
       textarea {
         border: 2px solid #ddd;
