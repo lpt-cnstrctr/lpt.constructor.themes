@@ -1,6 +1,6 @@
 .popup {
   &-1 {
-    max-width: 20rem;
+    max-width: 40rem;
     position: relative;
     z-index: 999;
 
