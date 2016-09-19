@@ -119,6 +119,9 @@
   }
 
   &-5 {
+    .lpt-container {
+      max-width:20rem;
+    }
     .lpt-title-2 {
       font-family: 'Open Sans';
     }
