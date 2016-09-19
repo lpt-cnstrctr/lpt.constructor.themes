@@ -32,6 +32,6 @@
   text-align: left;
 }
 
-p, h2, h3 {
+p, h2, h3, a {
   word-break: break-word;
 }

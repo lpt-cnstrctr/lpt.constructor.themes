@@ -27,6 +27,7 @@
       font-weight: 100;
 
       &.strong {
+        min-width: 15rem;
         font-weight: 700;
         border-bottom: 2px solid;
         margin: 0 0.8rem 0 0.5rem;
