@@ -110,11 +110,7 @@
 
   &-4 {
     .lpt-title-2 {
-      margin-bottom: 0;
-    }
-
-    hr {
-      margin: 2rem 0;
+      margin-bottom: 2rem;
     }
 
     .lpt-button {

@@ -5,6 +5,19 @@
       margin-bottom: 2rem;
     }
 
+    .repeater-item-wrapper {
+      /* WORKAROUND fix lug after hover */
+      margin-right: -2px;
+
+      & > div:first-of-type {
+        &,
+        a {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
     /* WORKAROUND for preview */
     .editable.repeater-item-wrapper {
       flex: 1 1 25%;
@@ -51,9 +64,6 @@
 
       img {
         transition: 0.4s;
-
-        /* WORKAROUND fix lug after hover */
-        margin-right: -2px;
 
         /* WORKAROUND for editor */
         max-width: 150%;

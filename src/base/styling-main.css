@@ -169,6 +169,10 @@
     box-sizing: border-box;
     margin-top: 0.9rem;
 
+    input[type='submit'] {
+      border: 0;
+    }
+
     &.max-width {
       width: 100%;
 
@@ -289,10 +293,6 @@
 
   select {
     padding: 0 0.125rem;
-  }
-
-  input[type='submit'] {
-    border: 0;
   }
 
   .button-form,

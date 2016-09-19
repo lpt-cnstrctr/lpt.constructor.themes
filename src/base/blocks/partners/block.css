@@ -47,6 +47,11 @@
         left: -1px;
         border-bottom: 1px dashed #ddd;
       }
+      
+      .grayscale {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);   
+      }
     }
   }
 }
