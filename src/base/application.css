@@ -31,3 +31,7 @@
 .text-left {
   text-align: left;
 }
+
+p, h2, h3 {
+  word-break: break-word;
+}
