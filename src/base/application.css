@@ -35,3 +35,9 @@
 p, h2, h3, a {
   word-break: break-word;
 }
+
+.fixed-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
