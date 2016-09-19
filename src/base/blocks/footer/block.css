@@ -26,6 +26,10 @@
       color: #d0d0d0;
     }
 
+    .footer-height{
+      height: 10rem;
+    }
+
     .social {
       .icon-class {
         width: 2rem;
