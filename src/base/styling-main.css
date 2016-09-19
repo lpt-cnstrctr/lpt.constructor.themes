@@ -284,11 +284,11 @@
 
   input,
   select {
-    height: 1.8rem;
+    min-height: 1.8rem;
   }
 
   textarea {
-    height: 3.2rem;
+    min-height: 3.2rem;
   }
 
   select {
