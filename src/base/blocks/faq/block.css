@@ -16,8 +16,12 @@
       /* WORKAROUND for preview */
       & > div:last-of-type h2,
       & > div:last-of-type .accordion-title,
-      & > div:last-of-type .accordion-body.expand {
+      & > div:last-of-type .accordion-body {
         border-bottom: 0;
+      }
+
+      & > div:last-of-type .accordion-body.expand {
+        border-top: 1px dashed #ccc;
       }
 
       /* WORKAROUND for preview */
@@ -40,9 +44,8 @@
     .accordion-body {
       font-size: 0.9rem;
       letter-spacing: 0;
-      padding: 0 1rem 1rem;
       margin-bottom: 0;
-      padding: 0 1rem 1rem;
+      padding:1rem;
       display: none;
       color: #555;
 
