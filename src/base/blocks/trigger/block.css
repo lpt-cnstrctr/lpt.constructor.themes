@@ -1,5 +1,6 @@
 .trigger {
   &-1 {
+
     hr {
       margin: 2rem auto;
     }
@@ -41,6 +42,7 @@
   }
 
   &-2 {
+
     h2 {
       font-weight: 100;
       line-height: 1.25;
@@ -54,8 +56,15 @@
   }
 
   &-3 {
+
     hr {
       margin: 1.5rem auto;
     }
+  }
+
+  &-1,
+  &-2 {
+    max-width: 1200px;
+    margin: 0px auto;
   }
 }

@@ -1,14 +1,24 @@
 .gray .lpt-container.trigger {
-  &-1 {
-    background-color: gray;
-    color: #fff;
+  background-color: gray;
+
+  &-1,
+  &-2 {
+    color: #333;
 
     h2 {
-      color: #fff;
+      color: #333;
     }
 
     .lpt-title-2 {
-      color: #fff;
+      color: #333;
     }
   }
+}
+
+.gray.trigger {
+  background-color: hsla(0,0%,98%,.92);
+}
+
+.gray.trigger .lpt-container {
+  background-color: transparent;
 }

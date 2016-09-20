@@ -1,6 +1,5 @@
 .light .lpt-container.trigger {
   &-1 {
-    background-color: #fff;
     color: #777;
 
     h2 {
@@ -27,4 +26,13 @@
       color: #444;
     }
   }
+}
+
+
+.light.trigger {
+  background-color: #fff;
+}
+
+.light.trigger .lpt-container {
+  background-color: transparent;
 }
