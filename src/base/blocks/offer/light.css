@@ -1,4 +1,12 @@
 .light .lpt-container.offer {
+  &-1 {
+    background-color: #fff !important;
+
+    form {
+      background-color: hsla(0, 0%, 95%, 0.7);
+    }
+  }
+
   &-2 {
     .lpt-title-1 {
       color: #444;

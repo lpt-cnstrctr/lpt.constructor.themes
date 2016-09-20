@@ -5,7 +5,7 @@
 
   .lpt-container {
     color: var(--text-color);
-    background-color: hsla(0, 0%, 98%, 0.92);
+    background-color: hsla(0, 0%, 95%, 0.92);
 
     label {
       color: var(--label-color);
@@ -16,7 +16,7 @@
     textarea {
       background-color: #fff;
       color: var(--text-color);
-      border: 1px solid var(--text-color);
+      border: 1px solid #eee;
     }
 
     .button-form {
