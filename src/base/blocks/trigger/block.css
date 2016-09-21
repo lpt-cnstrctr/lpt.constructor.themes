@@ -1,4 +1,11 @@
 .trigger {
+
+  .icon-class {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--accent-color);
+  }
+    
   &-1 {
 
     hr {
@@ -16,12 +23,6 @@
         flex: 1 1 100%;
         max-width: 100%;
       }
-    }
-
-    .icon-class {
-      font-size: 3rem;
-      text-align: center;
-      color: var(--accent-color);
     }
 
     .repeater {

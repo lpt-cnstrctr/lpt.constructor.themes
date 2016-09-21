@@ -53,3 +53,7 @@ p, h2, h3, a {
 .block.gray {
   background:#f2f2f2;
 }
+
+body {
+  opacity: 1 !important;
+}

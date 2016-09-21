@@ -24,7 +24,7 @@
     textarea {
       background-color: #fff;
       color: var(--text-color);
-      border: 1px solid var(--text-color);
+      border: 1px solid #eee;
     }
 
     .button-form {
@@ -39,7 +39,7 @@
 
     .button-form-2 {
       color: #fff;
-      background-color: #5cb85c;
+      background-color: var(--accent-color);
 
       &:hover {
         background-color: #525252;

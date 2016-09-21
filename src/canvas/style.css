@@ -14,7 +14,7 @@
 body.theme-canvas {
   font-family: 'Open Sans', sans-serif;
 
-  --accent-color: #1abc9c;
-  --base-color: #333;
+  /*--accent-color: #1abc9c;*/
   --danger-color: #d9534f;
+  --base-color: #333;
 }
