@@ -39,7 +39,7 @@
 
     .button-form-2 {
       color: #fff;
-      background-color: #5cb85c;
+      background-color: var(--accent-color);
 
       &:hover {
         background-color: #525252;
