@@ -1,5 +1,7 @@
 .navigation {
   &-1 {
+    background-color: var(--accent-color);
+    
     .nav-link {
       transition: 0.3s;
       padding: 8px 10px;
