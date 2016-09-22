@@ -57,3 +57,8 @@ p, h2, h3, a {
 body {
   opacity: 1 !important;
 }
+
+.limited-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
