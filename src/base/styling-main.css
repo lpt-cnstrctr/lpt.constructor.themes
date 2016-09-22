@@ -113,6 +113,12 @@
   }
 
   .lpt-button {
+
+    max-width:90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+
     padding: 0.6rem 1rem;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -141,6 +147,12 @@
   }
 
   .lpt-button-3 {
+
+    max-width:90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+
     border: 2px solid #333;
     color: #333;
     transition: 0.3s;

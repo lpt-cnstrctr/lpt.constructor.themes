@@ -42,6 +42,18 @@ p, h2, h3, a {
   background-size: cover;
 }
 
+.block.dark {
+  background:#333;
+}
+
+.block.light {
+  background:#fff;
+}
+
+.block.gray {
+  background:#f2f2f2;
+}
+
 body {
   opacity: 1 !important;
 }
