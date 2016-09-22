@@ -282,10 +282,11 @@
   textarea,
   select {
     border-radius: 3px;
-    border: 0;
+    border-color: #ddd;
     padding: 2px 7px;
     margin: 0 0 1.2rem;
-    min-width: 10rem;
+    min-width: 10rem !important;
+    max-width: 100% !important;
     box-sizing: border-box;
     display: block;
 

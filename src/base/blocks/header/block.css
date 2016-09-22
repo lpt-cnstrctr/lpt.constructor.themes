@@ -15,7 +15,7 @@
 
   &-2.lpt-container {
     .logo {
-      border-right: 1px solid;
+      border-right: 1px solid #eee;
     }
 
     .repeater a {
