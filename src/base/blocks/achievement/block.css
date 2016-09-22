@@ -37,4 +37,8 @@
       letter-spacing: 1px;
     }
   }
+
+  .repeater-item-wrapper > div {
+    max-width: 200px;
+  }
 }
