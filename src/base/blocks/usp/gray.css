@@ -58,7 +58,7 @@
         input,
         select,
         textarea {
-          border: 1px solid #525252;
+          border: 1px solid #ddd;
         }
 
         .button-form {
