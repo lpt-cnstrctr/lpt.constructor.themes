@@ -1,6 +1,7 @@
 /* popup */
 .lpt-dialog-overlay {
   position: fixed !important;
+  z-index: 9000;
   top: 0;
   bottom: 0;
   left: 0;
