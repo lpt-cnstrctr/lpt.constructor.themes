@@ -1,9 +1,13 @@
-.dark .usp {
+.dark.usp form.lpt-container {
+  background: rgba(0, 0, 0, 0.7);
+}
 
+.dark .usp {
   &-2 {
 
     .lpt-container {
       color: #cacaca;
+      background: rgba(0, 0, 0, 0.7);
 
       form {
 

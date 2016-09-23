@@ -34,14 +34,14 @@
     .lpt-container {
 
       .left-side {
-        color: #eee;
+        color: #333;
 
         h3 {
-          color: #fff;
+          color: #333;
         }
 
         .author {
-          color: #fff;
+          color: #333;
 
           .company {
             color: #cecece;

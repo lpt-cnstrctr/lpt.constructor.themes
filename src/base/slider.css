@@ -50,7 +50,7 @@
   opacity: 0;
 
   &:hover {
-    background-color: #1abc9c;
+    background-color: var(--accent-color);
     color: #fff;
   }
 }

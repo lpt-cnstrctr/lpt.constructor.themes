@@ -1,9 +1,9 @@
 .gray .lpt-container.offer {
   &-1 {
-    background-color: hsla(0,0%,95%, 0.92) !important;
+    background-color: #F9F9F9 !important;
 
     form {
-      background-color: hsla(0, 0%, 92%, 0.7);
+      background-color: #F9F9F9;
     }
   }
 
