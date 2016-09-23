@@ -43,15 +43,15 @@ p, h2, h3, a {
 }
 
 .block.dark {
-  background:#333;
+  background: #444;
 }
 
 .block.light {
-  background:#fff;
+  background: #fff;
 }
 
 .block.gray {
-  background:#f2f2f2;
+  background: #f9f9f9;
 }
 
 body {

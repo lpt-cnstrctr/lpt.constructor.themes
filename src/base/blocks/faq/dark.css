@@ -1,6 +1,6 @@
 .dark .lpt-container.faq {
   &-1 {
-    h2 {
+    .faq-container h2 {
       color: #444;
     }
 
