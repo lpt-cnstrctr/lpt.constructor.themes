@@ -1,7 +1,0 @@
-@media (max-width: 960px) {
-  .contacts {
-    &-1 .lpt-container {
-      margin-right: 0 !important;
-    }
-  }
-}
