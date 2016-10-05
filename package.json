@@ -2,7 +2,7 @@
   "name": "nezimo",
   "version": "1.0.0",
   "scripts": {
-    "test": "stylelint **/*.css",
+    "test": "stylelint src/**/*.css",
     "start": "gulp watch",
     "build": "gulp"
   },
