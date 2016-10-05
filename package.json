@@ -1,16 +1,11 @@
 {
-  "name": "lpt.constructor.themes",
-  "version": "1.0.8",
-  "private": true,
+  "name": "nezimo",
+  "version": "1.0.0",
   "scripts": {
     "test": "stylelint **/*.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lpt-cnstrctr/lpt.constructor.themes.git"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "lptracker",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.3.7",
     "cssnano": "^3.7.3",
