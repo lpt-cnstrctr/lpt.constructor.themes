@@ -1,3 +1,17 @@
-@import './src/canvas/style.css';
-@import './src/default/style.css';
-@import './src/base/application.css';
+@import 'reset-css/reset.css';
+@import './src/fonts';
+@import './src/layout';
+@import './src/display';
+@import './src/helpers';
+
+:root {
+  /* basic defaults values here */
+
+  --accent-color: #00bcd4;
+  --base-color: #333;
+}
+
+::selection {
+  color: white;
+  background: var(--accent-color);
+}
