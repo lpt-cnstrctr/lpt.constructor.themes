@@ -1,5 +1,104 @@
 /*
 headers\caption
 btns
+  flat btn
+  3d btn
+  bordered btn
+  primary btn
+  secondary btn
 forms (inputs)
 */
+
+html, body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+
+  min-height: 100%;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* configuration here */
+$display-4-font-size-base: 112px;
+$display-3-font-size-base: 56px;
+$display-2-font-size-base: 45px;
+$display-1-font-size-base: 34px;
+$headline-font-size-base:  24px;
+$title-font-size-base:     20px;
+$subhead-font-size-base:   16px;
+
+$body-font-size-base:      14px;
+$caption-font-size-base:   12px;
+
+/* declaration zone */
+.nz-display-1 {
+  font-size: $display-1-font-size-base;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.nz-display-2 {
+  font-size: $display-2-font-size-base;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.nz-display-3 {
+  font-size: $display-3-font-size-base;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: $display-3-font-size-base;
+}
+
+.nz-display-4 {
+  font-size: $display-4-font-size-base;
+  font-weight: 300;
+  letter-spacing: -0.010em;
+  line-height: $display-4-font-size-base;
+}
+
+.nz-headline {
+  font-size: $headline-font-size-base;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.nz-title {
+  font-size: $title-font-size-base;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+.nz-subhead {
+  font-size: $subhead-font-size-base;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 24px;
+}
+
+.nz-body-1 {
+  font-size: $body-font-size-base;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 20px;
+}
+
+.nz-body-2 {
+  font-size: $body-font-size-base;
+  font-weight: 500;
+  letter-spacing: 0.010em;
+  line-height: 24px;
+}
+
+.nz-button {
+  letter-spacing: 0.010em;
+}
+
+.nz-caption {
+  font-size: $caption-font-size-base;
+  letter-spacing: 0.020em;
+}
