@@ -21,6 +21,8 @@ gt-lg >= 1920px
 xl >= 1920px
 */
 
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
 @define-mixin layout-for-name $name {
   .nz-layout$(name),
   .nz-layout$(name)-column,
@@ -58,13 +60,40 @@ xl >= 1920px
 }
 
 @define-mixin flex-for-name $name {
-  .nz-flex$(name)             {flex: 1; box-sizing: border-box;}
-  .nz-flex$(name)-grow        {flex: 1 1 100%; box-sizing: border-box;}
-  .nz-flex$(name)-initial     {flex: 0 1 auto; box-sizing: border-box;}
-  .nz-flex$(name)-auto        {flex: 1 1 auto; box-sizing: border-box;}
-  .nz-flex$(name)-none        {flex: 0 0 auto; box-sizing: border-box;}
-  .nz-flex$(name)-noshrink    {flex: 1 0 auto; box-sizing: border-box;}
-  .nz-flex$(name)-nogrow      {flex: 0 1 auto; box-sizing: border-box;}
+  .nz-flex$(name) {
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-grow {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-initial {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-auto {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-none {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-noshrink {
+    flex: 1 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-nogrow {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
 
   @for $index from 0 to 100 by 5 {
     @mixin flex-for-value $(index), $(index), $(name) {}
@@ -192,7 +221,6 @@ xl >= 1920px
   }
 }
 
-
 @define-mixin layout-padding-margin-for-name $name {
   .nz-layout-padding$(name)-1 {
     padding: 16px;
@@ -228,7 +256,7 @@ xl >= 1920px
 
 @define-mixin offset-for-value $index, $value, $name {
   .nz-flex-offset$(name)-$(index) {
-    margin-left: $(value)% ;
+    margin-left: $(value)%;
   }
 }
 
@@ -247,9 +275,11 @@ xl >= 1920px
   }
 }
 
+/* stylelint-disable */
 @mixin layout-for-name {}
 @mixin flex-for-name {}
 @mixin layout-align-for-name {}
 @mixin layout-padding-margin-for-name {}
 @mixin offset-for-name {}
 @mixin hide-for-name {}
+/* stylelint-enable */
