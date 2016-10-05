@@ -13,3 +13,26 @@ nz-subhead
 nz-body-1
 nz-body-2
 nz-caption
+
+## layout
+nz-layout
+nz-layout-row
+nz-layout-column
+nz-flex
+nz-flex-grow
+nz-flex-initial
+nz-flex-auto
+nz-flex-none
+nz-flex-noshrink
+nz-flex-nogrow
+nz-flex-$(step)
+nz-layout-align-$(main)-$(cross)
+nz-layout-padding-1
+nz-layout-padding-2
+nz-layout-margin-1
+nz-layout-margin-2
+nz-layout-wrap
+nz-layout-nowrap
+nz-layout-fill
+nz-flex-offset-$(step)
+nz-hide

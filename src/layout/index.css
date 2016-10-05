@@ -7,4 +7,249 @@ align
 fill
 wrap
 hide
+
+print
+default
+xs < 600px
+gt-xs >= 600px
+sm 600px <= width < 960px
+gt-sm >= 960px
+md 960px <= width < 1280px
+gt-md >= 1280px
+lg 1280px <= width < 1920px
+gt-lg >= 1920px
+xl >= 1920px
 */
+
+@define-mixin layout-for-name $name {
+  .nz-layout$(name),
+  .nz-layout$(name)-column,
+  .nz-layout$(name)-row {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .nz-layout$(name)-column {
+    flex-direction: column;
+  }
+
+  .nz-layout$(name)-row {
+    flex-direction: row;
+  }
+}
+
+@define-mixin flex-for-value $index, $value, $name {
+  .nz-flex$(name)-$(index) {
+    flex: 1 1 $(value)%;
+    max-width: $(value)%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-layout$(name)-row > .nz-flex$(name)-$(index) {
+    max-width: $(value)%;
+    max-height: 100%;
+  }
+
+  .nz-layout$(name)-column > .nz-flex$(name)-$(index) {
+    max-width: 100%;
+    max-height: $(value)%;
+  }
+}
+
+@define-mixin flex-for-name $name {
+  .nz-flex$(name)             {flex: 1; box-sizing: border-box;}
+  .nz-flex$(name)-grow        {flex: 1 1 100%; box-sizing: border-box;}
+  .nz-flex$(name)-initial     {flex: 0 1 auto; box-sizing: border-box;}
+  .nz-flex$(name)-auto        {flex: 1 1 auto; box-sizing: border-box;}
+  .nz-flex$(name)-none        {flex: 0 0 auto; box-sizing: border-box;}
+  .nz-flex$(name)-noshrink    {flex: 1 0 auto; box-sizing: border-box;}
+  .nz-flex$(name)-nogrow      {flex: 0 1 auto; box-sizing: border-box;}
+
+  @for $index from 0 to 100 by 5 {
+    @mixin flex-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin flex-for-value 33, 33.33, $(name) {}
+  @mixin flex-for-value 66, 66.66, $(name) {}
+}
+
+@define-mixin layout-align-for-name $name {
+  /*
+    Alignment attributes for layout containers' children
+    Arrange on the Main Axis
+    center, start, end, space-between, space-around
+    flex-start is the default for justify-content
+  */
+
+  .nz-layout-align$(name),
+  .nz-layout-align$(name)-start-stretch {
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  /* Main Axis Center */
+  .nz-layout-align$(name)-start,
+  .nz-layout-align$(name)-start-start,
+  .nz-layout-align$(name)-start-center,
+  .nz-layout-align$(name)-start-end,
+  .nz-layout-align$(name)-start-stretch {
+    justify-content: flex-start;
+  }
+
+  /* Main Axis Center */
+  .nz-layout-align$(name)-center,
+  .nz-layout-align$(name)-center-start,
+  .nz-layout-align$(name)-center-center,
+  .nz-layout-align$(name)-center-end,
+  .nz-layout-align$(name)-center-stretch {
+    justify-content: center;
+  }
+
+  /* Main Axis End */
+  .nz-layout-align$(name)-end,
+  .nz-layout-align$(name)-end-start,
+  .nz-layout-align$(name)-end-center,
+  .nz-layout-align$(name)-end-end,
+  .nz-layout-align$(name)-end-stretch {
+    justify-content: flex-end;
+  }
+
+  /* Main Axis Space Around */
+  .nz-layout-align$(name)-space-around,
+  .nz-layout-align$(name)-space-around-center,
+  .nz-layout-align$(name)-space-around-start,
+  .nz-layout-align$(name)-space-around-end,
+  .nz-layout-align$(name)-space-around-stretch {
+    justify-content: space-around;
+  }
+
+  /* Main Axis Space Between */
+  .nz-layout-align$(name)-space-between,
+  .nz-layout-align$(name)-space-between-center,
+  .nz-layout-align$(name)-space-between-start,
+  .nz-layout-align$(name)-space-between-end,
+  .nz-layout-align$(name)-space-between-stretch {
+    justify-content: space-between;
+  }
+
+  /*
+    Arrange on the Cross Axis
+    center, start, end
+    stretch is the default for align-items
+  */
+
+  /* Cross Axis Start */
+  .nz-layout-align$(name)-start-start,
+  .nz-layout-align$(name)-center-start,
+  .nz-layout-align$(name)-end-start,
+  .nz-layout-align$(name)-space-between-start,
+  .nz-layout-align$(name)-space-around-start {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  /* Cross Axis Center */
+  .nz-layout-align$(name)-start-center,
+  .nz-layout-align$(name)-center-center,
+  .nz-layout-align$(name)-end-center,
+  .nz-layout-align$(name)-space-between-center,
+  .nz-layout-align$(name)-space-around-center {
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+
+  /* Cross Axis Center IE overflow fix */
+  .nz-layout-align$(name)-start-center > *,
+  .nz-layout-align$(name)-center-center > *,
+  .nz-layout-align$(name)-end-center > *,
+  .nz-layout-align$(name)-space-between-center > *,
+  .nz-layout-align$(name)-space-around-center > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cross Axis End */
+  .nz-layout-align$(name)-start-end,
+  .nz-layout-align$(name)-center-end,
+  .nz-layout-align$(name)-end-end,
+  .nz-layout-align$(name)-space-between-end,
+  .nz-layout-align$(name)-space-around-end {
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  /* Cross Axis Start */
+  .nz-layout-align$(name)-start-stretch,
+  .nz-layout-align$(name)-center-stretch,
+  .nz-layout-align$(name)-end-stretch,
+  .nz-layout-align$(name)-space-between-stretch,
+  .nz-layout-align$(name)-space-around-stretch {
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+
+@define-mixin layout-padding-margin-for-name $name {
+  .nz-layout-padding$(name)-1 {
+    padding: 16px;
+  }
+
+  .nz-layout-padding$(name)-2 {
+    padding: 32px;
+  }
+
+  .nz-layout-margin$(name)-1 {
+    margin: 16px;
+  }
+
+  .nz-layout-margin$(name)-2 {
+    margin: 32px;
+  }
+
+  .nz-layout-wrap$(name) {
+    flex-wrap: wrap;
+  }
+
+  .nz-layout-nowrap$(name) {
+    flex-wrap: nowrap;
+  }
+
+  .nz-layout-fill$(name) {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+  }
+}
+
+@define-mixin offset-for-value $index, $value, $name {
+  .nz-flex-offset$(name)-$(index) {
+    margin-left: $(value)% ;
+  }
+}
+
+@define-mixin offset-for-name $name {
+  @for $index from 0 to 95 by 5 {
+    @mixin offset-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin offset-for-value 33, 33.33, $(name) {}
+  @mixin offset-for-value 66, 66.66, $(name) {}
+}
+
+@define-mixin hide-for-name $name {
+  .nz-hide$(name) {
+    display: none !important;
+  }
+}
+
+@mixin layout-for-name {}
+@mixin flex-for-name {}
+@mixin layout-align-for-name {}
+@mixin layout-padding-margin-for-name {}
+@mixin offset-for-name {}
+@mixin hide-for-name {}

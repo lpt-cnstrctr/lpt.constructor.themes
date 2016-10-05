@@ -6,8 +6,9 @@ module.exports = dep => {
       addDependencyTo: dep
     }),
     require('postcss-mixins'),
-    require('postcss-simple-vars'),
+    require('postcss-for'),
     require('postcss-each'),
+    require('postcss-simple-vars'),
     require('cssnano')(),
     require('postcss-reporter')()
   ];
