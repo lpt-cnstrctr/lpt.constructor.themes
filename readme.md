@@ -27,6 +27,7 @@
 * nz-button.danger
 * nz-button.outline
 * nz-button.fat
+* nz-button.block
 
 ## layout
 * nz-layout

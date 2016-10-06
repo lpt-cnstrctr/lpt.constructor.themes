@@ -121,3 +121,11 @@
 .nz-button.fat:active {
   border-bottom-width: 1px;
 }
+
+/* block button */
+.nz-button.block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
