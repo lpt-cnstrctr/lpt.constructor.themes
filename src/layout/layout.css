@@ -1,0 +1,16 @@
+@define-mixin layout-for-name $name {
+  .nz-layout$(name),
+  .nz-layout$(name)-column,
+  .nz-layout$(name)-row {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .nz-layout$(name)-column {
+    flex-direction: column;
+  }
+
+  .nz-layout$(name)-row {
+    flex-direction: row;
+  }
+}

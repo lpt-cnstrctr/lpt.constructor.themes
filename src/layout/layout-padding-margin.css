@@ -1,0 +1,32 @@
+@define-mixin layout-padding-margin-for-name $name {
+  .nz-layout-padding$(name)-1 {
+    padding: 8px;
+  }
+
+  .nz-layout-padding$(name)-2 {
+    padding: 16px;
+  }
+
+  .nz-layout-margin$(name)-1 {
+    margin: 8px;
+  }
+
+  .nz-layout-margin$(name)-2 {
+    margin: 16px;
+  }
+
+  .nz-layout-wrap$(name) {
+    flex-wrap: wrap;
+  }
+
+  .nz-layout-nowrap$(name) {
+    flex-wrap: nowrap;
+  }
+
+  .nz-layout-fill$(name) {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+  }
+}

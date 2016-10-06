@@ -1,0 +1,16 @@
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@define-mixin offset-for-value $index, $value, $name {
+  .nz-flex-offset$(name)-$(index) {
+    margin-left: $(value)%;
+  }
+}
+
+@define-mixin offset-for-name $name {
+  @for $index from 0 to 95 by 5 {
+    @mixin offset-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin offset-for-value 33, 33.33, $(name) {}
+  @mixin offset-for-value 66, 66.66, $(name) {}
+}

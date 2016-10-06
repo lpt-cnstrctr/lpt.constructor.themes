@@ -1,0 +1,66 @@
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@define-mixin flex-for-value $index, $value, $name {
+  .nz-flex$(name)-$(index) {
+    flex: 1 1 $(value)%;
+    max-width: $(value)%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-layout$(name)-row > .nz-flex$(name)-$(index),
+  .nz-layout-row > .nz-flex$(name)-$(index) {
+    max-width: $(value)%;
+    max-height: 100%;
+  }
+
+  .nz-layout$(name)-column > .nz-flex$(name)-$(index),
+  .nz-layout-column > .nz-flex$(name)-$(index) {
+    max-width: 100%;
+    max-height: $(value)%;
+  }
+}
+
+@define-mixin flex-for-name $name {
+  .nz-flex$(name) {
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-grow {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-initial {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-auto {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-none {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-noshrink {
+    flex: 1 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-nogrow {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+  @for $index from 0 to 100 by 5 {
+    @mixin flex-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin flex-for-value 33, 33.33, $(name) {}
+  @mixin flex-for-value 66, 66.66, $(name) {}
+}

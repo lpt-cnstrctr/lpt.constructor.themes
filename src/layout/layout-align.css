@@ -1,0 +1,117 @@
+@define-mixin layout-align-for-name $name {
+  /*
+    Alignment attributes for layout containers' children
+    Arrange on the Main Axis
+    center, start, end, space-between, space-around
+    flex-start is the default for justify-content
+  */
+
+  .nz-layout-align$(name),
+  .nz-layout-align$(name)-start-stretch {
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  /* Main Axis Center */
+  .nz-layout-align$(name)-start,
+  .nz-layout-align$(name)-start-start,
+  .nz-layout-align$(name)-start-center,
+  .nz-layout-align$(name)-start-end,
+  .nz-layout-align$(name)-start-stretch {
+    justify-content: flex-start;
+  }
+
+  /* Main Axis Center */
+  .nz-layout-align$(name)-center,
+  .nz-layout-align$(name)-center-start,
+  .nz-layout-align$(name)-center-center,
+  .nz-layout-align$(name)-center-end,
+  .nz-layout-align$(name)-center-stretch {
+    justify-content: center;
+  }
+
+  /* Main Axis End */
+  .nz-layout-align$(name)-end,
+  .nz-layout-align$(name)-end-start,
+  .nz-layout-align$(name)-end-center,
+  .nz-layout-align$(name)-end-end,
+  .nz-layout-align$(name)-end-stretch {
+    justify-content: flex-end;
+  }
+
+  /* Main Axis Space Around */
+  .nz-layout-align$(name)-space-around,
+  .nz-layout-align$(name)-space-around-center,
+  .nz-layout-align$(name)-space-around-start,
+  .nz-layout-align$(name)-space-around-end,
+  .nz-layout-align$(name)-space-around-stretch {
+    justify-content: space-around;
+  }
+
+  /* Main Axis Space Between */
+  .nz-layout-align$(name)-space-between,
+  .nz-layout-align$(name)-space-between-center,
+  .nz-layout-align$(name)-space-between-start,
+  .nz-layout-align$(name)-space-between-end,
+  .nz-layout-align$(name)-space-between-stretch {
+    justify-content: space-between;
+  }
+
+  /*
+    Arrange on the Cross Axis
+    center, start, end
+    stretch is the default for align-items
+  */
+
+  /* Cross Axis Start */
+  .nz-layout-align$(name)-start-start,
+  .nz-layout-align$(name)-center-start,
+  .nz-layout-align$(name)-end-start,
+  .nz-layout-align$(name)-space-between-start,
+  .nz-layout-align$(name)-space-around-start {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  /* Cross Axis Center */
+  .nz-layout-align$(name)-start-center,
+  .nz-layout-align$(name)-center-center,
+  .nz-layout-align$(name)-end-center,
+  .nz-layout-align$(name)-space-between-center,
+  .nz-layout-align$(name)-space-around-center {
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+
+  /* Cross Axis Center IE overflow fix */
+  .nz-layout-align$(name)-start-center > *,
+  .nz-layout-align$(name)-center-center > *,
+  .nz-layout-align$(name)-end-center > *,
+  .nz-layout-align$(name)-space-between-center > *,
+  .nz-layout-align$(name)-space-around-center > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cross Axis End */
+  .nz-layout-align$(name)-start-end,
+  .nz-layout-align$(name)-center-end,
+  .nz-layout-align$(name)-end-end,
+  .nz-layout-align$(name)-space-between-end,
+  .nz-layout-align$(name)-space-around-end {
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  /* Cross Axis Start */
+  .nz-layout-align$(name)-start-stretch,
+  .nz-layout-align$(name)-center-stretch,
+  .nz-layout-align$(name)-end-stretch,
+  .nz-layout-align$(name)-space-between-stretch,
+  .nz-layout-align$(name)-space-around-stretch {
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
