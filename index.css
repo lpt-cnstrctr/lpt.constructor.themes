@@ -7,6 +7,8 @@
 :root {
   /* basic defaults values here */
   --accent-color: #00bcd4;
+  --accent-color-darken: #007888;
+  --accent-color-light: #22e6ff;
   --base-color: #333;
 
   font-family: Roboto, 'Helvetica Neue', sans-serif;

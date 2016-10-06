@@ -19,6 +19,12 @@ nz-body-1
 nz-body-2
 nz-caption
 nz-whiteframe-z$(step)
+nz-button
+nz-button.small
+nz-button.primary
+nz-button.danger
+nz-button.outline
+nz-button.fat
 
 ## layout
 nz-layout

@@ -1,3 +1,123 @@
+/* button */
 .nz-button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  line-height: 24px;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #eee;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
   letter-spacing: 0.01em;
+  text-decoration: none;
+  appearance: none; /* Corrects inability to style clickable `input` types in iOS. */
+}
+
+.nz-button:focus {
+  border-color: #51a7e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+.nz-button:hover,
+.nz-button:active {
+  background-color: #ddd;
+  border-color: #ccc;
+}
+
+.nz-button:active {
+  background-color: #dcdcdc;
+  border-color: #b5b5b5;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nz-button:disabled,
+.nz-button.disabled {
+  color: rgba(102, 102, 102, 0.5);
+  cursor: default;
+  background-color: rgba(229, 229, 229, 0.5);
+  background-image: none;
+  border-color: rgba(197, 197, 197, 0.5);
+  box-shadow: none;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+/* small button */
+.nz-button.small {
+  padding: 4px 8px;
+  font-size: 0.75em;
+  line-height: 24px;
+}
+
+/* primary button */
+.nz-button.primary {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.nz-button.primary:hover {
+  color: #fff;
+  background-color: var(--accent-color-darken);
+  border-color: var(--accent-color-darken);
+}
+
+.nz-button.primary:active {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color-darken);
+  border-color: var(--accent-color-darken);
+}
+
+/* danger button */
+.nz-button.danger {
+  color: #900;
+}
+
+.nz-button.danger:hover {
+  color: #fff;
+  background-color: #b33630;
+  border-color: #cd504a;
+}
+
+.nz-button.danger:active {
+  color: #fff;
+  background-color: #b33630;
+  border-color: darken(#cd504a, 15%);
+}
+
+/* outline button */
+.nz-button.outline {
+  color: var(--accent-color);
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.nz-button.outline:hover,
+.nz-button.outline:active {
+  color: #fff;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+
+}
+
+.nz-button.outline:disabled,
+.nz-button.outline.disabled {
+  color: #767676;
+  background-color: #fff;
+}
+
+/* fat (3d) button */
+.nz-button.fat {
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(102, 102, 102, 0.5);
+}
+
+.nz-button.fat:active {
+  border-bottom-width: 1px;
 }
