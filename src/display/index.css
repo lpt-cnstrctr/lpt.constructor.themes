@@ -121,6 +121,7 @@ $shadow-key-umbra-opacity: 0.2;
 $shadow-key-penumbra-opacity: 0.14;
 $shadow-ambient-shadow-opacity: 0.12;
 
+/* stylelint-disable length-zero-no-unit */
 .nz-whiteframe-z1 {
   box-shadow:
     0px 1px 3px 0px rgba(0, 0, 0, $shadow-key-umbra-opacity),
