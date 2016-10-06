@@ -2,6 +2,11 @@
 
 ... under development
 
+## TODO
+* Bi-directional support
+* more breakpoints
+*
+
 ## display
 nz-display-4
 nz-display-3
@@ -13,6 +18,7 @@ nz-subhead
 nz-body-1
 nz-body-2
 nz-caption
+nz-whiteframe-z$(step)
 
 ## layout
 nz-layout
