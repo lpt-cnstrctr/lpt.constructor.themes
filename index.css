@@ -1,4 +1,4 @@
-@import 'reset-css/reset.css';
+@import 'normalize.css/normalize.css';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=cyrillic';
 @import './src/fonts';
 @import './src/layout';
