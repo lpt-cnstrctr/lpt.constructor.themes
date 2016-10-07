@@ -4,10 +4,14 @@
 
 ## TODO
 * Bi-directional support
+* chekbox
+* radiobtn
 * more breakpoints
 * px to rem repleace
-* forms
 * docs \ kss
+* navigation
+* icons
+* use config colors
 
 ## display
 * nz-display-4
@@ -28,6 +32,7 @@
 * nz-button.outline
 * nz-button.fat
 * nz-button.block
+* form input, textarea, select
 
 ## layout
 * nz-layout

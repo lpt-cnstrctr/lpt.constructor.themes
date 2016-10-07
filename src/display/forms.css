@@ -1,0 +1,121 @@
+/* Disable ligatures in editable areas due to https://github.com/github/github/issues/56941 */
+input,
+textarea {
+  font-feature-settings: "liga" 0;
+}
+
+/*
+  Hide the up/down buttons in <input type="number"> in the login form, the
+  input is used for two-factor auth codes, type="number" makes it more usable
+  on phones
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+/* Custom styling for HTML5 validation bubbles (WebKit only) */
+::placeholder {
+  color: #999;
+}
+
+/* input */
+form input,
+form textarea,
+form select {
+  min-height: 34px;
+  padding: 8px 16px;
+  line-height: 20px;
+  color: var(--base-color);
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat; /* Repeat and position set for form states (success, error, etc) */
+  background-position: right 8px center; /* For form validation. This keeps images 8px from right and centered vertically. */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px var(--accent-color);
+}
+
+/* label */
+form label {
+  font-weight: 600;
+}
+
+/* select */
+form select {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 34px;
+  /* IE9 hacks to reduce padding */
+  padding-right: 24px;
+  padding-right: 8px \9;
+  background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC") no-repeat right 8px center;
+  /* IE9 hacks to hide the background-image*/
+  background-image: none \9;
+  background-size: 8px 10px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Hides the default caret in IE11 */
+form select::-ms-expand {
+  opacity: 0;
+}
+
+form select[multiple] {
+  height: auto;
+}
+
+form.small select {
+  min-height: 28px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.75em;
+}
+
+form.small select[multiple] {
+  height: auto;
+  min-height: 0;
+}
+
+/* Mini inputs, to match .nz-button.small */
+form.small input {
+  min-height: 28px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.75em;
+  line-height: 20px;
+}
+
+/* nz-layout combination */
+.nz-layout-row input:not([type="checkbox"]):not([type="radio"]),
+.nz-layout-row textarea,
+.nz-layout-row select {
+  margin-right: 2em;
+}
+
+.nz-layout-row label {
+  margin-right: 1em;
+}
+
+.nz-layout-column input:not([type="checkbox"]):not([type="radio"]),
+.nz-layout-column textarea,
+.nz-layout-column select {
+  margin-bottom: 1em;
+}
+
+.nz-layout-column label {
+  margin-bottom: 0.5em;
+}
