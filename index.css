@@ -6,10 +6,11 @@
 
 :root {
   /* basic defaults values here */
-  --accent-color: #00bcd4;
-  --accent-color-darken: #007888;
-  --accent-color-light: #22e6ff;
-  --base-color: #333;
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --disabled-color: #bdbdbd;
+  --accent-color: #3367d6;
+  --danger-color: #c53929;
 
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 16px;
