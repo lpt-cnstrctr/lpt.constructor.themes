@@ -21,7 +21,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* input */
-form input,
+form input:not([type="submit"]),
 form textarea,
 form select {
   min-height: 34px;
@@ -58,8 +58,8 @@ form select {
   display: inline-block;
   max-width: 100%;
   min-height: 34px;
-  padding-right: 24px; /* IE9 hacks to reduce padding */
-  padding-right: 8px \9;
+  padding-right: 24px;
+  padding-right: 8px \9; /* IE9 hacks to reduce padding */
   background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC") no-repeat right 8px center;
   background-image: none \9; /* IE9 hacks to hide the background-image */
   background-size: 8px 10px;
