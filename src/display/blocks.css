@@ -1,6 +1,3 @@
-/* colors (themes)*/
-/* sizes */
-
 section.block {
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -13,8 +10,3 @@ section.block.dark {
   --accent-color: #7baaf7;
   --negative-color: #e67c73;
 }
-
-/*
-full-sized
-half-sized
-*/
