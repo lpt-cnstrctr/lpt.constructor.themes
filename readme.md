@@ -7,11 +7,9 @@
 * chekbox
 * radiobtn
 * more breakpoints
-* px to rem repleace
 * docs \ kss
 * navigation
 * icons
-* use config colors
 
 ## display
 * nz-display-4
@@ -33,6 +31,11 @@
 * nz-button.fat
 * nz-button.block
 * form input, textarea, select
+* nz-bg-cover
+* nz-bg-contain
+* nz-bg-fixed
+* section.block
+* section.block.dark
 
 ## layout
 * nz-layout
