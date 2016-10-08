@@ -1,0 +1,11 @@
+.nz-bg-cover {
+  background-size: cover;
+}
+
+.nz-bg-contain {
+  background-size: contain;
+}
+
+.nz-bg-fixed {
+  background-attachment: fixed;
+}
