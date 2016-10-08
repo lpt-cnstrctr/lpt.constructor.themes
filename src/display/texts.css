@@ -1,83 +1,75 @@
-$display-4-font-size-base: 112px;
-$display-3-font-size-base: 56px;
-$display-2-font-size-base: 45px;
-$display-1-font-size-base: 34px;
-$headline-font-size-base:  24px;
-$title-font-size-base:     20px;
-$subhead-font-size-base:   16px;
+$display-4-font-size-base: 7em;
+$display-3-font-size-base: 3.5em;
+$display-2-font-size-base: 3em;
+$display-1-font-size-base: 2em;
+$headline-font-size-base:  1.5em;
+$title-font-size-base:     1.25em;
+$subhead-font-size-base:   1em;
 
-$body-font-size-base:      14px;
-$caption-font-size-base:   12px;
+$body-font-size-base:      0.85em;
+$caption-font-size-base:   0.75em;
 
 .nz-display-1 {
   font-size: $display-1-font-size-base;
   font-weight: 400;
-  line-height: 40px;
-  padding-left: 8px;
+  padding-left: 0.2em;
 }
 
 .nz-display-2 {
   font-size: $display-2-font-size-base;
   font-weight: 400;
-  line-height: 64px;
-  padding-left: 7px;
+  padding-left: 0.1em;
 }
 
 .nz-display-3 {
   font-size: $display-3-font-size-base;
   font-weight: 400;
   letter-spacing: -0.005em;
-  line-height: $display-3-font-size-base;
-  padding-left: 6px;
+  padding-left: 0.1em;
 }
 
 .nz-display-4 {
   font-size: $display-4-font-size-base;
   font-weight: 300;
   letter-spacing: -0.01em;
-  line-height: $display-4-font-size-base;
 }
 
 .nz-headline {
   font-size: $headline-font-size-base;
   font-weight: 400;
-  line-height: 32px;
-  padding-left: 9px;
+  padding-left: 0.3em;
 }
 
 .nz-title {
   font-size: $title-font-size-base;
   font-weight: 500;
   letter-spacing: 0.005em;
-  padding-left: 9px;
+  padding-left: 0.4em;
 }
 
 .nz-subhead {
   font-size: $subhead-font-size-base;
   font-weight: 400;
   letter-spacing: 0.01em;
-  line-height: 24px;
-  padding-left: 9px;
+  padding-left: 0.5em;
 }
 
 .nz-body-1 {
   font-size: $body-font-size-base;
   font-weight: 400;
   letter-spacing: 0.01em;
-  line-height: 20px;
-  padding-left: 9px;
+  padding-left: 0.5em;
 }
 
 .nz-body-2 {
   font-size: $body-font-size-base;
   font-weight: 500;
   letter-spacing: 0.01em;
-  line-height: 24px;
-  padding-left: 9px;
+  padding-left: 0.5em;
 }
 
 .nz-caption {
   font-size: $caption-font-size-base;
   letter-spacing: 0.02em;
-  padding-left: 9px;
+  padding-left: 0.5em;
 }
