@@ -17,7 +17,7 @@
 
 .nz-block-wrapper {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 80em;
   padding: 4em 3em;
 }
 
@@ -27,4 +27,13 @@
 
 .nz-block-halfheight {
   min-height: 50vh;
+}
+
+.nz-block-cover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+.dark .nz-block-cover {
+  background: rgba(0, 0, 0, 0.5);
 }

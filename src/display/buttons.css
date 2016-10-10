@@ -1,3 +1,24 @@
+/*
+Кнопки
+
+Кнопки используемые для оформления ссылок и действия формы.
+
+.primary - кнопка привлекающая внимание
+.small - уменьшенная кнопка
+.danger - выделенная красным кнопка
+.outline - как обычная ссылка с рамкой
+.fat - с тенью, объемная кнопка
+.block - занимает всю ширину родителя
+:focus - после клика и до потери фокуса
+:hover - при наведении
+:active - в момент клика
+:disabled - заблокированная для действия
+
+Markup: buttons.hbs
+
+Style guide: nezimo.display.buttons
+*/
+
 /* button */
 .nz-button {
   position: relative;
@@ -17,6 +38,7 @@
   appearance: none; /* Corrects inability to style clickable `input` types in iOS. */
   opacity: 0.85;
   margin: 0.4em;
+  box-sizing: border-box;
 }
 
 .nz-button:focus {

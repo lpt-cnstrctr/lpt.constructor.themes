@@ -30,7 +30,10 @@
 * nz-button.outline
 * nz-button.fat
 * nz-button.block
-* form input, textarea, select
+* nz-form input
+* nz-form textarea
+* nz-form select
+* nz-form.small
 * nz-bg-cover
 * nz-bg-contain
 * nz-bg-fixed

@@ -10,7 +10,7 @@ gulp.task('css', () =>
     .pipe(gulp.dest('./build'))
 );
 
-gulp.task('serve', serve(['build', '.']));
+gulp.task('serve', serve(['build']));
 
 gulp.task('watch', ['css'], () =>
   gulp.watch(['./src/**/*.css', './index.css'], ['css'])
