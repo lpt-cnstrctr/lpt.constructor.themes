@@ -1,3 +1,15 @@
+/*
+Фоновые изображения
+
+Вспомогательные классы для работы с фоновыми изображениями
+
+.nz-bg-cover - background-size: cover
+.nz-bg-contain - background-size: contain
+.nz-bg-fixed - background-attachment: fixed
+
+Styleguide: nezimo.display.backgrounds
+*/
+
 .nz-bg-cover {
   background-size: cover;
 }
