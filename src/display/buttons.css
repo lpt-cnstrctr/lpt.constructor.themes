@@ -68,7 +68,8 @@ Styleguide: nezimo.display.buttons
 }
 
 /* small button */
-.nz-button.small {
+.nz-button.small,
+.small .nz-button { /* for small nz-form */
   padding: 0.25em 0.5em;
   font-size: 0.75em;
   line-height: 1.5em;

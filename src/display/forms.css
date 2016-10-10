@@ -1,3 +1,45 @@
+/*
+Формы
+
+Форма является контейнером в котором можно установить направление элементов (nz-layout-column, nz-layout-row)
+Оформлены основные элементы inpit, textarea, select
+
+.small - уменьшенная форма
+
+Markup:
+<form class="nz-form nz-layout-wrap nz-layout-column nz-flex-15 {{modifier_class}}">
+  <label for="name">Имя</label>
+  <input type="text" id="name">
+  <label for="email">Email</label>
+  <input type="email" id="email">
+  <select>
+    <option>Apple</option>
+    <option>Pen</option>
+    <option>Apple-Pen</option>
+    <option>Pineapple</option>
+    <option>Pineapple-Pen</option>
+    <option>Pen-Pineapple-Apple-Pen</option>
+  </select>
+  <textarea></textarea>
+  <button class="nz-button" type="submit">Отправить</button>
+</form>
+<form class="nz-layout-margin-2 nz-form nz-layout-wrap nz-layout-row nz-layout-align-center-center {{modifier_class}}">
+  <label for="name">Имя</label>
+  <input type="text" id="name">
+  <select>
+    <option>Apple</option>
+    <option>Pen</option>
+    <option>Apple-Pen</option>
+    <option>Pineapple</option>
+    <option>Pineapple-Pen</option>
+    <option>Pen-Pineapple-Apple-Pen</option>
+  </select>
+  <button class="nz-button" type="submit">Отправить</button>
+</form>
+
+Styleguide: nezimo.display.forms
+*/
+
 /* Disable ligatures in editable areas due to https://github.com/github/github/issues/56941 */
 input,
 textarea {
@@ -34,6 +76,7 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-sizing: border-box;
 }
 
 .nz-form input:focus,
