@@ -1,6 +1,32 @@
+/*
+Блоки
+
+nz-block используется в первую очередь для работы
+с цветовой схемой. Является основой для конструктора блоков,
+любой блок должен быть обернут в контейнер nz-block
+* .nz-block.dark - темная тема оформления (белый текст и черный фон)
+* .nz-block.gray - серая тема оформления (меняет фон на серый цвет)
+
+.nz-block-wrapper - устанавливает фиксированную ширину и выравнивает по центру контейнер блока
+.nz-block-fullheight - 100% от высоты экрана
+.nz-block-halfheight - 50% от высоты экрана
+.nz-block-cover - получерный\полусветлый фон для контейнера
+
+Markup:
+<section class="nz-block dark">
+  <div class="nz-layout {{modifier_class}}">Темный контейнер</div>
+</section>
+<section class="nz-block">
+  <div class="nz-layout {{modifier_class}}">Светлый контейнер</div>
+</section>
+
+Styleguide: nezimo.display.blocks
+*/
+
 .nz-block {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  padding: 4em 3em;
 }
 
 .nz-block.dark {
@@ -18,21 +44,19 @@
 .nz-block-wrapper {
   margin: 0 auto;
   max-width: 80em;
-  padding: 4em 3em;
 }
 
 .nz-block-fullheight {
-  min-height: 100vh;
+  min-height: calc(100vh - 8em);
 }
 
 .nz-block-halfheight {
-  min-height: 50vh;
+  min-height: calc(50vh - 8em);
 }
 
 .nz-block-cover {
   background: rgba(255, 255, 255, 0.5);
 }
-
 
 .dark .nz-block-cover {
   background: rgba(0, 0, 0, 0.5);
