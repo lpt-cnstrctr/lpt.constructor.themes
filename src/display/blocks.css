@@ -1,12 +1,23 @@
-section.block {
+.nz-block {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  padding: 4em 3em;
 }
 
-section.block.dark {
+.nz-block.dark {
   --primary-color: #fff;
   --secondary-color: #333;
   --disabled-color: #686868;
   --accent-color: #7baaf7;
   --negative-color: #e67c73;
 }
+
+.nz-block.gray {
+  background-color: #f9f9f9;
+}
+
+.nz-block-wrapper {
+  margin: 0 auto;
+  max-width: 60em;
+}
+

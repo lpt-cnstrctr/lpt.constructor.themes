@@ -34,8 +34,10 @@
 * nz-bg-cover
 * nz-bg-contain
 * nz-bg-fixed
-* section.block
-* section.block.dark
+* nz-block
+* nz-block.dark
+* nz-block.gray
+* nz-block-wrapper
 
 ## layout
 * nz-layout
