@@ -1,0 +1,733 @@
+<link href="./index.css" rel="stylesheet">
+<style>
+  .demo1 {
+    background-color: var(--accent-color);
+  }
+
+  .demo2 {
+    background-color: var(--danger-color);
+  }
+
+  .demo1,
+  .demo2 {
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    line-height: 50px;
+    text-align: center;
+  }
+</style>
+
+<section class="nz-block dark nz-bg-cover nz-bg-fixed" style="background-image: url(http://constructor.ven.lptracker.ru/static/_remont/fon_dark.jpg);">
+  <div class="nz-block-wrapper nz-layout-column nz-layout-align-center-center nz-block-fullheight ">
+    <h2 class="nz-display-2 nz-text-center">КАЧЕСТВЕННЫЙ РЕМОНТ КВАРТИР ПОД КЛЮЧ С ОПЛАТОЙ ЗА РЕЗУЛЬТАТ</h2>
+    <p class="nz-headline nz-text-center">Работаем без предоплаты. Оплата после завершения ремонта.</p>
+    <form class="nz-flex-offset-5 nz-form nz-layout-row nz-layout-padding-3 nz-block-cover nz-layout-align-center-center">
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш email">
+      <input type="text" placeholder="Ваш телефон">
+      <button type="button" class="nz-button primary">РАСЧЕТ СТОИМОСТИ</button>
+    </form>
+  </div>
+</section>
+
+<section class="nz-block dark">
+  <h1 class="nz-display-4">Display 4</h1>
+  <h2 class="nz-display-3">Display 3</h2>
+  <h2 class="nz-display-2">Display 2</h2>
+  <h2 class="nz-display-1">Display 1</h2>
+  <h3 class="nz-headline">Headline</h3>
+  <h3 class="nz-title">title</h3>
+  <h3 class="nz-subhead">subhead</h3>
+  <h3 class="nz-body-1">body 1</h3>
+  <h3 class="nz-body-2">body 2</h3>
+  <h3 class="nz-caption">caption</h3>
+
+  <i class="pull-right icon-line2-note"></i>
+  <i class="pull-right icon-line2-clock icon-lg"></i>
+  <i class="pull-right icon-line2-tag icon-5x icon-spin"></i>
+
+  <div class="nz-layout-column nz-layout-margin-1">
+    <div class="nz-layout-column">
+      <div class="nz-flex demo1">First item in row</div>
+      <div class="nz-flex demo2">Second item in row</div>
+    </div>
+    <div class="nz-layout-row">
+      <div class="nz-flex demo1">First item in column</div>
+      <div class="nz-flex demo2">Second item in column</div>
+    </div>
+  </div>
+
+  <div class="nz-layout-xs-column nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex demo1">
+      I'm above on mobile, and to the left on larger devices.
+    </div>
+    <div class="nz-flex demo2">
+      I'm below on mobile, and to the right on larger devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-20 demo1">
+      [flex="20"]
+    </div>
+    <div class="nz-flex-70 demo2">
+      [flex="70"]
+    </div>
+    <div class="nz-flex nz-hide-xs demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-30 demo1">
+      [flex="30"]
+    </div>
+    <div class="nz-flex-45 demo2">
+      [flex="45"]
+    </div>
+    <div class="nz-flex-25 demo1">
+      [flex="25"]
+    </div>
+    <div class="nz-flex-33 demo2">
+      [flex="33"]
+    </div>
+    <div class="nz-flex-66 demo1">
+      [flex="66"]
+    </div>
+    <div class="nz-flex-50 demo2">
+      [flex="50"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-33 nz-flex-xs-66 demo1">
+      flex 33% on mobile, <br>and 66% on gt-sm devices.
+    </div>
+    <div class="nz-flex-66 nz-flex-xs-33 demo2">
+      flex 66%  on mobile, <br>and 33% on gt-sm devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-none demo2">
+      [flex="none"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+    <div class="nz-flex-nogrow demo2">
+      [flex="nogrow"]
+    </div>
+    <div class="nz-flex-grow demo1">
+      [flex="grow"]
+    </div>
+    <div class="nz-flex-initial demo2">
+      [flex="initial"]
+    </div>
+    <div class="nz-flex-auto demo1">
+      [flex="auto"]
+    </div>
+    <div class="nz-flex-noshrink demo2">
+      [flex="noshrink"]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-66 nz-flex-offset-15 demo1">
+      [flex-offset="15"]
+      [flex="66"]
+    </div>
+    <div class="nz-flex demo2">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-align-center-stretch" style="min-height: 128px">
+    <div class="demo1">one</div>
+    <div class="demo2">two</div>
+    <div class="demo1">three</div>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button button</button>
+    <a class="nz-button" href="#" role="button">Link button</a>
+    <button class="nz-button" type="button" disabled>Button disabled</button>
+    <a class="nz-button disabled" href="#" role="button">Link disabled</a>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button</button>
+    <button class="nz-button small" type="button">Small button</button>
+    <button class="nz-button small" type="button" disabled>Disabled small button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button primary" type="button">Primary button</button>
+    <button class="nz-button primary" type="button" disabled>Disabled primary button</button>
+    <button class="nz-button small primary" type="button">Small primary button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button danger" type="button">Danger button</button>
+    <button class="nz-button danger" type="button" disabled>Disabled danger button</button>
+    <button class="nz-button small danger" type="button">Small danger button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button outline" type="button">Outline button</button>
+    <button class="nz-button outline" type="button" disabled>Disabled outline button</button>
+    <button class="nz-button small outline" type="button">Small outline button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button block" type="button">Block button</button>
+    <button class="nz-button block" type="button" disabled>Disabled block button</button>
+    <button class="nz-button small block" type="button">Small block button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button fat" type="button">Fat button</button>
+    <button class="nz-button fat primary" type="button">Fat primary button</button>
+    <button class="nz-button fat danger" type="button">Fat danger button</button>
+    <button class="nz-button fat outline" type="button">Fat outline button</button>
+    <button class="nz-button fat" type="button" disabled>Disabled fat button</button>
+    <button class="nz-button small fat" type="button">Small fat button</button>
+  </div>
+
+  <form class="nz-layout-margin-1 nz-layout-column nz-flex-15">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+    <input type="submit" class="nz-button">
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+
+  <form class="nz-layout-margin-1 nz-layout-row nz-layout-align-center-center">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+</section>
+
+<section class="nz-block light">
+  <h1 class="nz-display-4">Display 4</h1>
+  <h2 class="nz-display-3">Display 3</h2>
+  <h2 class="nz-display-2">Display 2</h2>
+  <h2 class="nz-display-1">Display 1</h2>
+  <h3 class="nz-headline">Headline</h3>
+  <h3 class="nz-title">title</h3>
+  <h3 class="nz-subhead">subhead</h3>
+  <h3 class="nz-body-1">body 1</h3>
+  <h3 class="nz-body-2">body 2</h3>
+  <h3 class="nz-caption">caption</h3>
+
+  <i class="pull-right icon-line2-note"></i>
+  <i class="pull-right icon-line2-clock icon-lg"></i>
+  <i class="pull-right icon-line2-tag icon-5x icon-spin"></i>
+
+  <div class="nz-layout-column nz-layout-margin-1">
+    <div class="nz-layout-column">
+      <div class="nz-flex demo1">First item in row</div>
+      <div class="nz-flex demo2">Second item in row</div>
+    </div>
+    <div class="nz-layout-row">
+      <div class="nz-flex demo1">First item in column</div>
+      <div class="nz-flex demo2">Second item in column</div>
+    </div>
+  </div>
+
+  <div class="nz-layout-xs-column nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex demo1">
+      I'm above on mobile, and to the left on larger devices.
+    </div>
+    <div class="nz-flex demo2">
+      I'm below on mobile, and to the right on larger devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-20 demo1">
+      [flex="20"]
+    </div>
+    <div class="nz-flex-70 demo2">
+      [flex="70"]
+    </div>
+    <div class="nz-flex nz-hide-xs demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-30 demo1">
+      [flex="30"]
+    </div>
+    <div class="nz-flex-45 demo2">
+      [flex="45"]
+    </div>
+    <div class="nz-flex-25 demo1">
+      [flex="25"]
+    </div>
+    <div class="nz-flex-33 demo2">
+      [flex="33"]
+    </div>
+    <div class="nz-flex-66 demo1">
+      [flex="66"]
+    </div>
+    <div class="nz-flex-50 demo2">
+      [flex="50"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-33 nz-flex-xs-66 demo1">
+      flex 33% on mobile, <br>and 66% on gt-sm devices.
+    </div>
+    <div class="nz-flex-66 nz-flex-xs-33 demo2">
+      flex 66%  on mobile, <br>and 33% on gt-sm devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-none demo2">
+      [flex="none"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+    <div class="nz-flex-nogrow demo2">
+      [flex="nogrow"]
+    </div>
+    <div class="nz-flex-grow demo1">
+      [flex="grow"]
+    </div>
+    <div class="nz-flex-initial demo2">
+      [flex="initial"]
+    </div>
+    <div class="nz-flex-auto demo1">
+      [flex="auto"]
+    </div>
+    <div class="nz-flex-noshrink demo2">
+      [flex="noshrink"]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-66 nz-flex-offset-15 demo1">
+      [flex-offset="15"]
+      [flex="66"]
+    </div>
+    <div class="nz-flex demo2">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-align-center-stretch" style="min-height: 128px">
+    <div class="demo1">one</div>
+    <div class="demo2">two</div>
+    <div class="demo1">three</div>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button button</button>
+    <a class="nz-button" href="#" role="button">Link button</a>
+    <button class="nz-button" type="button" disabled>Button disabled</button>
+    <a class="nz-button disabled" href="#" role="button">Link disabled</a>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button</button>
+    <button class="nz-button small" type="button">Small button</button>
+    <button class="nz-button small" type="button" disabled>Disabled small button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button primary" type="button">Primary button</button>
+    <button class="nz-button primary" type="button" disabled>Disabled primary button</button>
+    <button class="nz-button small primary" type="button">Small primary button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button danger" type="button">Danger button</button>
+    <button class="nz-button danger" type="button" disabled>Disabled danger button</button>
+    <button class="nz-button small danger" type="button">Small danger button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button outline" type="button">Outline button</button>
+    <button class="nz-button outline" type="button" disabled>Disabled outline button</button>
+    <button class="nz-button small outline" type="button">Small outline button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button block" type="button">Block button</button>
+    <button class="nz-button block" type="button" disabled>Disabled block button</button>
+    <button class="nz-button small block" type="button">Small block button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button fat" type="button">Fat button</button>
+    <button class="nz-button fat primary" type="button">Fat primary button</button>
+    <button class="nz-button fat danger" type="button">Fat danger button</button>
+    <button class="nz-button fat outline" type="button">Fat outline button</button>
+    <button class="nz-button fat" type="button" disabled>Disabled fat button</button>
+    <button class="nz-button small fat" type="button">Small fat button</button>
+  </div>
+
+  <form class="nz-layout-margin-1 nz-layout-column nz-flex-15">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+    <input type="submit" class="nz-button">
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+
+  <form class="nz-layout-margin-1 nz-layout-row nz-layout-align-center-center">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+</section>
+
+<section class="nz-block gray">
+  <h1 class="nz-display-4">Display 4</h1>
+  <h2 class="nz-display-3">Display 3</h2>
+  <h2 class="nz-display-2">Display 2</h2>
+  <h2 class="nz-display-1">Display 1</h2>
+  <h3 class="nz-headline">Headline</h3>
+  <h3 class="nz-title">title</h3>
+  <h3 class="nz-subhead">subhead</h3>
+  <h3 class="nz-body-1">body 1</h3>
+  <h3 class="nz-body-2">body 2</h3>
+  <h3 class="nz-caption">caption</h3>
+
+  <i class="pull-right icon-line2-note"></i>
+  <i class="pull-right icon-line2-clock icon-lg"></i>
+  <i class="pull-right icon-line2-tag icon-5x icon-spin"></i>
+
+  <div class="nz-layout-column nz-layout-margin-1">
+    <div class="nz-layout-column">
+      <div class="nz-flex demo1">First item in row</div>
+      <div class="nz-flex demo2">Second item in row</div>
+    </div>
+    <div class="nz-layout-row">
+      <div class="nz-flex demo1">First item in column</div>
+      <div class="nz-flex demo2">Second item in column</div>
+    </div>
+  </div>
+
+  <div class="nz-layout-xs-column nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex demo1">
+      I'm above on mobile, and to the left on larger devices.
+    </div>
+    <div class="nz-flex demo2">
+      I'm below on mobile, and to the right on larger devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-20 demo1">
+      [flex="20"]
+    </div>
+    <div class="nz-flex-70 demo2">
+      [flex="70"]
+    </div>
+    <div class="nz-flex nz-hide-xs demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-30 demo1">
+      [flex="30"]
+    </div>
+    <div class="nz-flex-45 demo2">
+      [flex="45"]
+    </div>
+    <div class="nz-flex-25 demo1">
+      [flex="25"]
+    </div>
+    <div class="nz-flex-33 demo2">
+      [flex="33"]
+    </div>
+    <div class="nz-flex-66 demo1">
+      [flex="66"]
+    </div>
+    <div class="nz-flex-50 demo2">
+      [flex="50"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-33 nz-flex-xs-66 demo1">
+      flex 33% on mobile, <br>and 66% on gt-sm devices.
+    </div>
+    <div class="nz-flex-66 nz-flex-xs-33 demo2">
+      flex 66%  on mobile, <br>and 33% on gt-sm devices.
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+    <div class="nz-flex-none demo2">
+      [flex="none"]
+    </div>
+    <div class="nz-flex demo1">
+      [flex]
+    </div>
+    <div class="nz-flex-nogrow demo2">
+      [flex="nogrow"]
+    </div>
+    <div class="nz-flex-grow demo1">
+      [flex="grow"]
+    </div>
+    <div class="nz-flex-initial demo2">
+      [flex="initial"]
+    </div>
+    <div class="nz-flex-auto demo1">
+      [flex="auto"]
+    </div>
+    <div class="nz-flex-noshrink demo2">
+      [flex="noshrink"]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-margin-1">
+    <div class="nz-flex-66 nz-flex-offset-15 demo1">
+      [flex-offset="15"]
+      [flex="66"]
+    </div>
+    <div class="nz-flex demo2">
+      [flex]
+    </div>
+  </div>
+
+  <div class="nz-layout-row nz-layout-align-center-stretch" style="min-height: 128px">
+    <div class="demo1">one</div>
+    <div class="demo2">two</div>
+    <div class="demo1">three</div>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button button</button>
+    <a class="nz-button" href="#" role="button">Link button</a>
+    <button class="nz-button" type="button" disabled>Button disabled</button>
+    <a class="nz-button disabled" href="#" role="button">Link disabled</a>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button" type="button">Button</button>
+    <button class="nz-button small" type="button">Small button</button>
+    <button class="nz-button small" type="button" disabled>Disabled small button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button primary" type="button">Primary button</button>
+    <button class="nz-button primary" type="button" disabled>Disabled primary button</button>
+    <button class="nz-button small primary" type="button">Small primary button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button danger" type="button">Danger button</button>
+    <button class="nz-button danger" type="button" disabled>Disabled danger button</button>
+    <button class="nz-button small danger" type="button">Small danger button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button outline" type="button">Outline button</button>
+    <button class="nz-button outline" type="button" disabled>Disabled outline button</button>
+    <button class="nz-button small outline" type="button">Small outline button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button block" type="button">Block button</button>
+    <button class="nz-button block" type="button" disabled>Disabled block button</button>
+    <button class="nz-button small block" type="button">Small block button</button>
+  </div>
+
+  <div class="nz-layout-margin-1">
+    <button class="nz-button fat" type="button">Fat button</button>
+    <button class="nz-button fat primary" type="button">Fat primary button</button>
+    <button class="nz-button fat danger" type="button">Fat danger button</button>
+    <button class="nz-button fat outline" type="button">Fat outline button</button>
+    <button class="nz-button fat" type="button" disabled>Disabled fat button</button>
+    <button class="nz-button small fat" type="button">Small fat button</button>
+  </div>
+
+  <form class="nz-layout-margin-1 nz-layout-column nz-flex-15">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+    <input type="submit" class="nz-button">
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+
+  <form class="nz-layout-margin-1 nz-layout-row nz-layout-align-center-center">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email address</label>
+    <input type="email" id="email">
+
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+
+    <select>
+      <option>Choose an option</option>
+      <option>Git</option>
+      <option>Subversion</option>
+      <option>Social Coding</option>
+      <option>Beets</option>
+      <option>Bears</option>
+      <option>Battlestar Galactica</option>
+    </select>
+
+    <textarea></textarea>
+
+    <button class="nz-button" type="submit">Submit</button>
+  </form>
+</section>
