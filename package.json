@@ -4,7 +4,8 @@
   "scripts": {
     "test": "stylelint src/**/*.css",
     "start": "gulp start",
-    "build": "gulp && kss --source src/ --destination build/ --css index.css --title Nezimo --homepage ../README.md"
+    "build": "gulp css && kss --source src/ --destination build/ --css index.css --title Nezimo --homepage ../README.md",
+    "deploy": "npm run build && gulp deploy"
   },
   "author": "lptracker",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "autoprefixer": "^6.3.7",
     "cssnano": "^3.7.3",
     "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^6.2.0",
     "gulp-serve": "^1.4.0",
     "kss": "^3.0.0-beta.15",
