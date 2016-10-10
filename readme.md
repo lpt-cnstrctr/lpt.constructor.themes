@@ -9,7 +9,7 @@
 * more breakpoints
 * docs \ kss
 * navigation
-* icons
+* icons refactoring
 
 ## display
 * nz-display-4
@@ -61,3 +61,29 @@
 * nz-layout-fill
 * nz-flex-offset-$(step)
 * nz-hide
+
+## icons
+* icon-medical-$(name)
+* icon-et-$(name)
+* icon-$(name)
+* icon-line-$(name)
+* icon-line2-$(name)
+* icon-lg
+* icon-2x
+* icon-3x
+* icon-4x
+* icon-5x
+* icon-fw
+* icon-border
+* pull-right
+* pull-left
+* icon-spin
+* icon-rotate-90
+* icon-rotate-180
+* icon-rotate-270
+* icon-rotate-270
+* icon-flip-horizontal
+* icon-flip-vertical
+* icon-stacked
+* icon-stacked-1x
+* icon-stacked-2x
