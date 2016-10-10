@@ -14,9 +14,12 @@
 :active - в момент клика
 :disabled - заблокированная для действия
 
-Markup: buttons.hbs
+Markup:
+<a href="#" class="nz-button {{modifier_class}}">Ссылка</a>
+<button class="nz-button {{modifier_class}}">Элемент кнопки</button>
+<input type="submit" class="nz-button {{modifier_class}}" value="Элемент формы"/>
 
-Style guide: nezimo.display.buttons
+Styleguide: nezimo.display.buttons
 */
 
 /* button */
