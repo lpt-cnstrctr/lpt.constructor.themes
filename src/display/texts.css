@@ -1,3 +1,26 @@
+/*
+Тексты и заголовки
+
+Классы для работы с текстами и заголовками.
+
+.nz-display-1 - крупный заголовок 1
+.nz-display-2 - крупный заголовок 2
+.nz-display-3 - крупный заголовок 3
+.nz-display-4 - крупный заголовок 4
+.nz-headline - подзаголовок для display заголовков
+.nz-title - базовый заголовок
+.nz-subhead - базовый подзаголовок
+.nz-body-1 - обычный текст
+.nz-body-2 - обычный текст выделенный жирным
+.nz-caption - подсказка
+.nz-text-center - выровнять текст по центру
+
+Markup:
+<p class="{{modifier_class}}">Тестовый заголовок</p>
+
+Styleguide: nezimo.display.texts
+*/
+
 $display-4-font-size-base: 7em;
 $display-3-font-size-base: 3.5em;
 $display-2-font-size-base: 3em;
