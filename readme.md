@@ -39,6 +39,8 @@
 * nz-block.gray
 * nz-block-wrapper
 * nz-text-center
+* nz-block-fullheight
+* nz-block-halfheight
 
 ## layout
 * nz-layout

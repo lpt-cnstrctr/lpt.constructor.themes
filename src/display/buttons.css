@@ -16,6 +16,7 @@
   text-decoration: none;
   appearance: none; /* Corrects inability to style clickable `input` types in iOS. */
   opacity: 0.85;
+  margin: 0.4em;
 }
 
 .nz-button:focus {

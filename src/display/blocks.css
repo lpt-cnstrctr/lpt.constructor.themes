@@ -1,7 +1,6 @@
 .nz-block {
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  padding: 4em 3em;
 }
 
 .nz-block.dark {
@@ -19,5 +18,13 @@
 .nz-block-wrapper {
   margin: 0 auto;
   max-width: 60em;
+  padding: 4em 3em;
 }
 
+.nz-block-fullheight {
+  min-height: 100vh;
+}
+
+.nz-block-halfheight {
+  min-height: 50vh;
+}
