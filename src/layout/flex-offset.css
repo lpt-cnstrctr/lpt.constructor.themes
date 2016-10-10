@@ -1,7 +1,11 @@
 /* stylelint-disable block-no-empty, at-rule-empty-line-before */
 
 @define-mixin offset-for-value $index, $value, $name {
-  .nz-flex-offset$(name)-$(index) {
+  .nz-layout-column .nz-flex-offset$(name)-$(index) {
+    margin-top: $(value)%;
+  }
+
+  .nz-layout-row .nz-flex-offset$(name)-$(index) {
     margin-left: $(value)%;
   }
 }

@@ -20,7 +20,7 @@ $caption-font-size-base:   0.75em;
   font-size: $display-2-font-size-base;
   font-weight: 400;
   padding-left: 0.1em;
-  margin: 0 0 0.75em;
+  margin: 0 0 0.5em;
 }
 
 .nz-display-3 {
@@ -28,7 +28,7 @@ $caption-font-size-base:   0.75em;
   font-weight: 400;
   letter-spacing: -0.005em;
   padding-left: 0.1em;
-  margin: 0 0 0.75em;
+  margin: 0 0 0.5em;
 }
 
 .nz-display-4 {
@@ -40,7 +40,7 @@ $caption-font-size-base:   0.75em;
 
 .nz-headline {
   font-size: $headline-font-size-base;
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 0.3em;
   margin: 0 0 1em;
 }
@@ -55,7 +55,7 @@ $caption-font-size-base:   0.75em;
 
 .nz-subhead {
   font-size: $subhead-font-size-base;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.01em;
   padding-left: 0.5em;
   margin: 0 0 1em;
@@ -82,4 +82,8 @@ $caption-font-size-base:   0.75em;
   letter-spacing: 0.02em;
   padding-left: 0.5em;
   margin: 0 0 1em;
+}
+
+.nz-text-center {
+  text-align: center;
 }

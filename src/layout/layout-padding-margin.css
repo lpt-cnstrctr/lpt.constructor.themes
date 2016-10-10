@@ -1,18 +1,26 @@
 @define-mixin layout-padding-margin-for-name $name {
   .nz-layout-padding$(name)-1 {
-    padding: 8px;
+    padding: 0.5em;
   }
 
   .nz-layout-padding$(name)-2 {
-    padding: 16px;
+    padding: 1em;
+  }
+
+  .nz-layout-padding$(name)-3 {
+    padding: 2em;
   }
 
   .nz-layout-margin$(name)-1 {
-    margin: 8px;
+    margin: 0.5em;
   }
 
   .nz-layout-margin$(name)-2 {
-    margin: 16px;
+    margin: 1em;
+  }
+
+  .nz-layout-margin$(name)-3 {
+    margin: 2em;
   }
 
   .nz-layout-wrap$(name) {

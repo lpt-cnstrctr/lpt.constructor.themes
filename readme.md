@@ -38,6 +38,7 @@
 * nz-block.dark
 * nz-block.gray
 * nz-block-wrapper
+* nz-text-center
 
 ## layout
 * nz-layout
@@ -54,8 +55,10 @@
 * nz-layout-align-$(main)-$(cross)
 * nz-layout-padding-1
 * nz-layout-padding-2
+* nz-layout-padding-3
 * nz-layout-margin-1
 * nz-layout-margin-2
+* nz-layout-margin-3
 * nz-layout-wrap
 * nz-layout-nowrap
 * nz-layout-fill
