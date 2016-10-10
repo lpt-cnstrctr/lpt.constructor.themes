@@ -1,3 +1,20 @@
+/*
+Тень
+
+Тень контейнера для обозначения глубины
+
+.nz-whiteframe-z1 - тень 1
+.nz-whiteframe-z2 - тень 2
+.nz-whiteframe-z3 - тень 3
+.nz-whiteframe-z4 - тень 4
+.nz-whiteframe-z5 - тень 5
+
+Markup:
+<div class="nz-layout-padding-3 nz-layout-margin-2 {{modifier_class}}"></div>
+
+Styleguide: nezimo.display.whiteframes
+*/
+
 $shadow-key-umbra-opacity: 0.2;
 $shadow-key-penumbra-opacity: 0.14;
 $shadow-ambient-shadow-opacity: 0.12;
