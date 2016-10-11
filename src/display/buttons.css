@@ -19,7 +19,7 @@ Markup:
 <button class="nz-button {{modifier_class}}">Элемент кнопки</button>
 <input type="submit" class="nz-button {{modifier_class}}" value="Элемент формы"/>
 
-Styleguide: nezimo.display.buttons
+Styleguide: display.buttons
 */
 
 /* button */

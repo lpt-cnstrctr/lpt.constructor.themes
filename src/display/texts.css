@@ -18,7 +18,7 @@
 Markup:
 <p class="{{modifier_class}}">Тестовый заголовок</p>
 
-Styleguide: nezimo.display.texts
+Styleguide: display.texts
 */
 
 $display-4-font-size-base: 7em;

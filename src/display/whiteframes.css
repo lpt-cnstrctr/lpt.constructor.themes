@@ -12,7 +12,7 @@
 Markup:
 <div class="nz-layout-padding-3 nz-layout-margin-2 {{modifier_class}}"></div>
 
-Styleguide: nezimo.display.whiteframes
+Styleguide: display.whiteframes
 */
 
 $shadow-key-umbra-opacity: 0.2;
