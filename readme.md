@@ -7,9 +7,9 @@
 * chekbox
 * radiobtn
 * more breakpoints
-* docs \ kss
-* navigation
 * icons refactoring
+* navigation
+* docs \ kss
 
 ## display
 * nz-display-4

@@ -86,7 +86,6 @@ Styleguide: popup
   color: rgba(255, 255, 255, 0.9);
   content: '\2715';
   text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-  font-size: 1em;
 }
 
 .close:hover {
@@ -102,6 +101,6 @@ Styleguide: popup
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .popup {
-    width:85%;
+    width: 85%;
   }
 }
