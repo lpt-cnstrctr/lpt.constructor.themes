@@ -1,6 +1,12 @@
 /*
 Иконки
 
+Styleguide: icons
+*/
+
+/*
+Модификаторы иконок
+
 .icon-lg - немного увеличенный размер иконки
 .icon-2x - размер 2х
 .icon-3x - размер 3х
@@ -22,7 +28,7 @@ Markup:
 <i class="icon-line2-clock {{modifier_class}}"></i>
 <i class="icon-line2-tag {{modifier_class}}"></i>
 
-Styleguide: icons
+Styleguide: icons.mods
 */
 
 /* stylelint-disable */
