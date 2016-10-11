@@ -11,6 +11,12 @@ gulp.task('css', () =>
     .pipe(gulp.dest('./build'))
 );
 
+gulp.task('fonts', () =>
+  gulp
+    .src(['./src/fonts/*', '!./src/fonts/*.css'])
+    .pipe(gulp.dest('./build/src/fonts'))
+);
+
 gulp.task('deploy', () =>
   gulp
     .src('build/**/*')
@@ -19,9 +25,9 @@ gulp.task('deploy', () =>
 
 gulp.task('serve', serve(['build']));
 
-gulp.task('watch', ['css'], () =>
+gulp.task('watch', ['default'], () =>
   gulp.watch(['./src/**/*.css', './index.css'], ['css'])
 );
 
 gulp.task('start', ['watch', 'serve']);
-gulp.task('default', ['css']);
+gulp.task('default', ['css', 'fonts']);
