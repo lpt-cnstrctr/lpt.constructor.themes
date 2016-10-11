@@ -1,0 +1,107 @@
+/*
+Модальные окна
+
+Markup:
+<a href="#example_popup" class="nz-button">Открыть модальное окно</a>
+<a href="#close" class="overlay" id="example_popup"></a>
+<div class="popup">
+  <a class="close" title="Закрыть" href="#close"></a>
+  <h2 class="nz-display-2">Условия сим-карт</h2>
+  <p class="nz-headline">
+    Условия использования инструмента доступа к системе LPTracker «сим-карта LPTracker»
+    Входящие звонки 0 руб.
+    Исходящие звонки согласно файлу https://land.lptracker.ru/voip.pdf
+    Пакет смс-сообщений 200 шт - 0 руб. за календарный месяц (1 смс 70 символов включая пробелы) только отправка.
+    Прием (входящие) смс сообщений ограничен.
+    Пакет мобильный интернет 2 гб - 0 руб. за календарный месяц.
+    Доступно только для Москвы и Санкт-Петербурга
+  </p>
+</div>
+
+Styleguide: popup
+*/
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  cursor: default;
+  transition: 0.6s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  top: 25%;
+  right: 0;
+  left: 50%;
+  z-index: 10000;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 20em;
+  max-width: 50em;
+  position: fixed;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0 1em rgba(0, 0, 0, 0.25);
+  transition: top 0.3s ease-out, opacity 0.6s ease;
+  transform: translate(0, 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target + .popup {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  padding: 0;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: rgba(61,61,61,.8);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 2em;
+  transition: background-color ease .7s;
+}
+
+.close:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: '\2715';
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 1em;
+}
+
+.close:hover {
+  background-color: var(--danger-color);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .popup {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .popup {
+    width:85%;
+  }
+}

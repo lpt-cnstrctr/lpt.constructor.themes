@@ -3,6 +3,7 @@
 @import './src/fonts';
 @import './src/layout';
 @import './src/display';
+@import './src/popup';
 
 :root {
   /* basic defaults values here */
