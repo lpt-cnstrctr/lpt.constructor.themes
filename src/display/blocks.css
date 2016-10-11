@@ -12,15 +12,7 @@ nz-block используется в первую очередь для рабо
 .nz-block-halfheight - 50% от высоты экрана
 .nz-block-cover - получерный\полусветлый фон для контейнера
 
-Markup:
-<section class="nz-block dark">
-  <div class="nz-layout {{modifier_class}}">Темный контейнер</div>
-</section>
-<section class="nz-block">
-  <div class="nz-layout {{modifier_class}}">Светлый контейнер</div>
-</section>
-
-Styleguide: nezimo.display.blocks
+Styleguide: display.blocks
 */
 
 .nz-block {
