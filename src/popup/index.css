@@ -74,12 +74,12 @@ Styleguide: popup
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  background-color: rgba(61,61,61,.8);
+  background-color: rgba(61, 61, 61, 0.8);
   text-align: center;
   text-decoration: none;
   font-weight: 700;
   line-height: 2em;
-  transition: background-color ease .7s;
+  transition: background-color ease 0.7s;
 }
 
 .close:before {
@@ -91,7 +91,6 @@ Styleguide: popup
 .close:hover {
   background-color: var(--danger-color);
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .popup {
