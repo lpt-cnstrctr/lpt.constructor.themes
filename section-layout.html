@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nezimo</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Nezimo</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-display.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Отображение</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-icons.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Иконки</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Позиционирование</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-align">
+                  <span class="kss-nav__ref ">3.1</span
+                  ><span class="kss-nav__name">Выравнивание</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-flex">
+                  <span class="kss-nav__ref ">3.2</span
+                  ><span class="kss-nav__name">Ширина</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-flex-direction">
+                  <span class="kss-nav__ref ">3.3</span
+                  ><span class="kss-nav__name">Направление</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-flex-offset">
+                  <span class="kss-nav__ref ">3.4</span
+                  ><span class="kss-nav__name">Отступ</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-hide">
+                  <span class="kss-nav__ref ">3.5</span
+                  ><span class="kss-nav__name">Скрыть</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-padding-margin">
+                  <span class="kss-nav__ref ">3.6</span
+                  ><span class="kss-nav__name">Отступы и переносы</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-popup.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Модальные окна</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+    <div id="kssref-layout" class="kss-section kss-section--depth-1">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-layout">
+            <span class="kss-title__ref">
+              3
+              <span class="kss-title__permalink-hash">
+                  #layout
+              </span>
+            </span>
+            Позиционирование
+          </a>
+        </h1>
+
+          <div class="kss-description">
+            <p>Особый класс свойств которые устанавливают поведение элементов.
+Все классы делятся на те, что устанавливаются на контейнеры (nz-layout-...)
+и те что устанавливаются на элементы (nz-flex-...).
+Каждый класс имеет вспомогательный суфикс &quot;состояние&quot;, с его помощью можно
+применять классы только при определенных разрешениях экрана или иных условий.
+Сейчас существует два состояния: xs (экран меньше 600px) или print (макет при печати).
+Пример:</p>
+<ul>
+<li>.nz-hide-$(состояние)</li>
+<li>.nz-hide</li>
+<li>.nz-hide-print</li>
+<li>.nz-hide-xs</li>
+</ul>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <style>
+  .demo1 {
+    background-color: var(--accent-color);
+  }
+  .demo2 {
+    background-color: var(--danger-color);
+  }
+  .demo1,
+  .demo2 {
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    line-height: 50px;
+    text-align: center;
+  }
+</style>
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;style&gt;
+  .demo1 {
+    background-color: var(--accent-color);
+  }
+  .demo2 {
+    background-color: var(--danger-color);
+  }
+  .demo1,
+  .demo2 {
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    line-height: 50px;
+    text-align: center;
+  }
+&lt;/style&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/index.css</code>, line 1
+        </div>
+
+    </div>
+    <section id="kssref-layout-align" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-align">
+            <span class="kss-title__ref">
+              3.1
+              <span class="kss-title__permalink-hash">
+                  #layout.align
+              </span>
+            </span>
+            Выравнивание
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Устанавливается для контейнера содержащего элементы.</p>
+<p>Задается как .nz-layout-align-$(состояние)-$(основная)-$(поперечная),
+где основная - выравнивание по основной оси (start, center, end, space-around, space-between),
+а поперечная - выравнивание по поперечной оси (start, center, end, stretch),
+а состояние - xs (экран меньше 600px) или print (макет при печати).</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <div class="demo2 nz-layout-row [modifier class]" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-start-start
+            </div>
+            <div class="kss-modifier__description kss-style">
+              start start
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-start-start" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-start-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              start center
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-start-center" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-start-end
+            </div>
+            <div class="kss-modifier__description kss-style">
+              start end
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-start-end" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-start-stretch
+            </div>
+            <div class="kss-modifier__description kss-style">
+              start stretch
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-start-stretch" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-center-start
+            </div>
+            <div class="kss-modifier__description kss-style">
+              center start
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-center-start" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-center-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              center center
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-center-center" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-center-end
+            </div>
+            <div class="kss-modifier__description kss-style">
+              center end
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-center-end" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-center-stretch
+            </div>
+            <div class="kss-modifier__description kss-style">
+              center stretch
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-center-stretch" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-end-start
+            </div>
+            <div class="kss-modifier__description kss-style">
+              end start
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-end-start" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-end-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              end center
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-end-center" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-end-end
+            </div>
+            <div class="kss-modifier__description kss-style">
+              end end
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-end-end" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-end-stretch
+            </div>
+            <div class="kss-modifier__description kss-style">
+              end stretch
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-end-stretch" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-around-start
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-around start
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-around-start" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-around-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-around center
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-around-center" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-around-end
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-around end
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-around-end" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-around-stretch
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-around stretch
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-around-stretch" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-between-start
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-between start
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-between-start" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-between-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-between center
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-between-center" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-between-end
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-between end
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-between-end" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-align-space-between-stretch
+            </div>
+            <div class="kss-modifier__description kss-style">
+              space-between stretch
+            </div>
+            <div class="kss-modifier__example">
+              <div class="demo2 nz-layout-row nz-layout-align-space-between-stretch" style="min-height: 128px">
+  <div class="demo1">one</div>
+  <div class="demo2">two</div>
+  <div class="demo1">three</div>
+</div>
+            </div>
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;demo2 nz-layout-row [modifier class]&quot; style&#x3D;&quot;min-height: 128px&quot;&gt;
+  &lt;div class&#x3D;&quot;demo1&quot;&gt;one&lt;/div&gt;
+  &lt;div class&#x3D;&quot;demo2&quot;&gt;two&lt;/div&gt;
+  &lt;div class&#x3D;&quot;demo1&quot;&gt;three&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/layout-align.css</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-layout-flex" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-flex">
+            <span class="kss-title__ref">
+              3.2
+              <span class="kss-title__permalink-hash">
+                  #layout.flex
+              </span>
+            </span>
+            Ширина
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Устанавливает ограничение по ширине, применяется к элементу.</p>
+<p>Задается как .nz-flex-$(состояние)-$(шаг), где шаг - число от 0 до 100 (с шагом 5) и числа 33, 66,
+а состояние - xs (экран меньше 600px) или print (макет при печати),
+без состояния значение применяется в любом состоянии.</p>
+<p>Шаг устанавливает ограничение по ширине (или высоте) в процентах.</p>
+<p>Дополнительно существуют вспомогательные классы:</p>
+<ul>
+<li>.nz-flex$(состояние)-grow - занимает всю ширину, аналогичен на nz-flex-100</li>
+<li>.nz-flex$(состояние)-initial - растягивается по необходимости, минимальный размер согласно контенту</li>
+<li>.nz-flex$(состояние)-auto - растягивается и ужимается по необходимости, изначально занимает пространство согласно контенту</li>
+<li>.nz-flex$(состояние)-none - не будет растягиватся или ужиматься, будет занимать пространство согласно контенту</li>
+<li>.nz-flex$(состояние)-noshrink - растягивается по необходимости, но не сжимается</li>
+<li>.nz-flex$(состояние)-nogrow - сжимается по необходимости, но не растягивается</li>
+</ul>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-20 demo1">
+    [class="nz-flex-20"]
+  </div>
+  <div class="nz-flex-70 demo2">
+    [class="nz-flex-70"]
+  </div>
+  <div class="nz-flex nz-hide-xs demo1">
+    [class="nz-flex nz-hide-xs"]
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+  <div class="nz-flex-30 demo1">
+    [class="nz-flex-30"]
+  </div>
+  <div class="nz-flex-45 demo2">
+    [class="nz-flex-45"]
+  </div>
+  <div class="nz-flex-25 demo1">
+    [class="nz-flex-25"]
+  </div>
+  <div class="nz-flex-33 demo2">
+    [class="nz-flex-33"]
+  </div>
+  <div class="nz-flex-66 demo1">
+    [class="nz-flex-66"]
+  </div>
+  <div class="nz-flex-50 demo2">
+    [class="nz-flex-50"]
+  </div>
+  <div class="nz-flex demo1">
+    [class="nz-flex"]
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-33 nz-flex-xs-66 demo1">
+    66% на мобильных (меньше 600px ширины), <br>и 33% на остальных устройствах
+  </div>
+  <div class="nz-flex-66 nz-flex-xs-33 demo2">
+    33% на мобильных (меньше 600px ширины), <br>и 66% на остальных устройствах
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+  <div class="nz-flex-none demo2">
+    [class="nz-flex-none"]
+  </div>
+  <div class="nz-flex demo1">
+    [class="nz-flex"]
+  </div>
+  <div class="nz-flex-nogrow demo2">
+    [class="nz-flex-nogrow"]
+  </div>
+  <div class="nz-flex-grow demo1">
+    [class="nz-flex-grow"]
+  </div>
+  <div class="nz-flex-initial demo2">
+    [class="nz-flex-initial"]
+  </div>
+  <div class="nz-flex-auto demo1">
+    [class="nz-flex-auto"]
+  </div>
+  <div class="nz-flex-noshrink demo2">
+    [class="nz-flex-noshrink"]
+  </div>
+</div>
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;nz-layout-row nz-layout-margin-1&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-20 demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-20&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-70 demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-70&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex nz-hide-xs demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex nz-hide-xs&quot;]
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;nz-layout-row nz-layout-margin-1 nz-layout-wrap&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-30 demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-30&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-45 demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-45&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-25 demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-25&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-33 demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-33&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-66 demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-66&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-50 demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-50&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex&quot;]
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;nz-layout-row nz-layout-margin-1&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-33 nz-flex-xs-66 demo1&quot;&gt;
+    66% на мобильных (меньше 600px ширины), &lt;br&gt;и 33% на остальных устройствах
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-66 nz-flex-xs-33 demo2&quot;&gt;
+    33% на мобильных (меньше 600px ширины), &lt;br&gt;и 66% на остальных устройствах
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;nz-layout-row nz-layout-margin-1 nz-layout-wrap&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-none demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-none&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-nogrow demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-nogrow&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-grow demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-grow&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-initial demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-initial&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-auto demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-auto&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-noshrink demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex-noshrink&quot;]
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/flex.css</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-layout-flex-direction" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-flex-direction">
+            <span class="kss-title__ref">
+              3.3
+              <span class="kss-title__permalink-hash">
+                  #layout.flex-direction
+              </span>
+            </span>
+            Направление
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Задает направление элементов внутри контейнера,
+задается для контейнера как .nz-layout-$(состояние)-column и
+.nz-layout-$(состояние)-row где состояние - xs (экран меньше 600px) или print (макет при печати)</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <div class="[modifier class] nz-layout-margin-1">
+  <div class="nz-flex demo1">Первый</div>
+  <div class="nz-flex demo2">Второй</div>
+</div>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-column
+            </div>
+            <div class="kss-modifier__description kss-style">
+              элементы контейнера как строки
+            </div>
+            <div class="kss-modifier__example">
+              <div class="nz-layout-column nz-layout-margin-1">
+  <div class="nz-flex demo1">Первый</div>
+  <div class="nz-flex demo2">Второй</div>
+</div>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-layout-row
+            </div>
+            <div class="kss-modifier__description kss-style">
+              элементы контейнера как столбцы
+            </div>
+            <div class="kss-modifier__example">
+              <div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex demo1">Первый</div>
+  <div class="nz-flex demo2">Второй</div>
+</div>
+            </div>
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;[modifier class] nz-layout-margin-1&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex demo1&quot;&gt;Первый&lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex demo2&quot;&gt;Второй&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/layout.css</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-layout-flex-offset" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-flex-offset">
+            <span class="kss-title__ref">
+              3.4
+              <span class="kss-title__permalink-hash">
+                  #layout.flex-offset
+              </span>
+            </span>
+            Отступ
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Устанавливает отступ, применяется к элементу.
+Задается как .nz-flex-offset-$(состояние)-$(шаг), где шаг - число от 0 до 95 (с шагом 5) и числа 33, 66,
+а состояние - xs (экран меньше 600px) или print (макет при печати),
+без состояния значение применяется в любом состоянии.
+Отступ задается в зависимости от контейнера.
+Для .nz-layout-column margin-top, а для .nz-layout-row margin-left</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-66 nz-flex-offset-15 demo1">
+    [class="nz-flex-66 nz-flex-offset-15"]
+  </div>
+  <div class="nz-flex demo2">
+    [class="nz-flex"]
+  </div>
+</div>
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;nz-layout-row nz-layout-margin-1&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-66 nz-flex-offset-15 demo1&quot;&gt;
+    [class&#x3D;&quot;nz-flex-66 nz-flex-offset-15&quot;]
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex demo2&quot;&gt;
+    [class&#x3D;&quot;nz-flex&quot;]
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/flex-offset.css</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-layout-hide" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-hide">
+            <span class="kss-title__ref">
+              3.5
+              <span class="kss-title__permalink-hash">
+                  #layout.hide
+              </span>
+            </span>
+            Скрыть
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Скрывает элемент (display: none !important), используется вместе с состоянием.</p>
+<p>Задается как .nz-hide-$(состояние),
+где состояние - xs (экран меньше 600px) или print (макет при печати).</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <button class="nz-button [modifier class]">Скрываемый элемент</button>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .nz-hide
+            </div>
+            <div class="kss-modifier__description kss-style">
+              скрывает элемент (всегда)
+            </div>
+            <div class="kss-modifier__example">
+              <button class="nz-button nz-hide">Скрываемый элемент</button>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-hide-print
+            </div>
+            <div class="kss-modifier__description kss-style">
+              скрывает элемент при печати
+            </div>
+            <div class="kss-modifier__example">
+              <button class="nz-button nz-hide-print">Скрываемый элемент</button>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .nz-hide-xs
+            </div>
+            <div class="kss-modifier__description kss-style">
+              скрывает элемент на мобильных устройствах (экран меньше 600px)
+            </div>
+            <div class="kss-modifier__example">
+              <button class="nz-button nz-hide-xs">Скрываемый элемент</button>
+            </div>
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class&#x3D;&quot;nz-button [modifier class]&quot;&gt;Скрываемый элемент&lt;/button&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/hide.css</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-layout-padding-margin" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-layout-padding-margin">
+            <span class="kss-title__ref">
+              3.6
+              <span class="kss-title__permalink-hash">
+                  #layout.padding-margin
+              </span>
+            </span>
+            Отступы и переносы
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Вспомогательные классы для контейнеров, каждый класс имеет модификатор &quot;состояние&quot;.
+Состояние - xs (экран меньше 600px) или print (макет при печати).
+Как nz-layout-padding-print-1 или nz-layout-wrap-xs</p>
+<ul>
+<li>.nz-layout-padding-1 - небольшой отступ (padding)</li>
+<li>.nz-layout-padding-2 - отступ (padding)</li>
+<li>.nz-layout-padding-3 - большой отступ (padding)</li>
+<li>.nz-layout-margin-1 - небольшое поле (margin)</li>
+<li>.nz-layout-margin-2 - поле (margin)</li>
+<li>.nz-layout-margin-3 - большое поле (margin)</li>
+<li>.nz-layout-wrap - перенос на новую строку, когда заканчивается доступное пространство</li>
+<li>.nz-layout-nowrap - все элементы будут размещены на одной строке</li>
+<li>.nz-layout-fill - занимает все доступное пространство</li>
+</ul>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <div class="nz-layout-row">
+  <div class="nz-layout-margin-2 demo1">
+    Поля
+  </div>
+  <div class="nz-layout-padding-2 demo2">
+    Отступы
+  </div>
+  <div class="nz-layout-fill demo1">
+    Занимает все доступное пространство
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-wrap">
+  <div class="nz-flex-33 demo1">[flex=33]</div>
+  <div class="nz-flex-66 demo2">[flex=66]</div>
+  <div class="nz-flex-66 demo1">[flex=66]</div>
+  <div class="nz-flex-33 demo2">[flex=33]</div>
+</div>
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;nz-layout-row&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-layout-margin-2 demo1&quot;&gt;
+    Поля
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-layout-padding-2 demo2&quot;&gt;
+    Отступы
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-layout-fill demo1&quot;&gt;
+    Занимает все доступное пространство
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;nz-layout-row nz-layout-wrap&quot;&gt;
+  &lt;div class&#x3D;&quot;nz-flex-33 demo1&quot;&gt;[flex&#x3D;33]&lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-66 demo2&quot;&gt;[flex&#x3D;66]&lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-66 demo1&quot;&gt;[flex&#x3D;66]&lt;/div&gt;
+  &lt;div class&#x3D;&quot;nz-flex-33 demo2&quot;&gt;[flex&#x3D;33]&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>layout/layout-padding-margin.css</code>, line 1
+        </div>
+
+    </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/prettify.js"></script>
+<script>
+  prettyPrint();
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
