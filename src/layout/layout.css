@@ -1,3 +1,22 @@
+/*
+Направление
+
+Задает направление элементов внутри контейнера,
+задается для контейнера как .nz-layout-$(состояние)-column и
+.nz-layout-$(состояние)-row где состояние - xs (экран меньше 600px) или print (макет при печати)
+
+.nz-layout-column - элементы контейнера как строки
+.nz-layout-row - элементы контейнера как столбцы
+
+Markup:
+<div class="{{modifier_class}} nz-layout-margin-1">
+  <div class="nz-flex demo1">Первый</div>
+  <div class="nz-flex demo2">Второй</div>
+</div>
+
+Styleguide: layout.flex-direction
+*/
+
 @define-mixin layout-for-name $name {
   .nz-layout$(name),
   .nz-layout$(name)-column,

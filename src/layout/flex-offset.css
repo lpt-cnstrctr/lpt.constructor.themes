@@ -1,3 +1,26 @@
+/*
+Отступ
+
+Устанавливает отступ, применяется к элементу.
+Задается как .nz-flex-offset-$(состояние)-$(шаг), где шаг - число от 0 до 95 (с шагом 5) и числа 33, 66,
+а состояние - xs (экран меньше 600px) или print (макет при печати),
+без состояния значение применяется в любом состоянии.
+Отступ задается в зависимости от контейнера.
+Для .nz-layout-column margin-top, а для .nz-layout-row margin-left
+
+Markup:
+<div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-66 nz-flex-offset-15 demo1">
+    [class="nz-flex-66 nz-flex-offset-15"]
+  </div>
+  <div class="nz-flex demo2">
+    [class="nz-flex"]
+  </div>
+</div>
+
+Styleguide: layout.flex-offset
+*/
+
 /* stylelint-disable block-no-empty, at-rule-empty-line-before */
 
 @define-mixin offset-for-value $index, $value, $name {

@@ -1,4 +1,38 @@
-/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+/*
+Позиционирование
+
+Особый класс свойств которые устанавливают поведение элементов.
+Все классы делятся на те, что устанавливаются на контейнеры (nz-layout-...)
+и те что устанавливаются на элементы (nz-flex-...).
+Каждый класс имеет вспомогательный суфикс "состояние", с его помощью можно
+применять классы только при определенных разрешениях экрана или иных условий.
+Сейчас существует два состояния: xs (экран меньше 600px) или print (макет при печати).
+Пример:
+* .nz-hide-$(состояние)
+* .nz-hide
+* .nz-hide-print
+* .nz-hide-xs
+
+Markup:
+<style>
+  .demo1 {
+    background-color: var(--accent-color);
+  }
+  .demo2 {
+    background-color: var(--danger-color);
+  }
+  .demo1,
+  .demo2 {
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    line-height: 50px;
+    text-align: center;
+  }
+</style>
+
+Styleguide: layout
+*/
+
 
 /*
 breakpoints
@@ -16,6 +50,8 @@ lg 1280px <= width < 1920px
 gt-lg >= 1920px
 xl >= 1920px
 */
+
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
 
 @import './layout';
 @import './flex';

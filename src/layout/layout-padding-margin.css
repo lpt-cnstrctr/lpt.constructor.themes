@@ -1,3 +1,41 @@
+/*
+Отступы и переносы
+
+Вспомогательные классы для контейнеров, каждый класс имеет модификатор "состояние".
+Состояние - xs (экран меньше 600px) или print (макет при печати).
+Как nz-layout-padding-print-1 или nz-layout-wrap-xs
+* .nz-layout-padding-1 - небольшой отступ (padding)
+* .nz-layout-padding-2 - отступ (padding)
+* .nz-layout-padding-3 - большой отступ (padding)
+* .nz-layout-margin-1 - небольшое поле (margin)
+* .nz-layout-margin-2 - поле (margin)
+* .nz-layout-margin-3 - большое поле (margin)
+* .nz-layout-wrap - перенос на новую строку, когда заканчивается доступное пространство
+* .nz-layout-nowrap - все элементы будут размещены на одной строке
+* .nz-layout-fill - занимает все доступное пространство
+
+Markup:
+<div class="nz-layout-row">
+  <div class="nz-layout-margin-2 demo1">
+    Поля
+  </div>
+  <div class="nz-layout-padding-2 demo2">
+    Отступы
+  </div>
+  <div class="nz-layout-fill demo1">
+    Занимает все доступное пространство
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-wrap">
+  <div class="nz-flex-33 demo1">[flex=33]</div>
+  <div class="nz-flex-66 demo2">[flex=66]</div>
+  <div class="nz-flex-66 demo1">[flex=66]</div>
+  <div class="nz-flex-33 demo2">[flex=33]</div>
+</div>
+
+Styleguide: layout.padding-margin
+*/
+
 @define-mixin layout-padding-margin-for-name $name {
   .nz-layout-padding$(name)-1 {
     padding: 0.5em;
@@ -35,6 +73,5 @@
     margin: 0;
     width: 100%;
     min-height: 100%;
-    height: 100%;
   }
 }

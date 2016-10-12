@@ -1,3 +1,21 @@
+/*
+Скрыть
+
+Скрывает элемент (display: none !important), используется вместе с состоянием.
+
+Задается как .nz-hide-$(состояние),
+где состояние - xs (экран меньше 600px) или print (макет при печати).
+
+.nz-hide - скрывает элемент (всегда)
+.nz-hide-print - скрывает элемент при печати
+.nz-hide-xs - скрывает элемент на мобильных устройствах (экран меньше 600px)
+
+Markup:
+<button class="nz-button {{modifier_class}}">Скрываемый элемент</button>
+
+Styleguide: layout.hide
+*/
+
 @define-mixin hide-for-name $name {
   .nz-hide$(name) {
     display: none !important;
