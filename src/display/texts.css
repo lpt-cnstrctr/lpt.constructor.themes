@@ -107,6 +107,7 @@ $caption-font-size-base:   0.75em;
   margin: 0 0 1em;
 }
 
+/* helpers */
 .nz-text-center {
   text-align: center;
 }

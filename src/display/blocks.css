@@ -8,6 +8,7 @@ nz-block используется в первую очередь для рабо
 * .nz-block.gray - серая тема оформления (меняет фон на серый цвет)
 
 .nz-block-wrapper - устанавливает фиксированную ширину и выравнивает по центру контейнер блока
+.nz-block-wrapper.pillow - добавляет отступы
 .nz-block-fullheight - 100% от высоты экрана
 .nz-block-halfheight - 50% от высоты экрана
 .nz-block-cover - получерный\полусветлый фон для контейнера
@@ -18,7 +19,6 @@ Styleguide: display.blocks
 .nz-block {
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  padding: 4em 3em;
 }
 
 .nz-block.dark {
@@ -36,6 +36,14 @@ Styleguide: display.blocks
 .nz-block-wrapper {
   margin: 0 auto;
   max-width: 80em;
+}
+
+.nz-block-wrapper.pillow {
+  padding: 4em 3em;
+}
+
+.nz-block-wrapper.semi-pillow {
+  padding: 1em 3em;
 }
 
 .nz-block-fullheight {
