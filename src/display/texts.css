@@ -35,14 +35,14 @@ $caption-font-size-base:   0.75em;
 .nz-display-1 {
   font-size: $display-1-font-size-base;
   font-weight: 400;
-  padding-left: 0.2em;
+  padding: 0 0.2em;
   margin: 0 0 1em;
 }
 
 .nz-display-2 {
   font-size: $display-2-font-size-base;
   font-weight: 400;
-  padding-left: 0.1em;
+  padding: 0 0.1em;
   margin: 0 0 0.5em;
 }
 
@@ -50,7 +50,7 @@ $caption-font-size-base:   0.75em;
   font-size: $display-3-font-size-base;
   font-weight: 400;
   letter-spacing: -0.005em;
-  padding-left: 0.1em;
+  padding: 0 0.1em;
   margin: 0 0 0.5em;
 }
 
@@ -64,7 +64,7 @@ $caption-font-size-base:   0.75em;
 .nz-headline {
   font-size: $headline-font-size-base;
   font-weight: 300;
-  padding-left: 0.3em;
+  padding: 0 0.3em;
   margin: 0 0 1em;
 }
 
@@ -72,7 +72,7 @@ $caption-font-size-base:   0.75em;
   font-size: $title-font-size-base;
   font-weight: 500;
   letter-spacing: 0.005em;
-  padding-left: 0.4em;
+  padding: 0 0.4em;
   margin: 0 0 1em;
 }
 
@@ -80,7 +80,7 @@ $caption-font-size-base:   0.75em;
   font-size: $subhead-font-size-base;
   font-weight: 300;
   letter-spacing: 0.01em;
-  padding-left: 0.5em;
+  padding: 0 0.5em;
   margin: 0 0 1em;
 }
 
@@ -88,7 +88,7 @@ $caption-font-size-base:   0.75em;
   font-size: $body-font-size-base;
   font-weight: 400;
   letter-spacing: 0.01em;
-  padding-left: 0.5em;
+  padding: 0 0.5em;
   margin: 0 0 1em;
 }
 
@@ -96,14 +96,14 @@ $caption-font-size-base:   0.75em;
   font-size: $body-font-size-base;
   font-weight: 500;
   letter-spacing: 0.01em;
-  padding-left: 0.5em;
+  padding: 0 0.5em;
   margin: 0 0 1em;
 }
 
 .nz-caption {
   font-size: $caption-font-size-base;
   letter-spacing: 0.02em;
-  padding-left: 0.5em;
+  padding: 0 0.5em;
   margin: 0 0 1em;
 }
 
