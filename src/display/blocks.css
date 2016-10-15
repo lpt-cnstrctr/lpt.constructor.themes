@@ -26,7 +26,7 @@ Styleguide: display.blocks
   --primary-color: #fff;
   --secondary-color: #333;
   --disabled-color: #686868;
-  --accent-color: #7baaf7;
+  /*--accent-color: #7baaf7;*/
   --negative-color: #e67c73;
 }
 
