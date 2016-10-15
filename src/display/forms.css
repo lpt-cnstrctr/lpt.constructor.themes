@@ -164,3 +164,26 @@ input::-webkit-inner-spin-button {
 .nz-form .nz-button {
   margin: 0;
 }
+
+/* tmp workaround for editor div */
+
+/* nz-layout combination */
+.nz-layout-row > div > input:not([type="checkbox"]):not([type="radio"]),
+.nz-layout-row > div > textarea,
+.nz-layout-row > div > select {
+  margin-right: 2em;
+}
+
+.nz-layout-row > div > label:not(:empty) {
+  margin-right: 1em;
+}
+
+.nz-layout-column > div > input:not([type="checkbox"]):not([type="radio"]),
+.nz-layout-column > div > textarea,
+.nz-layout-column > div > select {
+  margin-bottom: 1em;
+}
+
+.nz-layout-column > div > label:not(:empty) {
+  margin-bottom: 0.5em;
+}
