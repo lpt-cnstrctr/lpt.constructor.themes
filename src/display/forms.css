@@ -140,50 +140,34 @@ input::-webkit-inner-spin-button {
 }
 
 /* nz-layout combination */
-.nz-layout-row > input:not([type="checkbox"]):not([type="radio"]),
-.nz-layout-row > textarea,
-.nz-layout-row > select {
-  margin-right: 2em;
+/* tmp solution, need rework */
+@define-mixin nz-layout-combination-for-value $name, $val1, $val2 {
+  .$(name) > input:not([type="checkbox"]):not([type="radio"]),
+  .$(name) > textarea,
+  .$(name) > select {
+    margin: $(val1);
+  }
+
+  .$(name) > label:not(:empty) {
+    margin: $(val2);
+  }
 }
 
-.nz-layout-row > label:not(:empty) {
-  margin-right: 1em;
+@define-mixin nz-layout-combination-for-name $name {
+  @mixin nz-layout-combination-for-value $(name)-row, 0 2em 0 0, 0 1em 0 0 {}
+  @mixin nz-layout-combination-for-value $(name)-column, 0 0 1em 0, 0 0 0.5em 0 {}
+
+  @mixin nz-layout-combination-for-value $(name)-row>div, 0 2em 0 0, 0 1em 0 0 {}
+  @mixin nz-layout-combination-for-value $(name)-column>div, 0 0 1em 0, 0 0 0.5em 0 {}
 }
 
-.nz-layout-column > input:not([type="checkbox"]):not([type="radio"]),
-.nz-layout-column > textarea,
-.nz-layout-column > select {
-  margin-bottom: 1em;
-}
+@mixin nz-layout-combination-for-name nz-layout {}
 
-.nz-layout-column > label:not(:empty) {
-  margin-bottom: 0.5em;
+@media (max-width: 600px) {
+  @mixin nz-layout-combination-for-name nz-layout-xs {}
 }
 
 /* reset btn margin in form */
 .nz-form .nz-button {
   margin: 0;
-}
-
-/* tmp workaround for editor div */
-
-/* nz-layout combination */
-.nz-layout-row > div > input:not([type="checkbox"]):not([type="radio"]),
-.nz-layout-row > div > textarea,
-.nz-layout-row > div > select {
-  margin-right: 2em;
-}
-
-.nz-layout-row > div > label:not(:empty) {
-  margin-right: 1em;
-}
-
-.nz-layout-column > div > input:not([type="checkbox"]):not([type="radio"]),
-.nz-layout-column > div > textarea,
-.nz-layout-column > div > select {
-  margin-bottom: 1em;
-}
-
-.nz-layout-column > div > label:not(:empty) {
-  margin-bottom: 0.5em;
 }
