@@ -146,7 +146,7 @@ input::-webkit-inner-spin-button {
   margin-right: 2em;
 }
 
-.nz-layout-row > label {
+.nz-layout-row > label:not(:empty) {
   margin-right: 1em;
 }
 
@@ -156,7 +156,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 1em;
 }
 
-.nz-layout-column > label {
+.nz-layout-column > label:not(:empty) {
   margin-bottom: 0.5em;
 }
 
