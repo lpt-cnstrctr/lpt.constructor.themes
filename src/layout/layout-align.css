@@ -6,7 +6,7 @@
 Задается как .nz-layout-align-$(состояние)-$(основная)-$(поперечная),
 где основная - выравнивание по основной оси (start, center, end, space-around, space-between),
 а поперечная - выравнивание по поперечной оси (start, center, end, stretch),
-а состояние - xs (экран меньше 600px) или print (макет при печати).
+а состояние - xs (экран меньше 600px) или print (макет при печати). (прим. .nz-layout-align-xs-start-start)
 
 .nz-layout-align-start-start - start start
 .nz-layout-align-start-center - start center
