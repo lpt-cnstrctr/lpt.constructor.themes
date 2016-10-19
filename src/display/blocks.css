@@ -57,8 +57,14 @@ Styleguide: display.blocks
 
 .nz-block-cover {
   background: rgba(255, 255, 255, 0.5);
-}
+} 
 
 .dark .nz-block-cover {
   background: rgba(0, 0, 0, 0.5);
+}
+
+.nz-fixed {
+  position: fixed;
+  z-index: 1;
+  width: 100%; /* use for fullwith blocks! */
 }
