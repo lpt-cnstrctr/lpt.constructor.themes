@@ -39,8 +39,8 @@ breakpoints
 + print
 + default
 + xs < 600px
++ gt-xs >= 600px
 
-gt-xs >= 600px
 sm 600px <= width < 960px
 gt-sm >= 960px
 md 960px <= width < 1280px
@@ -87,4 +87,14 @@ $layout-breakpoint-xs: 600px;
   @mixin layout-padding-margin-for-name -xs {}
   @mixin offset-for-name -xs {}
   @mixin hide-for-name -xs {}
+}
+
+/* greather then Xtra-SMALL SCREEN */
+@media (min-width: $layout-breakpoint-xs) {
+  @mixin layout-for-name -gt-xs {}
+  @mixin flex-for-name -gt-xs {}
+  @mixin layout-align-for-name -gt-xs {}
+  @mixin layout-padding-margin-for-name -gt-xs {}
+  @mixin offset-for-name -gt-xs {}
+  @mixin hide-for-name -gt-xs {}
 }
