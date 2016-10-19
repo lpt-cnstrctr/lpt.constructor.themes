@@ -9,7 +9,7 @@
 * more breakpoints
 * icons refactoring
 * navigation
-* docs \ kss
+* breakpoint docs improvement
 
 ## display
 * nz-display-4
