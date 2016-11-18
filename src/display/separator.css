@@ -28,12 +28,12 @@ Styleguide: display.separator
 }
 
 .dark .nz-separator {
-  background: #eee;
+  background: #666;
 }
 
 .dark .nz-separator:before {
   box-shadow: inset 0 0 0 12px #333;
-  color: #eee;
+  color:#666;
 }
 
 .gray .nz-separator:before {
