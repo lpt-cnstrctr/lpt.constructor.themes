@@ -140,6 +140,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* nz-layout combination */
+
 /* tmp solution, need rework */
 @define-mixin nz-layout-combination-for-value $name, $val1, $val2 {
   .$(name) > input:not([type="checkbox"]):not([type="radio"]),
@@ -154,17 +155,19 @@ input::-webkit-inner-spin-button {
 }
 
 @define-mixin nz-layout-combination-for-name $name {
-  @mixin nz-layout-combination-for-value $(name)-row, 0 2em 0 0, 0 1em 0 0 {}
-  @mixin nz-layout-combination-for-value $(name)-column, 0 0 1em 0, 0 0 0.5em 0 {}
+  @mixin nz-layout-combination-for-value $(name)-row, 0 2em 0 0, 0 1em 0 0 {} /* stylelint-disable-line block-no-empty */
 
-  @mixin nz-layout-combination-for-value $(name)-row>div, 0 2em 0 0, 0 1em 0 0 {}
-  @mixin nz-layout-combination-for-value $(name)-column>div, 0 0 1em 0, 0 0 0.5em 0 {}
+  @mixin nz-layout-combination-for-value $(name)-column, 0 0 1em 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
+
+  @mixin nz-layout-combination-for-value $(name)-row>div, 0 2em 0 0, 0 1em 0 0 {} /* stylelint-disable-line block-no-empty */
+
+  @mixin nz-layout-combination-for-value $(name)-column>div, 0 0 1em 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
 }
 
-@mixin nz-layout-combination-for-name nz-layout {}
+@mixin nz-layout-combination-for-name nz-layout {} /* stylelint-disable-line block-no-empty */
 
 @media (max-width: 600px) {
-  @mixin nz-layout-combination-for-name nz-layout-xs {}
+  @mixin nz-layout-combination-for-name nz-layout-xs {} /* stylelint-disable-line block-no-empty */
 }
 
 /* reset btn margin in form */

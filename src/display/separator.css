@@ -21,7 +21,7 @@ Styleguide: display.separator
   position: absolute;
   top: -19px;
   left: 50%;
-  box-shadow: inset 0 0 0px 12px #fff;
+  box-shadow: inset 0 0 0 12px #fff;
   width: 26px;
   text-align: center;
   margin-left: -13px;
@@ -32,10 +32,10 @@ Styleguide: display.separator
 }
 
 .dark .nz-separator:before {
-  box-shadow: inset 0 0 0px 12px #333;
+  box-shadow: inset 0 0 0 12px #333;
   color: #eee;
 }
 
 .gray .nz-separator:before {
-  box-shadow: inset 0 0 0px 12px #f9f9f9;
+  box-shadow: inset 0 0 0 12px #f9f9f9;
 }
