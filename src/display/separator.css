@@ -33,7 +33,7 @@ Styleguide: display.separator
 
 .dark .nz-separator:before {
   box-shadow: inset 0 0 0 12px #333;
-  color:#666;
+  color: #666;
 }
 
 .gray .nz-separator:before {
