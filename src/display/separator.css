@@ -17,7 +17,7 @@ Styleguide: display.separator
 .nz-separator:before {
   content: '\25CF';
   color: #eee;
-  font-size: 2em;
+  font-size: 32px;
   position: absolute;
   top: -19px;
   left: 50%;
@@ -27,15 +27,15 @@ Styleguide: display.separator
   margin-left: -13px;
 }
 
-.dark .nz-separator {
+.theme-dark .nz-separator {
   background: #666;
 }
 
-.dark .nz-separator:before {
-  box-shadow: inset 0 0 0 12px #333;
+.theme-dark .nz-separator:before {
+  box-shadow: inset 0 0 0 12px #444;
   color: #666;
 }
 
-.gray .nz-separator:before {
+.theme-gray .nz-separator:before {
   box-shadow: inset 0 0 0 12px #f9f9f9;
 }
