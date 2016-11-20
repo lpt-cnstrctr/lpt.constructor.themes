@@ -1,20 +1,15 @@
 @import 'normalize.css/normalize.css';
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=cyrillic';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
+@import './src/colors.css';
 @import './src/fonts';
 @import './src/layout';
 @import './src/display';
 @import './src/popup';
+@import './src/popup';
 
 :root {
-  /* basic defaults values here */
-  --primary-color: #333;
-  --secondary-color: #fff;
-  --disabled-color: #bdbdbd;
-  --accent-color: #3367d6;
-  --danger-color: #c53929;
-
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
 }
 
 ::selection {
@@ -24,7 +19,7 @@
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 /*

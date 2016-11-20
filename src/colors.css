@@ -1,0 +1,75 @@
+/*
+Цвета
+
+Палитра акцентных цветов
+
+.pizazz-color - #E87034
+.rob-roy-color - #E3B960
+.monte-carlo-color - #82C9AC
+.mountain-meadow-color - #19BC9C
+.charlotte-color - #95C6E3
+.curious-blue-color - #408DBD
+.heather-color - #AFB8BE
+.old-rose-color - #AF2E4E
+.illusion-color - #EE9FB2
+.lilac-bush-color - #A272C4
+
+Markup:
+<p class="{{modifier_class}}"><a>Тестовый заголовок</a></p>
+
+Styleguide: colors
+*/
+
+:root {
+  --background-gray-color: #f9f9f9;
+  --background-dark-gray-color: #444;
+  --base-color: #333;
+  --footer-color: #292929;
+  --green-color: #19bc9c;
+  --red-color: #c02942;
+  --border-color: #eee;
+  --text-dark-gray-color: #777;
+  --text-gray-color: #999;
+  --red-error-color: #d0011b;
+}
+
+/* accent colors */
+.pizazz-color {
+  --accent-color: #E87034;
+}
+
+.rob-roy-color {
+  --accent-color: #E3B960;
+}
+
+.monte-carlo-color {
+  --accent-color: #82C9AC;
+}
+
+.mountain-meadow-color {
+  --accent-color: #19BC9C;
+}
+
+.charlotte-color {
+  --accent-color: #95C6E3;
+}
+
+.curious-blue-color {
+  --accent-color: #408DBD;
+}
+
+.heather-color {
+  --accent-color: #AFB8BE;
+}
+
+.old-rose-color {
+  --accent-color: #AF2E4E;
+}
+
+.illusion-color {
+  --accent-color: #EE9FB2;
+}
+
+.lilac-bush-color {
+  --accent-color: #A272C4;
+}
