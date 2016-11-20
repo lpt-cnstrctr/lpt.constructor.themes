@@ -3,16 +3,15 @@
 
 Классы для работы с текстами и заголовками.
 
-.nz-display-1 - крупный заголовок 1
-.nz-display-2 - крупный заголовок 2
-.nz-display-3 - крупный заголовок 3
-.nz-display-4 - крупный заголовок 4
-.nz-headline - подзаголовок для display заголовков
-.nz-title - базовый заголовок
-.nz-subhead - базовый подзаголовок
-.nz-body-1 - обычный текст
-.nz-body-2 - обычный текст выделенный жирным
-.nz-caption - подсказка
+.nz-big-title -
+.nz-lead -
+.nz-bold-title -
+.nz-title -
+.nz-paragraph-accent -
+.nz-paragraph -
+.nz-small-paragraph -
+.nz-caption - 
+.nz-error - 
 .nz-text-center - выровнять текст по центру
 
 Markup:
@@ -21,90 +20,72 @@ Markup:
 Styleguide: display.texts
 */
 
-$display-4-font-size-base: 7em;
-$display-3-font-size-base: 3.5em;
-$display-2-font-size-base: 3em;
-$display-1-font-size-base: 2em;
-$headline-font-size-base:  1.5em;
-$title-font-size-base:     1.25em;
-$subhead-font-size-base:   1em;
+.nz-big-title {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 4em;
+  color: var(--base-color);
+}
 
-$body-font-size-base:      0.85em;
-$caption-font-size-base:   0.75em;
-
-.nz-display-1 {
-  font-size: $display-1-font-size-base;
+.nz-lead {
+  font-size: 2.4em;
   font-weight: 400;
-  padding: 0 0.2em;
-  margin: 0 0 1em;
+  line-height: 3em;
+  color: var(--lead-color);
 }
 
-.nz-display-2 {
-  font-size: $display-2-font-size-base;
-  font-weight: 400;
-  padding: 0 0.1em;
-  margin: 0 0 0.5em;
-}
-
-.nz-display-3 {
-  font-size: $display-3-font-size-base;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-  padding: 0 0.1em;
-  margin: 0 0 0.5em;
-}
-
-.nz-display-4 {
-  font-size: $display-4-font-size-base;
-  font-weight: 300;
-  letter-spacing: -0.01em;
-  margin: 0 0 0.5em;
-}
-
-.nz-headline {
-  font-size: $headline-font-size-base;
-  font-weight: 300;
-  padding: 0 0.3em;
-  margin: 0 0 1em;
+.nz-bold-title {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2.5em;
+  color: var(--base-color);
 }
 
 .nz-title {
-  font-size: $title-font-size-base;
-  font-weight: 500;
-  letter-spacing: 0.005em;
-  padding: 0 0.4em;
-  margin: 0 0 1em;
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 2.5em;
+  color: var(--base-color);
 }
 
-.nz-subhead {
-  font-size: $subhead-font-size-base;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-  padding: 0 0.5em;
-  margin: 0 0 1em;
-}
-
-.nz-body-1 {
-  font-size: $body-font-size-base;
+.nz-paragraph-accent {
+  font-size: 1.6em;
   font-weight: 400;
-  letter-spacing: 0.01em;
-  padding: 0 0.5em;
-  margin: 0 0 1em;
+  line-height: 2.5em;
+  color: var(--accent-color);
+  margin-bottom: 1em;
 }
 
-.nz-body-2 {
-  font-size: $body-font-size-base;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  padding: 0 0.5em;
-  margin: 0 0 1em;
+.nz-paragraph {
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 2.5em;
+  color: var(--base-color);
+  margin-bottom: 1em;
+}
+
+.nz-small-paragraph {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 2.5em;
+  color: var(--small-paragraph-color);
+  margin-bottom: 1em;
 }
 
 .nz-caption {
-  font-size: $caption-font-size-base;
-  letter-spacing: 0.02em;
-  padding: 0 0.5em;
-  margin: 0 0 1em;
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: var(--caption-color);
+  margin-bottom: 1em;
+}
+
+.nz-error {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 2.5em;
+  color: var(--red-error-color);
+  margin-bottom: 1em;
 }
 
 /* helpers */

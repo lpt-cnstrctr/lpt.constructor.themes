@@ -8,6 +8,7 @@ nz-block используется в первую очередь для рабо
 * .nz-block.gray - серая тема оформления (меняет фон на серый цвет)
 
 .nz-block-wrapper - устанавливает фиксированную ширину и выравнивает по центру контейнер блока
+.nz-block-wrapper.narrow - 
 .nz-block-wrapper.pillow - добавляет отступы
 .nz-block-wrapper.semi-pillow - добавляет небольшие отступы
 .nz-block-fullheight - 100% от высоты экрана
@@ -17,33 +18,62 @@ nz-block используется в первую очередь для рабо
 Styleguide: display.blocks
 */
 
-.nz-block {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+.nz-block.theme-dark {
+  background-color: var(--background-dark-gray-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--text-gray-color);
+  --caption-color: var(--text-gray-color);
 }
 
-.nz-block.dark {
-  --primary-color: #fff;
-  --secondary-color: #333;
-  --disabled-color: #686868;
-  --negative-color: #e67c73;
+.nz-block.theme-darker {
+  background-color: var(--footer-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--text-gray-color);
+  --caption-color: var(--text-gray-color);
 }
 
-.nz-block.gray {
-  background-color: #f9f9f9;
+.nz-block.theme-gray {
+  background-color: var(--background-gray-color);
+  --base-color: var(--dark-color);
+  --lead-color: var(--text-dark-gray-color);
+  --small-paragraph-color: var(--text-dark-gray-color);
+  --caption-color: var(--text-gray-color);
+}
+
+.nz-block.theme-light {
+  background-color: var(--white-color);
+  --base-color: var(--dark-color);
+  --lead-color: var(--text-dark-gray-color);
+  --small-paragraph-color: var(--text-dark-gray-color);
+  --caption-color: var(--text-gray-color);
+}
+
+.nz-block.theme-accent {
+  background-color: var(--accent-color);
+  --accent-color: var(--white-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--text-dark-gray-color);
+  --small-paragraph-color: var(--text-dark-gray-color);
+  --caption-color: var(--white-color);
 }
 
 .nz-block-wrapper {
   margin: 0 auto;
-  max-width: 80em;
+  max-width: 116em;
+}
+
+.nz-block-wrapper.narrow {
+  max-width: 92em;
 }
 
 .nz-block-wrapper.pillow {
-  padding: 4em 3em;
+  padding: 8em 3em;
 }
 
 .nz-block-wrapper.semi-pillow {
-  padding: 1em 3em;
+  padding: 3em 3em;
 }
 
 .nz-block-fullheight {
