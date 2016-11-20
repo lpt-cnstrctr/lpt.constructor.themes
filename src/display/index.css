@@ -11,3 +11,7 @@ Styleguide: display
 @import './blocks';
 @import './backgrounds';
 @import './separator';
+
+.clear-margin {
+  margin: 0;
+}
