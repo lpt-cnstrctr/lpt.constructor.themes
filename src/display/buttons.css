@@ -26,7 +26,7 @@ Styleguide: display.buttons
 .nz-button {
   position: relative;
   display: inline-block;
-  padding: calc(1.5 / 1.6)em calc(3 / 1.6)em;
+  padding: calc(1.5 / 1.6em) calc(3 / 1.6em);
   font-size: 1.6em;
   color: var(--secondary-color);
   white-space: nowrap;
@@ -40,7 +40,7 @@ Styleguide: display.buttons
   text-decoration: none;
   appearance: none; /* Corrects inability to style clickable `input` types in iOS. */
   opacity: 0.85;
-  margin: calc(2 / 1.6)em;
+  margin: calc(2 / 1.6em);
   box-sizing: border-box;
 }
 
