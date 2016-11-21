@@ -15,10 +15,7 @@ Styleguide: display.navigation
   margin-bottom: -10px;
 }
 
-.nz-navigation:hover {
-
-}
-
+.nz-navigation:hover,
 .nz-navigation.active {
   border-bottom-color: var(--base-color);
 }
