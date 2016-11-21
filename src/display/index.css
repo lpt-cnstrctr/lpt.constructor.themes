@@ -11,6 +11,7 @@ Styleguide: display
 @import './blocks';
 @import './backgrounds';
 @import './separator';
+@import './navigation';
 
 .clear-margin {
   margin: 0;

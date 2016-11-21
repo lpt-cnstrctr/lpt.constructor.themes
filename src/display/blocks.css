@@ -52,7 +52,6 @@ Styleguide: display.blocks
 
 .nz-block.theme-accent {
   background-color: var(--accent-color);
-  --accent-color: var(--white-color);
   --base-color: var(--white-color);
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
@@ -62,7 +61,7 @@ Styleguide: display.blocks
 .nz-block-wrapper {
   margin: 0 auto;
   max-width: 122em;
-  padding: 0 3em;
+  padding: 1em 3em;
 }
 
 .nz-block-wrapper.narrow {

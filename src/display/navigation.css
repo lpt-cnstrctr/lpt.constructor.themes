@@ -1,0 +1,24 @@
+/*
+Навигация
+
+.nz-navigation - navigation
+
+Styleguide: display.navigation
+*/
+
+.nz-navigation {
+  font-size: 1.6em;
+  color: var(--base-color);
+  line-height: 2.6em;
+  margin-left: 1em;
+  border-bottom: 5px solid transparent;
+  margin-bottom: -10px;
+}
+
+.nz-navigation:hover {
+
+}
+
+.nz-navigation.active {
+  border-bottom-color: var(--base-color);
+}
