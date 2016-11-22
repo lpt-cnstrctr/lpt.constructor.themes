@@ -69,8 +69,7 @@ Styleguide: display.buttons
   border-color: var(--background-dark-gray-color);
 }
 
-.nz-button:disabled,
-.nz-button.disabled {
+.nz-button:disabled {
   background-color: var(--border-color);
   border-color: var(--border-color);
   cursor: default;
@@ -85,14 +84,12 @@ Styleguide: display.buttons
   background-color: transparent;
 }
 
-/*.nz-button.outline:hover,
 .nz-button.outline:active {
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: var(--background-dark-gray-color);
+  border-color: var(--background-dark-gray-color);
 }
 
-.nz-button.outline:disabled,
-.nz-button.outline.disabled {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}*/
+.nz-button.outline:disabled {
+  color: var(--text-dark-gray-color);
+  border-color: var(--border-color);
+}
