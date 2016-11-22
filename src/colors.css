@@ -32,6 +32,9 @@ Styleguide: colors
   --border-color: #eee;
   --text-gray-color: #999;
   --red-error-color: #d0011b;
+
+  /* default color piazz-color tmp solution */
+  --accent-color: #e87034;
 }
 
 /* accent colors */
