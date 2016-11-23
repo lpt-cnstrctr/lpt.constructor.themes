@@ -40,6 +40,7 @@ Styleguide: display.texts
   font-size: 2em;
   font-weight: 700;
   line-height: calc(2.5 / 2em);
+  letter-spacing: calc(0.2 / 2em);
   color: var(--base-color);
   margin-bottom: calc(1 / 2em);
 }
@@ -48,6 +49,7 @@ Styleguide: display.texts
   font-size: 1.6em;
   font-weight: 600;
   line-height: calc(2.5 / 1.6em);
+  letter-spacing: calc(0.2 / 2em);
   color: var(--base-color);
   margin-bottom: calc(1 / 1.6em);
 }
@@ -76,6 +78,14 @@ Styleguide: display.texts
   margin-bottom: calc(1 / 1.4em);
 }
 
+.theme-accent .nz-small-paragraph {
+  color: #fff;
+}
+
+.theme-dark .nz-small-paragraph {
+  color: #999;
+}
+
 .nz-caption {
   font-size: 1.1em;
   font-weight: 600;
@@ -95,4 +105,8 @@ Styleguide: display.texts
 /* helpers */
 .nz-text-center {
   text-align: center;
+}
+
+.nz-text-uppercase {
+  text-transform: uppercase;
 }

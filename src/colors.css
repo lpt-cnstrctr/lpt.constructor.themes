@@ -77,3 +77,9 @@ Styleguide: colors
 .lilac-bush-color {
   --accent-color: #a272c4;
 }
+
+/* helpers */
+
+.nz-base-color {
+  color: var(--base-color);
+}
