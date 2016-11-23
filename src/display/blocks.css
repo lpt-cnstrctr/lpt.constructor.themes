@@ -55,8 +55,8 @@ Styleguide: display.blocks
 .nz-block.theme-accent {
   background-color: var(--accent-color);
   --base-color: var(--white-color);
-  --lead-color: var(--text-dark-gray-color);
-  --small-paragraph-color: var(--text-dark-gray-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--white-color);
   --caption-color: var(--white-color);
 }
 
