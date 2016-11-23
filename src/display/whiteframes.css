@@ -3,11 +3,8 @@
 
 Тень контейнера для обозначения глубины
 
-.nz-whiteframe-z1 - тень 1
-.nz-whiteframe-z2 - тень 2
-.nz-whiteframe-z3 - тень 3
-.nz-whiteframe-z4 - тень 4
-.nz-whiteframe-z5 - тень 5
+.nz-whiteframe - тень 1
+.nz-whiteframe-deep - тень 2
 
 Markup:
 <div class="nz-layout-padding-3 nz-layout-margin-2 {{modifier_class}}"></div>
@@ -15,42 +12,11 @@ Markup:
 Styleguide: display.whiteframes
 */
 
-$shadow-key-umbra-opacity: 0.2;
-$shadow-key-penumbra-opacity: 0.14;
-$shadow-ambient-shadow-opacity: 0.12;
-
 /* stylelint-disable length-zero-no-unit */
-.nz-whiteframe-z1 {
-  box-shadow:
-    0px 1px 3px 0px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-    0px 1px 1px 0px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-    0px 2px 1px -1px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+.nz-whiteframe {
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.12);
 }
 
-.nz-whiteframe-z2 {
-  box-shadow:
-    0px 2px 4px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-    0px 4px 5px 0px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-    0px 1px 10px 0px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
-}
-
-.nz-whiteframe-z3 {
-  box-shadow:
-    0px 4px 5px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-    0px 7px 10px 1px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-    0px 2px 16px 1px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
-}
-
-.nz-whiteframe-z4 {
-  box-shadow:
-    0px 6px 6px -3px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-    0px 10px 14px 1px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-    0px 4px 18px 3px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
-}
-
-.nz-whiteframe-z5 {
-  box-shadow:
-    0px 7px 8px -4px rgba(0, 0, 0, $shadow-key-umbra-opacity),
-    0px 13px 19px 2px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-    0px 5px 24px 4px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+.nz-whiteframe-deep {
+  box-shadow: 0 0 2.5em 0 rgba(0, 0, 0, 0.5);
 }

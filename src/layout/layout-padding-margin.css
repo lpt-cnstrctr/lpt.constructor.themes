@@ -38,27 +38,27 @@ Styleguide: layout.padding-margin
 
 @define-mixin layout-padding-margin-for-name $name {
   .nz-layout-padding$(name)-1 {
-    padding: 0.5em;
-  }
-
-  .nz-layout-padding$(name)-2 {
     padding: 1em;
   }
 
+  .nz-layout-padding$(name)-2 {
+    padding: 3em;
+  }
+
   .nz-layout-padding$(name)-3 {
-    padding: 2em;
+    padding: 3em 5em;
   }
 
   .nz-layout-margin$(name)-1 {
-    margin: 0.5em;
-  }
-
-  .nz-layout-margin$(name)-2 {
     margin: 1em;
   }
 
+  .nz-layout-margin$(name)-2 {
+    margin: 3em;
+  }
+
   .nz-layout-margin$(name)-3 {
-    margin: 2em;
+    margin: 3em 5em;
   }
 
   .nz-layout-wrap$(name) {

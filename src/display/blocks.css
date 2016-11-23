@@ -13,7 +13,9 @@ nz-block используется в первую очередь для рабо
 .nz-block-wrapper.semi-pillow - добавляет небольшие отступы
 .nz-block-fullheight - 100% от высоты экрана
 .nz-block-halfheight - 50% от высоты экрана
-.nz-block-cover - получерный\полусветлый фон для контейнера
+.nz-block-cover - светлый фон для контейнера
+.nz-block-cover.gray - серый фон для контейнера
+.nz-block-cover.dark - полупрозрачный черный фон для контейнера
 
 Styleguide: display.blocks
 */
@@ -85,11 +87,18 @@ Styleguide: display.blocks
 }
 
 .nz-block-cover {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
 }
 
-.dark .nz-block-cover {
-  background: rgba(0, 0, 0, 0.5);
+.nz-block-cover.dark {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+
+.nz-block-cover.gray {
+  background-color: var(--background-gray-color);
 }
 
 .nz-fixed {
