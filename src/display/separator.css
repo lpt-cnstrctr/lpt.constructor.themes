@@ -44,24 +44,5 @@ Styleguide: display.separator
   box-sizing: border-box;
   width: 4em;
   margin: 2em;
-  height: calc(0.2 / 4em);
-  border: calc(0.2 / 4em);
-  border-style: solid;
+  border: calc(0.2 / 4em) solid var(--small-paragraph-color);
 }
-
-.theme-dark .nz-separator-small {
-  border-color: #777;
-}
-
-.theme-light .nz-separator-small {
-  border-color: #777;
-}
-
-.theme-gray .nz-separator-small {
-  border-color: #777;
-}
-
-.theme-accent .nz-separator-small {
-  border-color: #fff;
-}
-

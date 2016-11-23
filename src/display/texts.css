@@ -78,14 +78,6 @@ Styleguide: display.texts
   margin-bottom: calc(1 / 1.4em);
 }
 
-.theme-accent .nz-small-paragraph {
-  color: #fff;
-}
-
-.theme-dark .nz-small-paragraph {
-  color: #999;
-}
-
 .nz-caption {
   font-size: 1.1em;
   font-weight: 600;
