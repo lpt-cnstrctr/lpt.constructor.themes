@@ -7,11 +7,9 @@
 .small - уменьшенная форма
 
 Markup:
-<form class="nz-form nz-layout-wrap nz-layout-column nz-flex-15 {{modifier_class}}">
-  <label for="name">Имя</label>
-  <input type="text" id="name">
-  <label for="email">Email</label>
-  <input type="email" id="email">
+<form class="nz-form nz-layout-wrap nz-layout-column {{modifier_class}}">
+  <input type="text" id="name" placeholder="name">
+  <input type="email" id="email" placeholder="email">
   <select>
     <option>Apple</option>
     <option>Pen</option>
@@ -24,8 +22,7 @@ Markup:
   <button class="nz-button" type="submit">Отправить</button>
 </form>
 <form class="nz-layout-margin-2 nz-form nz-layout-wrap nz-layout-row nz-layout-align-center-center {{modifier_class}}">
-  <label for="name">Имя</label>
-  <input type="text" id="name">
+  <input type="text" id="name" placeholder="name">
   <select>
     <option>Apple</option>
     <option>Pen</option>
@@ -59,23 +56,23 @@ input::-webkit-inner-spin-button {
 
 /* Custom styling for HTML5 validation bubbles (WebKit only) */
 ::placeholder {
-  color: #999;
+  color: #777;
 }
 
 /* input */
 .nz-form input:not([type="submit"]),
 .nz-form textarea,
 .nz-form select {
-  min-height: 2.1em;
-  padding: 0.5em 1em;
-  line-height: 1.25em;
-  color: #333;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid var(--disabled-color);
+  padding: calc(1.2 / 1.4em);
+  font-size: 1.4em;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
+  line-height: calc(2.5 / 1.4em);
+  color: var(--dark-color);
+  vertical-align: middle;
+  background-color: var(--white-color);
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
 }
 
@@ -84,9 +81,6 @@ input::-webkit-inner-spin-button {
 .nz-form select:focus {
   border-color: var(--accent-color);
   outline: none;
-  box-shadow:
-    inset 0 1px 2px rgba(0, 0, 0, 0.075),
-    0 0 5px var(--accent-color);
 }
 
 /* label */
@@ -119,24 +113,16 @@ input::-webkit-inner-spin-button {
 }
 
 .nz-form.small select {
-  min-height: 1.75em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  font-size: 0.75em;
+  padding: calc(0.7 / 1.4em);
 }
 
 .nz-form.small select[multiple] {
   height: auto;
-  min-height: 0;
 }
 
 /* Mini inputs, to match .nz-button.small */
 .nz-form.small input {
-  min-height: 1.75em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  font-size: 0.75em;
-  line-height: 1.25em;
+  padding: calc(0.7 / 1.4em);
 }
 
 /* nz-layout combination */
@@ -155,13 +141,13 @@ input::-webkit-inner-spin-button {
 }
 
 @define-mixin nz-layout-combination-for-name $name {
-  @mixin nz-layout-combination-for-value $(name)-row, 0 2em 0 0, 0 1em 0 0 {} /* stylelint-disable-line block-no-empty */
+  @mixin nz-layout-combination-for-value $(name)-row, 0 calc(2 / 1.4em) 0 0, 0 calc(2 / 1.4em) 0 0 {} /* stylelint-disable-line block-no-empty */
 
-  @mixin nz-layout-combination-for-value $(name)-column, 0 0 1em 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
+  @mixin nz-layout-combination-for-value $(name)-column, 0 0 calc(2 / 1.4em) 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
 
-  @mixin nz-layout-combination-for-value $(name)-row>div, 0 2em 0 0, 0 1em 0 0 {} /* stylelint-disable-line block-no-empty */
+  @mixin nz-layout-combination-for-value $(name)-row>div, 0 calc(2 / 1.4em) 0 0, 0 calc(2 / 1.4em) 0 0 {} /* stylelint-disable-line block-no-empty */
 
-  @mixin nz-layout-combination-for-value $(name)-column>div, 0 0 1em 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
+  @mixin nz-layout-combination-for-value $(name)-column>div, 0 0 calc(2 / 1.4em) 0, 0 0 0.5em 0 {} /* stylelint-disable-line block-no-empty */
 }
 
 @mixin nz-layout-combination-for-name nz-layout {} /* stylelint-disable-line block-no-empty */
