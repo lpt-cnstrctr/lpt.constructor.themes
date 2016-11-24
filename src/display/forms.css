@@ -76,6 +76,12 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
 }
 
+.full-with input:not([type="submit"]),
+.full-with textarea,
+.full-with select {
+  width: 100%;
+}
+
 .nz-form input:focus,
 .nz-form textarea:focus,
 .nz-form select:focus {
