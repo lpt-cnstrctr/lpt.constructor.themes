@@ -102,3 +102,7 @@ Styleguide: display.texts
 .nz-text-uppercase {
   text-transform: uppercase;
 }
+
+.nz-text-pre {
+  white-space: pre-wrap;
+}
