@@ -1,0 +1,11 @@
+/*
+    non flex width
+    need for slider
+    <div class="carousel-cell nz-width-..."></div>
+*/
+
+.nz-slider-33 {
+  width: 32%;
+  margin-right: 2%!important;
+  margin-left: 0!important;
+}

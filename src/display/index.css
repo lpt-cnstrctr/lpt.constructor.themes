@@ -16,3 +16,7 @@ Styleguide: display
 .clear-margin {
   margin: 0;
 }
+
+.max-width {
+  width: 100%;
+}
