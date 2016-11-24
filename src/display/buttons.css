@@ -93,3 +93,8 @@ Styleguide: display.buttons
   color: var(--text-dark-gray-color);
   border-color: var(--border-color);
 }
+.theme-accent .nz-button.outline {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  background-color: transparent;
+}
