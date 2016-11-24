@@ -26,6 +26,8 @@ Styleguide: display.blocks
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--text-gray-color);
   --caption-color: var(--text-gray-color);
+  --border-color: var(--text-dark-gray-color);
+  --cover-bg-color: var(--dark-background);
 }
 
 .nz-block.theme-darker {
@@ -34,6 +36,8 @@ Styleguide: display.blocks
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--text-gray-color);
   --caption-color: var(--text-gray-color);
+  --border-color: var(--text-dark-gray-color);
+  --cover-bg-color: var(--dark-background);
 }
 
 .nz-block.theme-gray {
@@ -58,6 +62,8 @@ Styleguide: display.blocks
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--white-color);
   --caption-color: var(--white-color);
+  --border-color: var(--white-color);
+  --cover-bg-color: var(--accent-color);
 }
 
 .nz-block-wrapper {
@@ -90,47 +96,14 @@ Styleguide: display.blocks
   border-bottom: 1px solid var(--border-color);
 }
 
-.theme-dark .nz-block-border-bottom {
-  border-bottom: 1px solid transparent;
-  border-color: transparent;
-}
-
-.theme-darker .nz-block-border-bottom {
-  border-bottom: 1px solid transparent;
-  border-color: transparent;
-}
-
 .nz-block-cover {
-  background-color: var(--white-color);
+  background-color: var(--cover-bg-color);
   border: 1px solid var(--border-color);
   border-radius: 3px;
-}
-
-.theme-dark .nz-block-cover {
-  background-color: var(--dark-gray-color);
-  border-color: transparent;
-}
-.theme-darker .nz-block-cover {
-  background-color: var(--dark-color);
-  border-color: transparent;
-}
-
-.theme-gray .nz-block-cover {
-  background-color: var(--background-gray-color);
-}
-
-.theme-accent .nz-block-cover {
-  background-color: var(--accent-color);
 }
 
 .nz-fixed {
   position: fixed;
   z-index: 1;
   width: 100%; /* use for fullwith blocks! */
-}
-
-/* helpers */
-
-.nz-block-no-bottom-border {
-  border-bottom: 0!important;
 }

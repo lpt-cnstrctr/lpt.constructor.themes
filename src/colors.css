@@ -35,6 +35,8 @@ Styleguide: colors
 
   /* default color piazz-color tmp solution */
   --accent-color: #e87034;
+
+  --dark-background: rgba(51, 51, 51, 0.32);
 }
 
 /* accent colors */
