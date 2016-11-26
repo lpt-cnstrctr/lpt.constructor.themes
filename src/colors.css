@@ -81,7 +81,10 @@ Styleguide: colors
 }
 
 /* helpers */
-
 .nz-base-color {
   color: var(--base-color);
+}
+
+.nz-accent-color {
+  color: var(--accent-color);
 }
