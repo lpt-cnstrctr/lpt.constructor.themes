@@ -35,3 +35,16 @@ Styleguide: display.gallery
   max-height: 100%;
   opacity: 1;
 }
+
+.nz-gallery-fit {
+  object-fit: cover;
+  max-width: 100%;
+
+  height: 40vw;
+  max-height: 500px;
+}
+
+.nz-gallery-fit.half {
+  height: 20vw;
+  max-height: 250px;
+}
