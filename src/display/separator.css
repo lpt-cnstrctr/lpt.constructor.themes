@@ -9,7 +9,7 @@ Styleguide: display.separator
 */
 
 .nz-separator {
-  background: var(--border-color);
+  background: var(--separator-color, var(--border-color));
   height: 2px;
   width: 430px;
   margin: 10px auto;
@@ -18,28 +18,15 @@ Styleguide: display.separator
 
 .nz-separator:before {
   content: '\25CF';
-  color: var(--border-color);
+  color: var(--separator-color, var(--border-color));
   font-size: 32px;
   position: absolute;
   top: -19px;
   left: 50%;
-  box-shadow: inset 0 0 0 12px var(--white-color);
+  box-shadow: inset 0 0 0 12px var(--bg-color);
   width: 26px;
   text-align: center;
   margin-left: -13px;
-}
-
-.theme-dark .nz-separator {
-  background: #666;
-}
-
-.theme-dark .nz-separator:before {
-  box-shadow: inset 0 0 0 12px var(--background-dark-gray-color);
-  color: #666;
-}
-
-.theme-gray .nz-separator:before {
-  box-shadow: inset 0 0 0 12px var(--background-gray-color);
 }
 
 .nz-separator-small {

@@ -20,8 +20,12 @@ nz-block используется в первую очередь для рабо
 Styleguide: display.blocks
 */
 
+.nz-block {
+  background-color: var(--bg-color);
+}
+
 .nz-block.theme-dark {
-  background-color: var(--background-dark-gray-color);
+  --bg-color: var(--background-dark-gray-color);
   --base-color: var(--white-color);
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--text-gray-color);
@@ -30,10 +34,11 @@ Styleguide: display.blocks
 
   --alt-border-color: var(--text-dark-gray-color);
   --base-border-color: transparent;
+  --separator-color: var(--dark-separator-color);
 }
 
 .nz-block.theme-darker {
-  background-color: var(--footer-color);
+  --bg-color: var(--footer-color);
   --base-color: var(--white-color);
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--text-gray-color);
@@ -42,10 +47,11 @@ Styleguide: display.blocks
 
   --alt-border-color: var(--text-dark-gray-color);
   --base-border-color: transparent;
+  --separator-color: var(--dark-separator-color);
 }
 
 .nz-block.theme-gray {
-  background-color: var(--background-gray-color);
+  --bg-color: var(--background-gray-color);
   --base-color: var(--dark-color);
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
@@ -53,7 +59,7 @@ Styleguide: display.blocks
 }
 
 .nz-block.theme-light {
-  background-color: var(--white-color);
+  --bg-color: var(--white-color);
   --base-color: var(--dark-color);
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
@@ -61,7 +67,7 @@ Styleguide: display.blocks
 }
 
 .nz-block.theme-accent {
-  background-color: var(--accent-color);
+  --bg-color: var(--accent-color);
   --base-color: var(--white-color);
   --lead-color: var(--white-color);
   --small-paragraph-color: var(--white-color);
