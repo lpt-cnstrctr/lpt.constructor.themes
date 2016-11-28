@@ -99,6 +99,14 @@ Styleguide: display.texts
   text-align: center;
 }
 
+.nz-text-left {
+  text-align: left;
+}
+
+.nz-text-right {
+  text-align: right;
+}
+
 .nz-text-uppercase {
   text-transform: uppercase;
 }
