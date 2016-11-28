@@ -38,3 +38,17 @@ Styleguide: icons.mods
 @import "./font-icons.css";
 
 /* stylelint-enable */
+
+.nz-background-circle {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.nz-background-circle.large {
+  padding: 1em;
+}
+
+.nz-background-circle.accent {
+  background-color: var(--accent-color);
+}
