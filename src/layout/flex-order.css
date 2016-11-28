@@ -1,0 +1,19 @@
+/*
+Порядок
+
+Styleguide: layout.flex-order
+*/
+
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@define-mixin order-for-value $index, $name {
+  .nz-flex-order$(name)-$(index) {
+    order: $(index);
+  }
+}
+
+@define-mixin order-for-name $name {
+  @for $index from 0 to 10 by 1 {
+    @mixin order-for-value $(index), $(name) {}
+  }
+}

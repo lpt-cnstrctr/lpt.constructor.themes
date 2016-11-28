@@ -7,6 +7,8 @@
 
 .nz-layout-column - элементы контейнера как строки
 .nz-layout-row - элементы контейнера как столбцы
+.nz-layout-column-reverse -
+.nz-layout-row-reverse -
 
 Markup:
 <div class="{{modifier_class}} nz-layout-margin-1">
@@ -20,6 +22,8 @@ Styleguide: layout.flex-direction
 @define-mixin layout-for-name $name {
   .nz-layout$(name),
   .nz-layout$(name)-column,
+  .nz-layout$(name)-column-reverse,
+  .nz-layout$(name)-row-reverse,
   .nz-layout$(name)-row {
     display: flex;
     box-sizing: border-box;
@@ -31,5 +35,13 @@ Styleguide: layout.flex-direction
 
   .nz-layout$(name)-row {
     flex-direction: row;
+  }
+
+  .nz-layout$(name)-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .nz-layout$(name)-row-reverse {
+    flex-direction: row-reverse;
   }
 }

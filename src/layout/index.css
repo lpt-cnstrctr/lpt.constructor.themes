@@ -59,6 +59,7 @@ xl >= 1920px
 @import './layout-padding-margin';
 @import './flex-offset';
 @import './hide';
+@import './flex-order';
 
 $layout-breakpoint-xs: 600px;
 
@@ -69,6 +70,7 @@ $layout-breakpoint-xs: 600px;
 @mixin layout-padding-margin-for-name {}
 @mixin offset-for-name {}
 @mixin hide-for-name {}
+@mixin order-for-name {}
 
 /* Print breakpoint */
 @media print {
@@ -78,6 +80,7 @@ $layout-breakpoint-xs: 600px;
   @mixin layout-padding-margin-for-name -print {}
   @mixin offset-for-name -print {}
   @mixin hide-for-name -print {}
+  @mixin order-for-name -print {}
 }
 
 /* Xtra-SMALL SCREEN */
@@ -88,6 +91,7 @@ $layout-breakpoint-xs: 600px;
   @mixin layout-padding-margin-for-name -xs {}
   @mixin offset-for-name -xs {}
   @mixin hide-for-name -xs {}
+  @mixin order-for-name -xs {}
 }
 
 /* greather then Xtra-SMALL SCREEN */
@@ -98,4 +102,5 @@ $layout-breakpoint-xs: 600px;
   @mixin layout-padding-margin-for-name -gt-xs {}
   @mixin offset-for-name -gt-xs {}
   @mixin hide-for-name -gt-xs {}
+  @mixin order-for-name -gt-xs {}
 }

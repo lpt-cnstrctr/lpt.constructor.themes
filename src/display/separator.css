@@ -2,6 +2,8 @@
 Разделитель
 
 .nz-separator - separator
+.nz-separator-small - separator
+.nz-separator-thin - separator
 
 Styleguide: display.separator
 */
@@ -44,5 +46,13 @@ Styleguide: display.separator
   box-sizing: border-box;
   width: 4em;
   margin: 2em;
-  border: calc(0.2 / 4em) solid var(--small-paragraph-color);
+  border: 1px solid var(--small-paragraph-color);
+}
+
+.nz-separator-thin {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 3em 0;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
 }

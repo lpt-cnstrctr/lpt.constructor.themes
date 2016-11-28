@@ -12,6 +12,7 @@ Styleguide: display
 @import './backgrounds';
 @import './separator';
 @import './navigation';
+@import './gallery';
 
 .clear-margin {
   margin: 0;
