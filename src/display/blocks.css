@@ -28,6 +28,7 @@ Styleguide: display.blocks
 
 .nz-block {
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 .nz-block.theme-dark {
