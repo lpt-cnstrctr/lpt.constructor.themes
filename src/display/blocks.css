@@ -20,6 +20,12 @@ nz-block используется в первую очередь для рабо
 Styleguide: display.blocks
 */
 
+.nz-block-cover {
+  background-color: var(--cover-bg-color);
+  border: 1px solid var(--base-border-color, var(--border-color));
+  border-radius: 3px;
+}
+
 .nz-block {
   background-color: var(--bg-color);
 }
@@ -104,12 +110,6 @@ Styleguide: display.blocks
 
 .nz-block-halfheight {
   min-height: calc(50vh - 8em);
-}
-
-.nz-block-cover {
-  background-color: var(--cover-bg-color);
-  border: 1px solid var(--base-border-color, var(--border-color));
-  border-radius: 3px;
 }
 
 /* using for services block */
