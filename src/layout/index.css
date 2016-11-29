@@ -54,7 +54,6 @@ xl >= 1920px
 
 @import './layout';
 @import './flex';
-@import './slider';
 @import './layout-align';
 @import './layout-padding-margin';
 @import './flex-offset';

@@ -6,6 +6,8 @@ Styleguide: display
 
 @import './texts';
 @import './buttons';
+@import './image';
+@import './slider';
 @import './whiteframes';
 @import './forms';
 @import './blocks';
