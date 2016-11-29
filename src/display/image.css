@@ -1,0 +1,12 @@
+/*
+Вспомогательные класссы для изображений
+*/
+
+.nz-image-grayscale {
+  transition: 0.5s;
+  filter: grayscale(100%);
+}
+
+.nz-image-grayscale:hover {
+  filter: grayscale(0%);
+}
