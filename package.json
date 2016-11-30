@@ -1,6 +1,6 @@
 {
   "name": "nezimo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "test": "stylelint src/**/*.css",
     "start": "gulp start",
