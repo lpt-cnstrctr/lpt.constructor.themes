@@ -78,6 +78,11 @@ Styleguide: display.blocks
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
   --caption-color: var(--text-gray-color);
+
+  /* nested nz-blocks theme-ligth correction */
+  --button-color: var(--white-color);
+  --button-bg-color: var(--accent-color);
+  --paragraph-accent-color: var(--accent-color);
 }
 
 .nz-block.theme-accent {
