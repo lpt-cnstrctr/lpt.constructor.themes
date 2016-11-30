@@ -142,6 +142,6 @@ Styleguide: display.blocks
   right: 0;
   bottom: 0;
   left: 0;
-  height: initial !important;
-  width: initial !important;
+  height: 100% !important;
+  width: 100% !important;
 }
