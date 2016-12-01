@@ -87,5 +87,9 @@ Styleguide: colors
 }
 
 .nz-accent-color {
-  color: var(--accent-color);
+  color: var(--paragraph-accent-color, var(--accent-color));
+}
+
+.nz-danger-color {
+  color: var(--red-color);
 }
