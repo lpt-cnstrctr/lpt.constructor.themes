@@ -4,9 +4,13 @@
 nz-block используется в первую очередь для работы
 с цветовой схемой. Является основой для конструктора блоков,
 любой блок должен быть обернут в контейнер nz-block
-* .nz-block.dark - темная тема оформления (белый текст и черный фон)
-* .nz-block.gray - серая тема оформления (меняет фон на серый цвет)
 
+.nz-block -
+.nz-block.theme-dark -
+.nz-block.theme-darker -
+.nz-block.theme-gray -
+.nz-block.theme-light -
+.nz-block.theme-accent -
 .nz-block-wrapper - устанавливает фиксированную ширину и выравнивает по центру контейнер блока
 .nz-block-wrapper.narrow -
 .nz-block-wrapper.pillow - добавляет отступы
@@ -14,8 +18,10 @@ nz-block используется в первую очередь для рабо
 .nz-block-fullheight - 100% от высоты экрана
 .nz-block-halfheight - 50% от высоты экрана
 .nz-block-cover - светлый фон для контейнера
-.nz-block-cover.gray - серый фон для контейнера
-.nz-block-cover.dark - полупрозрачный черный фон для контейнера
+.nz-block-cover.alt-border -
+.nz-fit -
+.nz-block-border-bottom -
+.nz-fixed -
 
 Styleguide: display.blocks
 */
@@ -29,6 +35,7 @@ Styleguide: display.blocks
 .nz-block {
   background-color: var(--bg-color);
   overflow: hidden;
+  position: relative;
 }
 
 .nz-block.theme-dark {
@@ -71,6 +78,11 @@ Styleguide: display.blocks
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
   --caption-color: var(--text-gray-color);
+
+  /* nested nz-blocks theme-ligth correction */
+  --button-color: var(--white-color);
+  --button-bg-color: var(--accent-color);
+  --paragraph-accent-color: var(--accent-color);
 }
 
 .nz-block.theme-accent {
@@ -126,4 +138,25 @@ Styleguide: display.blocks
   position: fixed;
   z-index: 1;
   width: 100%; /* use for fullwith blocks! */
+}
+
+.nz-fit,
+.nz-fit > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.nz-roundbox {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 0.8;
 }
