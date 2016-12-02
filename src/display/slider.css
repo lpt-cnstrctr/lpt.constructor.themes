@@ -3,9 +3,15 @@
     <div class="carousel-cell nz-width-..."></div>
 */
 
+.nz-slider-2 {
+  width: 49%;
+  margin-right: 2% !important;
+  margin-left: 0 !important;
+}
+
 .nz-slider-3 {
-  width: 30%;
-  margin-right: 5% !important;
+  width: 33%;
+  margin-right: 0.5% !important;
   margin-left: 0 !important;
 }
 
