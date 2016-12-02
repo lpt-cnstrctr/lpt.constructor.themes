@@ -158,5 +158,8 @@ Styleguide: display.blocks
   width: 2em;
   height: 2em;
   text-align: center;
-  line-height: 0.8;
+  line-height: 0.9;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 600;
 }

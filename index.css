@@ -1,5 +1,5 @@
 @import 'normalize.css/normalize.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700&subset=cyrillic');
 @import './src/colors.css';
 @import './src/fonts';
 @import './src/layout';
