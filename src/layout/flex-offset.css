@@ -30,7 +30,7 @@ Styleguide: layout.flex-offset
 
   .nz-layout-xs-column > .nz-flex-offset$(name)-$(index) {
     margin-top: $(value)%;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
   }
 
   .nz-layout-row > .nz-flex-offset$(name)-$(index) {
@@ -39,7 +39,7 @@ Styleguide: layout.flex-offset
 
   .nz-layout-xs-row > .nz-flex-offset$(name)-$(index) {
     margin-left: $(value)%;
-    margin-top: 0px !important;
+    margin-top: 0 !important;
   }
 }
 
