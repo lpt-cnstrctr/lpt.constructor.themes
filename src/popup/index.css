@@ -40,23 +40,26 @@ Styleguide: popup
 }
 
 .popup {
+  box-sizing: border-box;
   top: 25%;
   right: 0;
   left: 50%;
   z-index: 10000;
   margin: 0 auto;
   width: 100%;
-  min-width: 20em;
-  max-width: 50em;
+  max-width: 46em;
   position: fixed;
-  padding: 2em;
+  padding: 3em;
   background-color: #fff;
   border-radius: 0.25em;
-  box-shadow: 0 0 0 1em rgba(0, 0, 0, 0.25);
   transition: top 0.3s ease-out, opacity 0.6s ease;
   transform: translate(0, 0);
   visibility: hidden;
   opacity: 0;
+}
+
+.popup.wide {
+  max-width: 70em;
 }
 
 .overlay:target + .popup {
@@ -69,23 +72,20 @@ Styleguide: popup
 .close {
   position: absolute;
   padding: 0;
-  top: 1em;
-  right: 1em;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background-color: rgba(61, 61, 61, 0.8);
+  top: 2em;
+  right: 2em;
   text-align: center;
   text-decoration: none;
   font-weight: 700;
   line-height: 2em;
   transition: background-color ease 0.7s;
+  font-size: 1.4em;
 }
 
 .close:before {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--accent-color);
   content: '\2715';
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 1.4em;
 }
 
 .close:hover {
