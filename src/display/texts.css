@@ -114,3 +114,9 @@ Styleguide: display.texts
 .nz-text-pre {
   white-space: pre-wrap;
 }
+
+@media (max-width: $layout-breakpoint-xs) {
+  .nz-text-xs-center {
+    text-align: center;
+  }
+}
