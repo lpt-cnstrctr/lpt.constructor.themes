@@ -83,7 +83,7 @@ Styleguide: colors
 
 /* helpers */
 .nz-base-color {
-  color: var(--base-color);
+  color: var(--base-color) !important;
 }
 
 .nz-accent-color {

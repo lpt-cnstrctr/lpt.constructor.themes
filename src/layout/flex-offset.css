@@ -28,8 +28,18 @@ Styleguide: layout.flex-offset
     margin-top: $(value)%;
   }
 
+  .nz-layout-xs-column > .nz-flex-offset$(name)-$(index) {
+    margin-top: $(value)%;
+    margin-left: 0px !important;
+  }
+
   .nz-layout-row > .nz-flex-offset$(name)-$(index) {
     margin-left: $(value)%;
+  }
+
+  .nz-layout-xs-row > .nz-flex-offset$(name)-$(index) {
+    margin-left: $(value)%;
+    margin-top: 0px !important;
   }
 }
 
