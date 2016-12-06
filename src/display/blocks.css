@@ -134,6 +134,11 @@ Styleguide: display.blocks
   border-bottom: 1px solid var(--alt-border-color, var(--border-color));
 }
 
+.nz-block-border-top {
+  border-top: 1px solid var(--alt-border-color, var(--border-color));
+  padding-top: calc(1 / 1.4em);
+}
+
 .nz-fixed {
   position: fixed;
   z-index: 1;
