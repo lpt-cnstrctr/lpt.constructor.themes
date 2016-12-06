@@ -22,6 +22,7 @@ nz-block используется в первую очередь для рабо
 .nz-fit -
 .nz-block-border-bottom -
 .nz-fixed -
+.nz-fit-cover
 
 Styleguide: display.blocks
 */
@@ -45,6 +46,7 @@ Styleguide: display.blocks
   --small-paragraph-color: var(--text-gray-color);
   --caption-color: var(--text-gray-color);
   --cover-bg-color: var(--dark-background);
+  --fit-cover-bg-color: #000;
 
   --alt-border-color: var(--text-dark-gray-color);
   --base-border-color: transparent;
@@ -78,6 +80,7 @@ Styleguide: display.blocks
   --lead-color: var(--text-dark-gray-color);
   --small-paragraph-color: var(--text-dark-gray-color);
   --caption-color: var(--text-gray-color);
+  --fit-cover-bg-color: #fff;
 
   /* nested nz-blocks theme-ligth correction */
   --button-color: var(--white-color);
@@ -145,6 +148,7 @@ Styleguide: display.blocks
   width: 100%; /* use for fullwith blocks! */
 }
 
+.nz-fit-cover,
 .nz-fit,
 .nz-fit > * {
   position: absolute;
@@ -154,6 +158,15 @@ Styleguide: display.blocks
   left: 0;
   height: 100% !important;
   width: 100% !important;
+}
+
+.nz-fit-cover {
+  background-color: var(--fit-cover-bg-color);
+}
+
+/* all elements after fit-cover need place "over" fit-cover */
+.nz-fit-cover ~ * {
+  position: relative;
 }
 
 .nz-roundbox {
