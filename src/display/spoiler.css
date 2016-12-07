@@ -1,20 +1,27 @@
-summary{
-    outline:none;
+
+summary {
+  outline: none;
 }
+
 summary::-webkit-details-marker {
-    display: none
+  display: none;
 }
-summary:before , .nz-spoiler:before{
-    content: "\030C";
-    color: var(--spoiler-color);
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    position:relative;
-    top:10px;
-    left:3px;
-    margin-right:0.5em;
+
+summary:before,
+.nz-spoiler:before {
+  content: "\030C";
+  color: var(--spoiler-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  margin-right: 0.5em;
 }
-details[open] summary:before , .nz-spoiler[open]:before{
-    content: "\0302";
+
+details[open] summary:before,
+.nz-spoiler[open]:before {
+  content: "\0302";
 }
+
