@@ -37,6 +37,7 @@ Styleguide: display.blocks
   background-color: var(--bg-color);
   overflow: hidden;
   position: relative;
+  --spoiler-color: var(--accent-color);
 }
 
 .nz-block.theme-dark {
@@ -100,6 +101,7 @@ Styleguide: display.blocks
   --paragraph-accent-color: var(--white-color);
   --button-color: var(--accent-color);
   --button-bg-color: var(--white-color);
+  --spoiler-color: var(--white-color);
 }
 
 .nz-block-wrapper {

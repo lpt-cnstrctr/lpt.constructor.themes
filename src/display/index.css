@@ -8,6 +8,7 @@ Styleguide: display
 @import './buttons';
 @import './image';
 @import './slider';
+@import './spoiler';
 @import './whiteframes';
 @import './forms';
 @import './blocks';
