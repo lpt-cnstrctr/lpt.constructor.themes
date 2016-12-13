@@ -1,0 +1,185 @@
+/*
+Блоки
+
+nz-block используется в первую очередь для работы
+с цветовой схемой. Является основой для конструктора блоков,
+любой блок должен быть обернут в контейнер nz-block
+
+.nz-block -
+.nz-block.theme-dark -
+.nz-block.theme-darker -
+.nz-block.theme-gray -
+.nz-block.theme-light -
+.nz-block.theme-accent -
+.nz-block-wrapper - устанавливает фиксированную ширину и выравнивает по центру контейнер блока
+.nz-block-wrapper.narrow -
+.nz-block-wrapper.pillow - добавляет отступы
+.nz-block-wrapper.semi-pillow - добавляет небольшие отступы
+.nz-block-fullheight - 100% от высоты экрана
+.nz-block-halfheight - 50% от высоты экрана
+.nz-block-cover - светлый фон для контейнера
+.nz-block-cover.alt-border -
+.nz-fit -
+.nz-block-border-bottom -
+.nz-fixed -
+.nz-fit-cover
+
+Styleguide: display.blocks
+*/
+
+.nz-block-cover {
+  background-color: var(--cover-bg-color);
+  border: 1px solid var(--base-border-color, var(--border-color));
+  border-radius: 3px;
+}
+
+.nz-block {
+  background-color: var(--bg-color);
+  overflow: hidden;
+  position: relative;
+  --spoiler-color: var(--accent-color);
+}
+
+.nz-block.theme-dark {
+  --bg-color: var(--background-dark-gray-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--text-gray-color);
+  --caption-color: var(--text-gray-color);
+  --cover-bg-color: var(--dark-background);
+  --fit-cover-bg-color: #000;
+
+  --alt-border-color: var(--text-dark-gray-color);
+  --base-border-color: transparent;
+  --separator-color: var(--dark-separator-color);
+}
+
+.nz-block.theme-darker {
+  --bg-color: var(--footer-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--text-gray-color);
+  --caption-color: var(--text-gray-color);
+  --cover-bg-color: var(--dark-background);
+
+  --alt-border-color: var(--text-dark-gray-color);
+  --base-border-color: transparent;
+  --separator-color: var(--dark-separator-color);
+}
+
+.nz-block.theme-gray {
+  --bg-color: var(--background-gray-color);
+  --base-color: var(--dark-color);
+  --lead-color: var(--text-dark-gray-color);
+  --small-paragraph-color: var(--text-dark-gray-color);
+  --caption-color: var(--text-gray-color);
+}
+
+.nz-block.theme-light {
+  --bg-color: var(--white-color);
+  --base-color: var(--dark-color);
+  --lead-color: var(--text-dark-gray-color);
+  --small-paragraph-color: var(--text-dark-gray-color);
+  --caption-color: var(--text-gray-color);
+  --fit-cover-bg-color: #fff;
+
+  /* nested nz-blocks theme-ligth correction */
+  --button-color: var(--white-color);
+  --button-bg-color: var(--accent-color);
+  --paragraph-accent-color: var(--accent-color);
+}
+
+.nz-block.theme-accent {
+  --bg-color: var(--accent-color);
+  --base-color: var(--white-color);
+  --lead-color: var(--white-color);
+  --small-paragraph-color: var(--white-color);
+  --caption-color: var(--white-color);
+  --cover-bg-color: var(--accent-color);
+
+  --alt-border-color: var(--white-color);
+  --paragraph-accent-color: var(--white-color);
+  --button-color: var(--accent-color);
+  --button-bg-color: var(--white-color);
+  --spoiler-color: var(--white-color);
+}
+
+.nz-block-wrapper {
+  margin: 0 auto;
+  max-width: 122em;
+  padding: 1em 3em;
+}
+
+.nz-block-wrapper.narrow {
+  max-width: 92em;
+}
+
+.nz-block-wrapper.pillow {
+  padding: 8em 3em;
+}
+
+.nz-block-wrapper.semi-pillow {
+  padding: 3em;
+}
+
+.nz-block-fullheight {
+  min-height: calc(100vh - 8em);
+}
+
+.nz-block-halfheight {
+  min-height: calc(50vh - 8em);
+}
+
+/* using for services block */
+.nz-block-cover.alt-border {
+  border: 1px solid var(--alt-border-color, var(--border-color));
+}
+
+.nz-block-border-bottom {
+  border-bottom: 1px solid var(--alt-border-color, var(--border-color));
+}
+
+.nz-block-border-top {
+  border-top: 1px solid var(--alt-border-color, var(--border-color));
+  padding-top: calc(1 / 1.4em);
+}
+
+.nz-fixed {
+  position: fixed;
+  z-index: 1;
+  width: 100%; /* use for fullwith blocks! */
+}
+
+.nz-fit-cover,
+.nz-fit,
+.nz-fit > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.nz-fit-cover {
+  background-color: var(--fit-cover-bg-color);
+}
+
+/* all elements after fit-cover need place "over" fit-cover */
+.nz-fit-cover ~ * {
+  position: relative;
+}
+
+.nz-roundbox {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 0.9;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 600;
+}

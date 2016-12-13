@@ -1,0 +1,45 @@
+/*
+Разделитель
+
+.nz-separator - separator
+.nz-separator-small - separator
+.nz-separator-thin - separator
+
+Styleguide: display.separator
+*/
+
+.nz-separator {
+  background: var(--separator-color, var(--border-color));
+  height: 2px;
+  width: 430px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.nz-separator:before {
+  content: '\25CF';
+  color: var(--separator-color, var(--border-color));
+  font-size: 32px;
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  box-shadow: inset 0 0 0 12px var(--bg-color);
+  width: 26px;
+  text-align: center;
+  margin-left: -13px;
+}
+
+.nz-separator-small {
+  box-sizing: border-box;
+  width: 4em;
+  margin: 2em;
+  border: 1px solid var(--small-paragraph-color);
+}
+
+.nz-separator-thin {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 3em 0;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+}

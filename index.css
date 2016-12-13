@@ -1,3 +1,54 @@
-@import './src/canvas/style.css';
-@import './src/default/style.css';
-@import './src/base/application.css';
+@import 'normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700&subset=cyrillic');
+@import './src/colors.css';
+@import './src/fonts';
+@import './src/layout';
+@import './src/display';
+@import './src/popup';
+@import './src/popup';
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
+::selection {
+  color: white;
+  background: var(--accent-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/*
+  Global page styles
+
+  [1] disable callout and tap highlight when you touch and hold a touch target on iPhone OS
+  [2] Ensure the page always fills at least the entire height of the viewport.
+  [3] Prevent iOS text size adjust after orientation change, without disabling user zoom
+  [4] Fonts on OSX will look more consistent with other systems that do not
+  render text using sub-pixel anti-aliasing.
+*/
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* [1] */
+  -webkit-touch-callout: none; /* [1] */
+
+  min-height: 100%; /* [2] */
+
+  -webkit-text-size-adjust: 100%; /* [3] */
+  -ms-text-size-adjust: 100%; /* [3] */
+
+  -webkit-font-smoothing: antialiased; /* [4] */
+  -moz-osx-font-smoothing: grayscale; /* [4] */
+}

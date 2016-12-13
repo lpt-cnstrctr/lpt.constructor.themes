@@ -1,0 +1,101 @@
+/*
+Кнопки
+
+Кнопки используемые для оформления ссылок и действия формы.
+
+.small - уменьшенная кнопка
+.danger - выделенная красным кнопка
+.outline - как обычная ссылка с рамкой
+:focus - после клика и до потери фокуса
+:hover - при наведении
+:active - в момент клика
+:disabled - заблокированная для действия
+
+Markup:
+<a href="#" class="nz-button {{modifier_class}}">Ссылка</a>
+<button class="nz-button {{modifier_class}}">Элемент кнопки</button>
+<input type="submit" class="nz-button {{modifier_class}}" value="Элемент формы"/>
+
+Styleguide: display.buttons
+*/
+
+.nz-button {
+  position: relative;
+  display: inline-block;
+  padding: calc(1.2 / 1.6em) calc(3 / 1.6em);
+  font-size: 1.6em;
+  line-height: calc(2.5 / 1.6em);
+  color: var(--button-color, var(--white-color));
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--button-bg-color, var(--accent-color));
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  appearance: none; /* Corrects inability to style clickable `input` types in iOS. */
+  opacity: 0.85;
+  margin: calc(2 / 1.6em);
+  box-sizing: border-box;
+}
+
+/* small button */
+.nz-button.small,
+.small .nz-button { /* for small nz-form */
+  padding: calc(0.7 / 1.6em) calc(2 / 1.6em);
+  line-height: calc(2.5 / 1.6em);
+}
+
+/* danger button */
+.nz-button.danger {
+  color: var(--white-color);
+  border-color: var(--red-color);
+  background-color: var(--red-color);
+}
+
+/* states */
+.nz-button:focus {
+  outline: none;
+}
+
+.nz-button:hover,
+.nz-button:active {
+  opacity: 1;
+}
+
+.nz-button:active {
+  background-color: var(--background-dark-gray-color);
+  border-color: var(--background-dark-gray-color);
+}
+
+.nz-button:disabled {
+  background-color: var(--border-color);
+  border-color: var(--border-color);
+  cursor: default;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/* outline button */
+.nz-button.outline {
+  color: var(--button-bg-color, var(--accent-color));
+  border-color: var(--button-bg-color, var(--accent-color));
+  background-color: transparent;
+}
+
+.nz-button.outline:active {
+  color: var(--background-dark-gray-color);
+  border-color: var(--background-dark-gray-color);
+}
+
+.nz-button.outline:disabled {
+  color: var(--text-dark-gray-color);
+  border-color: var(--border-color);
+}
+
+.theme-accent .nz-button.outline {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  background-color: transparent;
+}

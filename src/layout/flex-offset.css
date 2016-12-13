@@ -1,0 +1,53 @@
+/*
+Отступ
+
+Устанавливает отступ, применяется к элементу.
+Задается как .nz-flex-offset-$(состояние)-$(шаг), где шаг - число от 0 до 95 (с шагом 5) и числа 33, 66,
+а состояние - xs (экран меньше 600px) или print (макет при печати),
+без состояния значение применяется в любом состоянии.
+Отступ задается в зависимости от контейнера.
+Для .nz-layout-column margin-top, а для .nz-layout-row margin-left
+
+Markup:
+<div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-66 nz-flex-offset-15 demo1">
+    [class="nz-flex-66 nz-flex-offset-15"]
+  </div>
+  <div class="nz-flex demo2">
+    [class="nz-flex"]
+  </div>
+</div>
+
+Styleguide: layout.flex-offset
+*/
+
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@define-mixin offset-for-value $index, $value, $name {
+  .nz-layout-column > .nz-flex-offset$(name)-$(index) {
+    margin-top: $(value)%;
+  }
+
+  .nz-layout$(name)-column > .nz-flex-offset-$(index) {
+    margin-top: $(value)%;
+    margin-left: 0;
+  }
+
+  .nz-layout-row > .nz-flex-offset$(name)-$(index) {
+    margin-left: $(value)%;
+  }
+
+  .nz-layout$(name)-row > .nz-flex-offset-$(index) {
+    margin-left: $(value)%;
+    margin-top: 0;
+  }
+}
+
+@define-mixin offset-for-name $name {
+  @for $index from 0 to 95 by 5 {
+    @mixin offset-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin offset-for-value 33, 33.33, $(name) {}
+  @mixin offset-for-value 66, 66.66, $(name) {}
+}

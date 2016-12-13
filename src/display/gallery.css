@@ -1,0 +1,50 @@
+/*
+Галерея
+
+Styleguide: display.gallery
+*/
+
+.nz-gallery {
+  background-color: #000;
+}
+
+.nz-gallery img {
+  object-fit: cover;
+  max-width: initial;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.nz-gallery:hover img {
+  opacity: 0.5;
+}
+
+.nz-gallery .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nz-gallery:hover .info {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.nz-gallery-fit {
+  object-fit: cover;
+  max-width: 100%;
+
+  height: 40vw;
+  max-height: 500px;
+}
+
+.nz-gallery-fit.half {
+  height: 20vw;
+  max-height: 250px;
+}

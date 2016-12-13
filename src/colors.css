@@ -1,0 +1,95 @@
+/*
+Цвета
+
+Палитра акцентных цветов
+
+.pizazz-color - #E87034
+.rob-roy-color - #E3B960
+.monte-carlo-color - #82C9AC
+.mountain-meadow-color - #19BC9C
+.charlotte-color - #95C6E3
+.curious-blue-color - #408DBD
+.heather-color - #AFB8BE
+.old-rose-color - #AF2E4E
+.illusion-color - #EE9FB2
+.lilac-bush-color - #A272C4
+
+Markup:
+<p class="{{modifier_class}}"><a>Тестовый заголовок</a></p>
+
+Styleguide: colors
+*/
+
+:root {
+  --white-color: #fff;
+  --background-gray-color: #f9f9f9;
+  --background-dark-gray-color: #444;
+  --footer-color: #292929;
+  --dark-color: #333;
+  --text-dark-gray-color: #777;
+  --green-color: #19bc9c;
+  --red-color: #c02942;
+  --border-color: #eee;
+  --text-gray-color: #999;
+  --red-error-color: #d0011b;
+  --dark-separator-color: #666;
+
+  /* default color piazz-color tmp solution */
+  --accent-color: #e87034;
+
+  --dark-background: rgba(3, 3, 3, 0.2);
+}
+
+/* accent colors */
+.pizazz-color {
+  --accent-color: #e87034;
+}
+
+.rob-roy-color {
+  --accent-color: #e3b960;
+}
+
+.monte-carlo-color {
+  --accent-color: #82c9ac;
+}
+
+.mountain-meadow-color {
+  --accent-color: #19bc9c;
+}
+
+.charlotte-color {
+  --accent-color: #95c6e3;
+}
+
+.curious-blue-color {
+  --accent-color: #408dbd;
+}
+
+.heather-color {
+  --accent-color: #afb8be;
+}
+
+.old-rose-color {
+  --accent-color: #af2e4e;
+}
+
+.illusion-color {
+  --accent-color: #ee9fb2;
+}
+
+.lilac-bush-color {
+  --accent-color: #a272c4;
+}
+
+/* helpers */
+.nz-base-color {
+  color: var(--base-color) !important;
+}
+
+.nz-accent-color {
+  color: var(--paragraph-accent-color, var(--accent-color));
+}
+
+.nz-danger-color {
+  color: var(--red-color);
+}

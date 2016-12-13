@@ -1,0 +1,26 @@
+/*
+Отображение
+
+Styleguide: display
+*/
+
+@import './texts';
+@import './buttons';
+@import './image';
+@import './slider';
+@import './spoiler';
+@import './whiteframes';
+@import './forms';
+@import './blocks';
+@import './backgrounds';
+@import './separator';
+@import './navigation';
+@import './gallery';
+
+.clear-margin {
+  margin: 0;
+}
+
+.max-width {
+  width: 100%;
+}

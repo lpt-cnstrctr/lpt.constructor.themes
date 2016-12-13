@@ -1,0 +1,105 @@
+/*
+Позиционирование
+
+Особый класс свойств которые устанавливают поведение элементов.
+Все классы делятся на те, что устанавливаются на контейнеры (nz-layout-...)
+и те что устанавливаются на элементы (nz-flex-...).
+Каждый класс имеет вспомогательный суфикс "состояние", с его помощью можно
+применять классы только при определенных разрешениях экрана или иных условий.
+Сейчас существует два состояния: xs (экран меньше 600px) или print (макет при печати).
+Пример:
+* .nz-hide-$(состояние)
+* .nz-hide
+* .nz-hide-print
+* .nz-hide-xs
+
+Markup:
+<style>
+  .demo1 {
+    background-color: var(--accent-color);
+  }
+  .demo2 {
+    background-color: var(--danger-color);
+  }
+  .demo1,
+  .demo2 {
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    line-height: 50px;
+    text-align: center;
+  }
+</style>
+
+Styleguide: layout
+*/
+
+/*
+breakpoints
+
++ print
++ default
++ xs < 600px
++ gt-xs >= 600px
+
+sm 600px <= width < 960px
+gt-sm >= 960px
+md 960px <= width < 1280px
+gt-md >= 1280px
+lg 1280px <= width < 1920px
+gt-lg >= 1920px
+xl >= 1920px
+*/
+
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@import './layout';
+@import './flex';
+@import './layout-align';
+@import './layout-padding-margin';
+@import './flex-offset';
+@import './hide';
+@import './flex-order';
+
+$layout-breakpoint-xs: 600px;
+
+/* Default breakpoint */
+@mixin layout-for-name {}
+@mixin flex-for-name {}
+@mixin layout-align-for-name {}
+@mixin layout-padding-margin-for-name {}
+@mixin offset-for-name {}
+@mixin hide-for-name {}
+@mixin order-for-name {}
+
+/* Print breakpoint */
+@media print {
+  @mixin layout-for-name -print {}
+  @mixin flex-for-name -print {}
+  @mixin layout-align-for-name -print {}
+  @mixin layout-padding-margin-for-name -print {}
+  @mixin offset-for-name -print {}
+  @mixin hide-for-name -print {}
+  @mixin order-for-name -print {}
+}
+
+/* Xtra-SMALL SCREEN */
+@media (max-width: $layout-breakpoint-xs) {
+  @mixin layout-for-name -xs {}
+  @mixin flex-for-name -xs {}
+  @mixin layout-align-for-name -xs {}
+  @mixin layout-padding-margin-for-name -xs {}
+  @mixin offset-for-name -xs {}
+  @mixin hide-for-name -xs {}
+  @mixin order-for-name -xs {}
+}
+
+/* greather then Xtra-SMALL SCREEN */
+@media (min-width: $layout-breakpoint-xs) {
+  @mixin layout-for-name -gt-xs {}
+  @mixin flex-for-name -gt-xs {}
+  @mixin layout-align-for-name -gt-xs {}
+  @mixin layout-padding-margin-for-name -gt-xs {}
+  @mixin offset-for-name -gt-xs {}
+  @mixin hide-for-name -gt-xs {}
+  @mixin order-for-name -gt-xs {}
+}

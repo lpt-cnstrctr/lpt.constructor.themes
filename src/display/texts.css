@@ -1,0 +1,138 @@
+/*
+Тексты и заголовки
+
+Классы для работы с текстами и заголовками.
+
+.nz-big-title -
+.nz-lead -
+.nz-bold-title -
+.nz-title -
+.nz-paragraph-accent -
+.nz-paragraph -
+.nz-small-paragraph -
+.nz-caption -
+.nz-error -
+.nz-text-center - выровнять текст по центру
+
+Markup:
+<p class="{{modifier_class}}">Тестовый заголовок</p>
+
+Styleguide: display.texts
+*/
+
+.nz-big-title {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: calc(4 / 3em);
+  color: var(--base-color);
+  margin-bottom: calc(1 / 3em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-lead {
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: calc(3 / 2.4em);
+  color: var(--lead-color);
+  margin-bottom: calc(1 / 2.4em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-bold-title {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: calc(2.5 / 2em);
+  letter-spacing: calc(0.2 / 2em);
+  color: var(--base-color);
+  margin-bottom: calc(1 / 2em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-title {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: calc(2.5 / 1.6em);
+  letter-spacing: calc(0.2 / 2em);
+  color: var(--base-color);
+  margin-bottom: calc(1 / 1.6em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-paragraph-accent {
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: calc(2.5 / 1.6em);
+  color: var(--paragraph-accent-color, var(--accent-color));
+  margin-bottom: calc(1 / 1.6em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-paragraph {
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: calc(2.5 / 1.6em);
+  color: var(--base-color);
+  margin-bottom: calc(1 / 1.6em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-small-paragraph {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: calc(2.5 / 1.4em);
+  color: var(--small-paragraph-color);
+  margin-bottom: calc(1 / 1.4em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-caption {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: calc(1.5 / 1.1em);
+  color: var(--caption-color);
+  margin-bottom: calc(1 / 1.1em);
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.nz-error {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: calc(2.5 / 1.4em);
+  color: var(--red-error-color);
+  margin-bottom: calc(1 / 1.4em);
+}
+
+/* helpers */
+.nz-text-center {
+  text-align: center;
+}
+
+.nz-text-left {
+  text-align: left;
+}
+
+.nz-text-right {
+  text-align: right;
+}
+
+.nz-text-uppercase {
+  text-transform: uppercase;
+}
+
+.nz-text-pre {
+  white-space: pre-wrap;
+}
+
+@media (max-width: $layout-breakpoint-xs) {
+  .nz-text-xs-center {
+    text-align: center;
+  }
+}

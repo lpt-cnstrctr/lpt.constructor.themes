@@ -1,0 +1,22 @@
+/*
+Тень
+
+Тень контейнера для обозначения глубины
+
+.nz-whiteframe - тень 1
+.nz-whiteframe-deep - тень 2
+
+Markup:
+<div class="nz-layout-padding-3 nz-layout-margin-2 {{modifier_class}}"></div>
+
+Styleguide: display.whiteframes
+*/
+
+/* stylelint-disable length-zero-no-unit */
+.nz-whiteframe {
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.12);
+}
+
+.nz-whiteframe-deep {
+  box-shadow: 0 0 2.5em 0 rgba(0, 0, 0, 0.5);
+}

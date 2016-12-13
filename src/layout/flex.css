@@ -1,0 +1,155 @@
+/*
+Ширина
+
+Устанавливает ограничение по ширине, применяется к элементу.
+
+Задается как .nz-flex-$(состояние)-$(шаг), где шаг - число от 0 до 100 (с шагом 5) и числа 33, 66,
+а состояние - xs (экран меньше 600px) или print (макет при печати),
+без состояния значение применяется в любом состоянии.
+
+Шаг устанавливает ограничение по ширине (или высоте) в процентах.
+
+Дополнительно существуют вспомогательные классы:
+* .nz-flex$(состояние)-grow - занимает всю ширину, аналогичен на nz-flex-100
+* .nz-flex$(состояние)-initial - растягивается по необходимости, минимальный размер согласно контенту
+* .nz-flex$(состояние)-auto - растягивается и ужимается по необходимости, изначально занимает пространство согласно контенту
+* .nz-flex$(состояние)-none - не будет растягиватся или ужиматься, будет занимать пространство согласно контенту
+* .nz-flex$(состояние)-noshrink - растягивается по необходимости, но не сжимается
+* .nz-flex$(состояние)-nogrow - сжимается по необходимости, но не растягивается
+
+Markup:
+<div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-20 demo1">
+    [class="nz-flex-20"]
+  </div>
+  <div class="nz-flex-70 demo2">
+    [class="nz-flex-70"]
+  </div>
+  <div class="nz-flex nz-hide-xs demo1">
+    [class="nz-flex nz-hide-xs"]
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+  <div class="nz-flex-30 demo1">
+    [class="nz-flex-30"]
+  </div>
+  <div class="nz-flex-45 demo2">
+    [class="nz-flex-45"]
+  </div>
+  <div class="nz-flex-25 demo1">
+    [class="nz-flex-25"]
+  </div>
+  <div class="nz-flex-33 demo2">
+    [class="nz-flex-33"]
+  </div>
+  <div class="nz-flex-66 demo1">
+    [class="nz-flex-66"]
+  </div>
+  <div class="nz-flex-50 demo2">
+    [class="nz-flex-50"]
+  </div>
+  <div class="nz-flex demo1">
+    [class="nz-flex"]
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1">
+  <div class="nz-flex-33 nz-flex-xs-66 demo1">
+    66% на мобильных (меньше 600px ширины), <br>и 33% на остальных устройствах
+  </div>
+  <div class="nz-flex-66 nz-flex-xs-33 demo2">
+    33% на мобильных (меньше 600px ширины), <br>и 66% на остальных устройствах
+  </div>
+</div>
+<div class="nz-layout-row nz-layout-margin-1 nz-layout-wrap">
+  <div class="nz-flex-none demo2">
+    [class="nz-flex-none"]
+  </div>
+  <div class="nz-flex demo1">
+    [class="nz-flex"]
+  </div>
+  <div class="nz-flex-nogrow demo2">
+    [class="nz-flex-nogrow"]
+  </div>
+  <div class="nz-flex-grow demo1">
+    [class="nz-flex-grow"]
+  </div>
+  <div class="nz-flex-initial demo2">
+    [class="nz-flex-initial"]
+  </div>
+  <div class="nz-flex-auto demo1">
+    [class="nz-flex-auto"]
+  </div>
+  <div class="nz-flex-noshrink demo2">
+    [class="nz-flex-noshrink"]
+  </div>
+</div>
+
+Styleguide: layout.flex
+*/
+
+/* stylelint-disable block-no-empty, at-rule-empty-line-before */
+
+@define-mixin flex-for-value $index, $value, $name {
+  .nz-flex$(name)-$(index) {
+    flex: 1 1 $(value)%;
+    max-width: $(value)%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-layout$(name)-row > .nz-flex$(name)-$(index),
+  .nz-layout-row > .nz-flex$(name)-$(index) {
+    max-width: $(value)%;
+    max-height: 100%;
+  }
+
+  .nz-layout$(name)-column > .nz-flex$(name)-$(index),
+  .nz-layout-column > .nz-flex$(name)-$(index) {
+    max-width: 100%;
+    max-height: $(value)%;
+  }
+}
+
+@define-mixin flex-for-name $name {
+  .nz-flex$(name) {
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-grow {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-initial {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-auto {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-none {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-noshrink {
+    flex: 1 0 auto;
+    box-sizing: border-box;
+  }
+
+  .nz-flex$(name)-nogrow {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+  @for $index from 0 to 100 by 5 {
+    @mixin flex-for-value $(index), $(index), $(name) {}
+  }
+
+  @mixin flex-for-value 33, 33.33, $(name) {}
+  @mixin flex-for-value 66, 66.66, $(name) {}
+}
