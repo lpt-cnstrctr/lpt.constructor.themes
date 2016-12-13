@@ -45,7 +45,6 @@ Styleguide: popup
   right: 0;
   left: 50%;
   z-index: 10000;
-  margin: 0 auto;
   width: 100%;
   max-width: 46em;
   position: fixed;
