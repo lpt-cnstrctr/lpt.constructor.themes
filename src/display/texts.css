@@ -27,6 +27,7 @@ Styleguide: display.texts
   color: var(--base-color);
   margin-bottom: calc(1 / 3em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-lead {
@@ -36,6 +37,7 @@ Styleguide: display.texts
   color: var(--lead-color);
   margin-bottom: calc(1 / 2.4em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-bold-title {
@@ -46,6 +48,7 @@ Styleguide: display.texts
   color: var(--base-color);
   margin-bottom: calc(1 / 2em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-title {
@@ -56,6 +59,7 @@ Styleguide: display.texts
   color: var(--base-color);
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-paragraph-accent {
@@ -65,6 +69,7 @@ Styleguide: display.texts
   color: var(--paragraph-accent-color, var(--accent-color));
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-paragraph {
@@ -74,6 +79,7 @@ Styleguide: display.texts
   color: var(--base-color);
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-small-paragraph {
@@ -83,6 +89,7 @@ Styleguide: display.texts
   color: var(--small-paragraph-color);
   margin-bottom: calc(1 / 1.4em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-caption {
@@ -92,6 +99,7 @@ Styleguide: display.texts
   color: var(--caption-color);
   margin-bottom: calc(1 / 1.1em);
   min-height: 1em;
+  min-width: 1em;
 }
 
 .nz-error {
