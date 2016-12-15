@@ -9,19 +9,19 @@ summary::-webkit-details-marker {
 
 summary:before,
 .nz-spoiler:before {
-  content: "\030C";
   color: var(--spoiler-color);
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: 10px;
   left: 3px;
   margin-right: 0.5em;
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
 }
 
 details[open] summary:before,
 .nz-spoiler[open]:before {
-  content: "\0302";
+  content: "\f106";
 }
 
