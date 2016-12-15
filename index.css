@@ -1,7 +1,7 @@
 @import 'normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700&subset=cyrillic');
+@import url('https://use.fontawesome.com/0d61a5f20f.css');
 @import './src/colors.css';
-@import './src/fonts';
 @import './src/layout';
 @import './src/display';
 @import './src/popup';
