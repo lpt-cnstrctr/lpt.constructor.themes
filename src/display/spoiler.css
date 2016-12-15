@@ -15,11 +15,13 @@ summary:before,
   text-align: center;
   position: relative;
   left: 3px;
+  top: 4px;
   margin-right: 0.5em;
 }
 
 details[open] summary:before,
 .nz-spoiler[open]:before {
   content: "\f106";
+  top: 0;
 }
 
