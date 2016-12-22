@@ -74,6 +74,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
+  height: 100%;
 }
 
 .full-with input:not([type="submit"]),
