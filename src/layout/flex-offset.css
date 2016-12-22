@@ -28,7 +28,7 @@ Styleguide: layout.flex-offset
     margin-top: $(value)%;
   }
 
-  .nz-layout$(name)-column > .nz-flex-offset-$(index) {
+  .nz-layout$(name)-column > .nz-flex-offset$(name)-$(index) {
     margin-top: $(value)%;
     margin-left: 0;
   }
@@ -37,7 +37,7 @@ Styleguide: layout.flex-offset
     margin-left: $(value)%;
   }
 
-  .nz-layout$(name)-row > .nz-flex-offset-$(index) {
+  .nz-layout$(name)-row > .nz-flex-offset$(name)-$(index) {
     margin-left: $(value)%;
     margin-top: 0;
   }
