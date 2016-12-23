@@ -21,64 +21,7 @@ Styleguide: colors
 */
 
 :root {
-  --white-color: #fff;
-  --background-gray-color: #f9f9f9;
-  --background-dark-gray-color: #444;
-  --footer-color: #292929;
-  --dark-color: #333;
-  --text-dark-gray-color: #777;
-  --green-color: #19bc9c;
-  --red-color: #c02942;
-  --border-color: #eee;
-  --text-gray-color: #999;
-  --red-error-color: #d0011b;
-  --dark-separator-color: #666;
-
-  /* default color piazz-color tmp solution */
   --accent-color: #e87034;
-
-  --dark-background: rgba(3, 3, 3, 0.2);
-}
-
-/* accent colors */
-.pizazz-color {
-  --accent-color: #e87034;
-}
-
-.rob-roy-color {
-  --accent-color: #e3b960;
-}
-
-.monte-carlo-color {
-  --accent-color: #82c9ac;
-}
-
-.mountain-meadow-color {
-  --accent-color: #19bc9c;
-}
-
-.charlotte-color {
-  --accent-color: #95c6e3;
-}
-
-.curious-blue-color {
-  --accent-color: #408dbd;
-}
-
-.heather-color {
-  --accent-color: #afb8be;
-}
-
-.old-rose-color {
-  --accent-color: #af2e4e;
-}
-
-.illusion-color {
-  --accent-color: #ee9fb2;
-}
-
-.lilac-bush-color {
-  --accent-color: #a272c4;
 }
 
 /* helpers */
@@ -87,9 +30,13 @@ Styleguide: colors
 }
 
 .nz-accent-color {
-  color: var(--paragraph-accent-color, var(--accent-color));
+  color: var(--accent-color);
+}
+
+.nz-block.theme-accent .nz-accent-color {
+  color: #fff;
 }
 
 .nz-danger-color {
-  color: var(--red-color);
+  color: #c02942;
 }

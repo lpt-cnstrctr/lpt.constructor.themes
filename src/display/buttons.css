@@ -25,7 +25,7 @@ Styleguide: display.buttons
   padding: calc(1.2 / 1.6em) calc(3 / 1.6em);
   font-size: 1.6em;
   line-height: calc(2.5 / 1.6em);
-  color: var(--button-color, var(--white-color));
+  color: var(--button-color, #fff);
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -49,9 +49,9 @@ Styleguide: display.buttons
 
 /* danger button */
 .nz-button.danger {
-  color: var(--white-color);
-  border-color: var(--red-color);
-  background-color: var(--red-color);
+  color: #fff;
+  border-color: #c02942;
+  background-color: #c02942;
 }
 
 /* states */
@@ -65,13 +65,13 @@ Styleguide: display.buttons
 }
 
 .nz-button:active {
-  background-color: var(--background-dark-gray-color);
-  border-color: var(--background-dark-gray-color);
+  background-color: #444;
+  border-color: #444;
 }
 
 .nz-button:disabled {
-  background-color: var(--border-color);
-  border-color: var(--border-color);
+  background-color: #eee;
+  border-color: #eee;
   cursor: default;
   box-shadow: none;
   pointer-events: none;
@@ -85,17 +85,17 @@ Styleguide: display.buttons
 }
 
 .nz-button.outline:active {
-  color: var(--background-dark-gray-color);
-  border-color: var(--background-dark-gray-color);
+  color: #444;
+  border-color: #444;
 }
 
 .nz-button.outline:disabled {
-  color: var(--text-dark-gray-color);
-  border-color: var(--border-color);
+  color: #777;
+  border-color: #eee;
 }
 
 .theme-accent .nz-button.outline {
-  color: var(--white-color);
-  border-color: var(--white-color);
+  color: #fff;
+  border-color: #fff;
   background-color: transparent;
 }

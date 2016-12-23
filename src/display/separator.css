@@ -9,7 +9,7 @@ Styleguide: display.separator
 */
 
 .nz-separator {
-  background: var(--separator-color, var(--border-color));
+  background: var(--separator-color, #eee);
   height: 2px;
   width: 430px;
   margin: 10px auto;
@@ -18,15 +18,34 @@ Styleguide: display.separator
 
 .nz-separator:before {
   content: '\25CF';
-  color: var(--separator-color, var(--border-color));
+  color: var(--separator-color, #eee);
   font-size: 32px;
   position: absolute;
   top: -19px;
   left: 50%;
-  box-shadow: inset 0 0 0 12px var(--bg-color);
   width: 26px;
   text-align: center;
   margin-left: -13px;
+}
+
+.nz-block.theme-dark .nz-separator:before {
+  box-shadow: inset 0 0 0 12px #444;
+}
+
+.nz-block.theme-darker .nz-separator:before {
+  box-shadow: inset 0 0 0 12px #292929;
+}
+
+.nz-block.theme-gray .nz-separator:before {
+  box-shadow: inset 0 0 0 12px #f9f9f9;
+}
+
+.nz-block.theme-light .nz-separator:before {
+  box-shadow: inset 0 0 0 12px #fff;
+}
+
+.nz-block.theme-accent .nz-separator:before {
+  box-shadow: inset 0 0 0 12px var(--accent-color);
 }
 
 .nz-separator-small {
@@ -41,5 +60,5 @@ Styleguide: display.separator
   width: 100%;
   margin: 3em 0;
   border: 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #eee;
 }

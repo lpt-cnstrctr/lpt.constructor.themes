@@ -29,79 +29,76 @@ Styleguide: display.blocks
 
 .nz-block-cover {
   background-color: var(--cover-bg-color);
-  border: 1px solid var(--base-border-color, var(--border-color));
+  border: 1px solid var(--base-border-color, #eee);
   border-radius: 3px;
 }
 
 .nz-block {
-  background-color: var(--bg-color);
   overflow: hidden;
   position: relative;
   --spoiler-color: var(--accent-color);
 }
 
 .nz-block.theme-dark {
-  --bg-color: var(--background-dark-gray-color);
-  --base-color: var(--white-color);
-  --lead-color: var(--white-color);
-  --small-paragraph-color: var(--text-gray-color);
-  --caption-color: var(--text-gray-color);
-  --cover-bg-color: var(--dark-background);
+  background-color: #444;
+  --base-color: #fff;
+  --lead-color: #fff;
+  --small-paragraph-color: #999;
+  --caption-color: #999;
+  --cover-bg-color: rgba(3, 3, 3, 0.2);
   --fit-cover-bg-color: #000;
 
-  --alt-border-color: var(--text-dark-gray-color);
+  --alt-border-color: #777;
   --base-border-color: transparent;
-  --separator-color: var(--dark-separator-color);
+  --separator-color: #666;
 }
 
 .nz-block.theme-darker {
-  --bg-color: var(--footer-color);
-  --base-color: var(--white-color);
-  --lead-color: var(--white-color);
-  --small-paragraph-color: var(--text-gray-color);
-  --caption-color: var(--text-gray-color);
-  --cover-bg-color: var(--dark-background);
+  background-color: #292929;
+  --base-color: #fff;
+  --lead-color: #fff;
+  --small-paragraph-color: #999;
+  --caption-color: #999;
+  --cover-bg-color: rgba(3, 3, 3, 0.2);
 
-  --alt-border-color: var(--text-dark-gray-color);
+  --alt-border-color: #777;
   --base-border-color: transparent;
-  --separator-color: var(--dark-separator-color);
+  --separator-color: #666;
 }
 
 .nz-block.theme-gray {
-  --bg-color: var(--background-gray-color);
-  --base-color: var(--dark-color);
-  --lead-color: var(--text-dark-gray-color);
-  --small-paragraph-color: var(--text-dark-gray-color);
-  --caption-color: var(--text-gray-color);
+  background-color: #f9f9f9;
+  --base-color: #333;
+  --lead-color: #777;
+  --small-paragraph-color: #777;
+  --caption-color: #999;
 }
 
 .nz-block.theme-light {
-  --bg-color: var(--white-color);
-  --base-color: var(--dark-color);
-  --lead-color: var(--text-dark-gray-color);
-  --small-paragraph-color: var(--text-dark-gray-color);
-  --caption-color: var(--text-gray-color);
+  background-color: #fff;
+  --base-color: #333;
+  --lead-color: #777;
+  --small-paragraph-color: #777;
+  --caption-color: #999;
   --fit-cover-bg-color: #fff;
 
   /* nested nz-blocks theme-ligth correction */
-  --button-color: var(--white-color);
+  --button-color: #fff;
   --button-bg-color: var(--accent-color);
-  --paragraph-accent-color: var(--accent-color);
 }
 
 .nz-block.theme-accent {
-  --bg-color: var(--accent-color);
-  --base-color: var(--white-color);
-  --lead-color: var(--white-color);
-  --small-paragraph-color: var(--white-color);
-  --caption-color: var(--white-color);
+  background-color: var(--accent-color);
+  --base-color: #fff;
+  --lead-color: #fff;
+  --small-paragraph-color: #fff;
+  --caption-color: #fff;
   --cover-bg-color: var(--accent-color);
 
-  --alt-border-color: var(--white-color);
-  --paragraph-accent-color: var(--white-color);
+  --alt-border-color: #fff;
   --button-color: var(--accent-color);
-  --button-bg-color: var(--white-color);
-  --spoiler-color: var(--white-color);
+  --button-bg-color: #fff;
+  --spoiler-color: #fff;
 }
 
 .nz-block-wrapper {
@@ -132,15 +129,15 @@ Styleguide: display.blocks
 
 /* using for services block */
 .nz-block-cover.alt-border {
-  border: 1px solid var(--alt-border-color, var(--border-color));
+  border: 1px solid var(--alt-border-color, #eee);
 }
 
 .nz-block-border-bottom {
-  border-bottom: 1px solid var(--alt-border-color, var(--border-color));
+  border-bottom: 1px solid var(--alt-border-color, #eee);
 }
 
 .nz-block-border-top {
-  border-top: 1px solid var(--alt-border-color, var(--border-color));
+  border-top: 1px solid var(--alt-border-color, #eee);
   padding-top: calc(1 / 1.4em);
 }
 

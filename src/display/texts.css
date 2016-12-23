@@ -66,10 +66,14 @@ Styleguide: display.texts
   font-size: 1.6em;
   font-weight: 400;
   line-height: calc(2.5 / 1.6em);
-  color: var(--paragraph-accent-color, var(--accent-color));
+  color: var(--accent-color);
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-accent .nz-paragraph-accent {
+  color: #fff;
 }
 
 .nz-paragraph {
@@ -106,7 +110,7 @@ Styleguide: display.texts
   font-size: 1.4em;
   font-weight: 400;
   line-height: calc(2.5 / 1.4em);
-  color: var(--red-error-color);
+  color: #d0011b;
   margin-bottom: calc(1 / 1.4em);
 }
 
