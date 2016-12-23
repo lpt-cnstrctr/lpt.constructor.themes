@@ -11,12 +11,17 @@ summary:before,
 .nz-spoiler:before {
   content: "\f107";
   font: normal normal normal 1.5em/1 FontAwesome;
-  color: var(--spoiler-color);
+  color: var(--accent-color);
   text-align: center;
   position: relative;
   left: 3px;
   top: 4px;
   margin-right: 0.5em;
+}
+
+.nz-block.theme-accent summary:before,
+.nz-block.theme-accent .nz-spoiler:before {
+  color: #fff;
 }
 
 details[open] summary:before,
