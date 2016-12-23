@@ -90,10 +90,29 @@ Styleguide: display.texts
   font-size: 1.4em;
   font-weight: 400;
   line-height: calc(2.5 / 1.4em);
-  color: var(--small-paragraph-color);
   margin-bottom: calc(1 / 1.4em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-dark .nz-small-paragraph {
+  color: #999;
+}
+
+.nz-block.theme-darker .nz-small-paragraph {
+  color: #999;
+}
+
+.nz-block.theme-gray .nz-small-paragraph {
+  color: #777;
+}
+
+.nz-block.theme-light .nz-small-paragraph {
+  color: #777;
+}
+
+.nz-block.theme-accent .nz-small-paragraph {
+  color: #fff;
 }
 
 .nz-caption {

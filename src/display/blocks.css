@@ -36,14 +36,12 @@ Styleguide: display.blocks
 .nz-block {
   overflow: hidden;
   position: relative;
-
 }
 
 .nz-block.theme-dark {
   background-color: #444;
   --base-color: #fff;
   --lead-color: #fff;
-  --small-paragraph-color: #999;
   --caption-color: #999;
   --cover-bg-color: rgba(3, 3, 3, 0.2);
   --fit-cover-bg-color: #000;
@@ -57,7 +55,6 @@ Styleguide: display.blocks
   background-color: #292929;
   --base-color: #fff;
   --lead-color: #fff;
-  --small-paragraph-color: #999;
   --caption-color: #999;
   --cover-bg-color: rgba(3, 3, 3, 0.2);
 
@@ -70,7 +67,6 @@ Styleguide: display.blocks
   background-color: #f9f9f9;
   --base-color: #333;
   --lead-color: #777;
-  --small-paragraph-color: #777;
   --caption-color: #999;
 }
 
@@ -78,7 +74,6 @@ Styleguide: display.blocks
   background-color: #fff;
   --base-color: #333;
   --lead-color: #777;
-  --small-paragraph-color: #777;
   --caption-color: #999;
   --fit-cover-bg-color: #fff;
 
@@ -91,7 +86,6 @@ Styleguide: display.blocks
   background-color: var(--accent-color);
   --base-color: #fff;
   --lead-color: #fff;
-  --small-paragraph-color: #fff;
   --caption-color: #fff;
   --cover-bg-color: var(--accent-color);
 

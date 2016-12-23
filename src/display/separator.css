@@ -52,7 +52,26 @@ Styleguide: display.separator
   box-sizing: border-box;
   width: 4em;
   margin: 2em;
-  border: 1px solid var(--small-paragraph-color);
+}
+
+.nz-block.theme-dark .nz-separator-small {
+  border: 1px solid #999;
+}
+
+.nz-block.theme-darker .nz-separator-small {
+  border: 1px solid #999;
+}
+
+.nz-block.theme-gray .nz-separator-small {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-light .nz-separator-small {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-separator-small {
+  border: 1px solid #fff;
 }
 
 .nz-separator-thin {
