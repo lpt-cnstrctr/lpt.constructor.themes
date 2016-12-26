@@ -20,10 +20,6 @@ Markup:
 Styleguide: colors
 */
 
-:root {
-  --accent-color: #e87034;
-}
-
 /* helpers */
 .nz-base-color {
   color: #fff !important;
