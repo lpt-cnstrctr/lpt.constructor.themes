@@ -32,6 +32,14 @@ Styleguide: display.blocks
   border-radius: 3px;
 }
 
+.nz-block.theme-light .nz-block-cover {
+  background-color: #fff;
+}
+
+.nz-block.theme-gray .nz-block-cover {
+  background-color: #fff;
+}
+
 .nz-block.theme-darker .nz-block-cover {
   background-color: rgba(3, 3, 3, 0.2);
 }
