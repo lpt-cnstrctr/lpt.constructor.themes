@@ -62,7 +62,6 @@ Styleguide: display.blocks
   --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
-  --fit-cover-bg-color: #000;
 
   --separator-color: #666;
 }
@@ -88,7 +87,6 @@ Styleguide: display.blocks
   --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
-  --fit-cover-bg-color: #fff;
 
   /* nested nz-blocks theme-ligth correction */
   --button-color: #fff;
@@ -199,8 +197,12 @@ Styleguide: display.blocks
   width: 100% !important;
 }
 
-.nz-fit-cover {
-  background-color: var(--fit-cover-bg-color);
+.nz-block.theme-dark .nz-fit-cover {
+  background-color: #000;
+}
+
+.nz-block.theme-light .nz-fit-cover {
+  background-color: #fff;
 }
 
 /* all elements after fit-cover need place "over" fit-cover */
