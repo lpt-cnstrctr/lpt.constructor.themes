@@ -89,7 +89,6 @@ Styleguide: display.blocks
   --caption-color: #999;
 
   /* nested nz-blocks theme-ligth correction */
-  --button-color: #fff;
   --button-bg-color: var(--accent-color);
 }
 
@@ -99,7 +98,6 @@ Styleguide: display.blocks
   --lead-color: #fff;
   --caption-color: #fff;
 
-  --button-color: var(--accent-color);
   --button-bg-color: #fff;
 }
 

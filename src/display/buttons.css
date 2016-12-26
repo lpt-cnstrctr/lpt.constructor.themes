@@ -25,7 +25,7 @@ Styleguide: display.buttons
   padding: calc(1.2 / 1.6em) calc(3 / 1.6em);
   font-size: 1.6em;
   line-height: calc(2.5 / 1.6em);
-  color: var(--button-color, #fff);
+  color: #fff;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -38,6 +38,15 @@ Styleguide: display.buttons
   opacity: 0.85;
   margin: calc(2 / 1.6em);
   box-sizing: border-box;
+}
+
+.nz-block.theme-accent .nz-button {
+  color: var(--accent-color);
+}
+
+/* nested nz-blocks theme-ligth correction */
+.nz-block.theme-light .nz-button {
+  color: #fff;
 }
 
 /* small button */
