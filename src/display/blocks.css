@@ -29,8 +29,14 @@ Styleguide: display.blocks
 
 .nz-block-cover {
   background-color: var(--cover-bg-color);
-  border: 1px solid var(--base-border-color, #eee);
+  border: 1px solid #eee;
   border-radius: 3px;
+}
+
+
+.nz-block.theme-darker .nz-block-cover,
+.nz-block.theme-dark .nz-block-cover {
+  border: 1px solid transparent;
 }
 
 .nz-block {
@@ -47,7 +53,6 @@ Styleguide: display.blocks
   --fit-cover-bg-color: #000;
 
   --alt-border-color: #777;
-  --base-border-color: transparent;
   --separator-color: #666;
 }
 
@@ -59,7 +64,6 @@ Styleguide: display.blocks
   --cover-bg-color: rgba(3, 3, 3, 0.2);
 
   --alt-border-color: #777;
-  --base-border-color: transparent;
   --separator-color: #666;
 }
 
