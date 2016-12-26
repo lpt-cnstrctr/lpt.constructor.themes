@@ -44,7 +44,10 @@ Styleguide: display.blocks
   background-color: var(--accent-color);
 }
 
-.nz-block.theme-darker .nz-block-cover,
+.nz-block.theme-darker .nz-block-cover {
+  border: 1px solid transparent;
+}
+
 .nz-block.theme-dark .nz-block-cover {
   border: 1px solid transparent;
 }
@@ -61,7 +64,6 @@ Styleguide: display.blocks
   --caption-color: #999;
   --fit-cover-bg-color: #000;
 
-  --alt-border-color: #777;
   --separator-color: #666;
 }
 
@@ -71,7 +73,6 @@ Styleguide: display.blocks
   --lead-color: #fff;
   --caption-color: #999;
 
-  --alt-border-color: #777;
   --separator-color: #666;
 }
 
@@ -100,7 +101,6 @@ Styleguide: display.blocks
   --lead-color: #fff;
   --caption-color: #fff;
 
-  --alt-border-color: #fff;
   --button-color: var(--accent-color);
   --button-bg-color: #fff;
 }
@@ -133,16 +133,52 @@ Styleguide: display.blocks
 
 /* using for services block */
 .nz-block-cover.alt-border {
-  border: 1px solid var(--alt-border-color, #eee);
+  border: 1px solid #eee;
+}
+
+.nz-block.theme-darker .nz-block-cover.alt-border {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-cover.alt-border {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-cover.alt-border {
+  border: 1px solid #fff;
 }
 
 .nz-block-border-bottom {
-  border-bottom: 1px solid var(--alt-border-color, #eee);
+  border-bottom: 1px solid #eee;
+}
+
+.nz-block.theme-darker .nz-block-border-bottom {
+  border-bottom: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-border-bottom {
+  border-bottom: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-border-bottom {
+  border-bottom: 1px solid #fff;
 }
 
 .nz-block-border-top {
-  border-top: 1px solid var(--alt-border-color, #eee);
+  border-top: 1px solid #eee;
   padding-top: calc(1 / 1.4em);
+}
+
+.nz-block.theme-darker .nz-block-border-top {
+  border-top: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-border-top {
+  border-top: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-border-top {
+  border-top: 1px solid #fff;
 }
 
 .nz-fixed {
