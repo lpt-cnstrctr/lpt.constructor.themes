@@ -39,10 +39,15 @@ Styleguide: display.texts
   font-size: 2.4em;
   font-weight: 400;
   line-height: calc(3 / 2.4em);
-  color: var(--lead-color);
+  color: #fff;
   margin-bottom: calc(1 / 2.4em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-light .nz-lead,
+.nz-block.theme-gray .nz-lead {
+  color: #777;
 }
 
 .nz-bold-title {
@@ -139,10 +144,14 @@ Styleguide: display.texts
   font-size: 1.1em;
   font-weight: 600;
   line-height: calc(1.5 / 1.1em);
-  color: var(--caption-color);
+  color: #999;
   margin-bottom: calc(1 / 1.1em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-accent .nz-caption {
+  color: #fff;
 }
 
 .nz-error {
