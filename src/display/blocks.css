@@ -87,9 +87,6 @@ Styleguide: display.blocks
   --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
-
-  /* nested nz-blocks theme-ligth correction */
-  --button-bg-color: var(--accent-color);
 }
 
 .nz-block.theme-accent {
@@ -97,8 +94,6 @@ Styleguide: display.blocks
   --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #fff;
-
-  --button-bg-color: #fff;
 }
 
 .nz-block-wrapper {

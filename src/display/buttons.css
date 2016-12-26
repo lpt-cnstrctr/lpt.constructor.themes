@@ -30,7 +30,7 @@ Styleguide: display.buttons
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  background-color: var(--button-bg-color, var(--accent-color));
+  background-color: var(--accent-color);
   border-radius: 3px;
   border: 1px solid transparent;
   text-decoration: none;
@@ -42,11 +42,13 @@ Styleguide: display.buttons
 
 .nz-block.theme-accent .nz-button {
   color: var(--accent-color);
+  background-color: #fff;
 }
 
 /* nested nz-blocks theme-ligth correction */
 .nz-block.theme-light .nz-button {
   color: #fff;
+  background-color: var(--accent-color);
 }
 
 /* small button */
