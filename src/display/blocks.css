@@ -59,7 +59,6 @@ Styleguide: display.blocks
 
 .nz-block.theme-dark {
   background-color: #444;
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
 
@@ -68,7 +67,6 @@ Styleguide: display.blocks
 
 .nz-block.theme-darker {
   background-color: #292929;
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
 
@@ -77,21 +75,18 @@ Styleguide: display.blocks
 
 .nz-block.theme-gray {
   background-color: #f9f9f9;
-  --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
 }
 
 .nz-block.theme-light {
   background-color: #fff;
-  --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
 }
 
 .nz-block.theme-accent {
   background-color: var(--accent-color);
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #fff;
 }
