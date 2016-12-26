@@ -19,7 +19,7 @@ Markup:
     background-color: var(--accent-color);
   }
   .demo2 {
-    background-color: var(--danger-color);
+    background-color: #c02942;
   }
   .demo1,
   .demo2 {
