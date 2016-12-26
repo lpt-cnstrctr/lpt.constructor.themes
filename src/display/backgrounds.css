@@ -25,6 +25,11 @@ Styleguide: display.backgrounds
   background-attachment: fixed;
 }
 
+.nz-bg-right {
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
+}
+
 .nz-background-circle {
   display: inline-block;
   border-radius: 50%;
