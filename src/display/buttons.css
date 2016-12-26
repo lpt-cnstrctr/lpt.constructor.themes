@@ -90,9 +90,14 @@ Styleguide: display.buttons
 
 /* outline button */
 .nz-button.outline {
-  color: var(--button-bg-color, var(--accent-color));
-  border-color: var(--button-bg-color, var(--accent-color));
+  color: var(--accent-color);
+  border-color: var(--accent-color);
   background-color: transparent;
+}
+
+.nz-block.theme-accent .nz-button.outline {
+  color: #fff;
+  border-color: #fff;
 }
 
 .nz-button.outline:active {
