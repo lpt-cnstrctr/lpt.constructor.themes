@@ -8,14 +8,26 @@ Styleguide: display.navigation
 
 .nz-navigation {
   font-size: 1.6em;
-  color: var(--base-color);
+  color: #fff;
   line-height: 2.6em;
   margin-left: 1em;
   border-bottom: 5px solid transparent;
   margin-bottom: -10px;
 }
 
+.nz-block.theme-gray .nz-navigation,
+.nz-block.theme-light .nz-navigation {
+  color: #333;
+}
+
 .nz-navigation:hover,
 .nz-navigation.active {
-  border-bottom-color: var(--base-color);
+  border-bottom-color: #fff;
+}
+
+.nz-block.theme-gray .nz-navigation:hover,
+.nz-block.theme-gray .nz-navigation.active,
+.nz-block.theme-light .nz-navigation:hover,
+.nz-block.theme-light .nz-navigation.active {
+  border-bottom-color: #333;
 }

@@ -24,10 +24,15 @@ Styleguide: display.texts
   font-size: 3em;
   font-weight: 600;
   line-height: calc(4 / 3em);
-  color: var(--base-color);
+  color: #fff;
   margin-bottom: calc(1 / 3em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-gray .nz-big-title,
+.nz-block.theme-light .nz-big-title {
+  color: #333;
 }
 
 .nz-lead {
@@ -45,10 +50,15 @@ Styleguide: display.texts
   font-weight: 700;
   line-height: calc(2.5 / 2em);
   letter-spacing: calc(0.2 / 2em);
-  color: var(--base-color);
+  color: #fff;
   margin-bottom: calc(1 / 2em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-gray .nz-bold-title,
+.nz-block.theme-light .nz-bold-title {
+  color: #333;
 }
 
 .nz-title {
@@ -56,10 +66,15 @@ Styleguide: display.texts
   font-weight: 600;
   line-height: calc(2.5 / 1.6em);
   letter-spacing: calc(0.2 / 2em);
-  color: var(--base-color);
+  color: #fff;
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-gray .nz-title,
+.nz-block.theme-light .nz-title {
+  color: #333;
 }
 
 .nz-paragraph-accent {
@@ -80,10 +95,15 @@ Styleguide: display.texts
   font-size: 1.6em;
   font-weight: 400;
   line-height: calc(2.5 / 1.6em);
-  color: var(--base-color);
+  color: #fff;
   margin-bottom: calc(1 / 1.6em);
   min-height: 1em;
   min-width: 1em;
+}
+
+.nz-block.theme-gray .nz-paragraph,
+.nz-block.theme-light .nz-paragraph {
+  color: #333;
 }
 
 .nz-small-paragraph {

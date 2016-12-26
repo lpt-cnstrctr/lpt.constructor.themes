@@ -26,7 +26,12 @@ Styleguide: colors
 
 /* helpers */
 .nz-base-color {
-  color: var(--base-color) !important;
+  color: #fff !important;
+}
+
+.nz-block.theme-gray .nz-base-color,
+.nz-block.theme-light .nz-base-color {
+  color: #333 !important;
 }
 
 .nz-accent-color {
