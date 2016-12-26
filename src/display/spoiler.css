@@ -1,6 +1,7 @@
 
 summary {
   outline: none;
+  cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -9,7 +10,7 @@ summary::-webkit-details-marker {
 
 summary:before,
 .nz-spoiler:before {
-  content: "\f107";
+  content: "\f107" !important;
   font: normal normal normal 1.5em/1 FontAwesome;
   color: var(--accent-color);
   text-align: center;
@@ -17,6 +18,7 @@ summary:before,
   left: 3px;
   top: 4px;
   margin-right: 0.5em;
+  display: inline-block;
 }
 
 .nz-block.theme-accent summary:before,
@@ -26,7 +28,7 @@ summary:before,
 
 details[open] summary:before,
 .nz-spoiler[open]:before {
-  content: "\f106";
+  content: "\f106" !important;
   top: 0;
 }
 
