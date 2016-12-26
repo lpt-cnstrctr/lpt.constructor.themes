@@ -28,11 +28,21 @@ Styleguide: display.blocks
 */
 
 .nz-block-cover {
-  background-color: var(--cover-bg-color);
   border: 1px solid #eee;
   border-radius: 3px;
 }
 
+.nz-block.theme-darker .nz-block-cover {
+  background-color: rgba(3, 3, 3, 0.2);
+}
+
+.nz-block.theme-dark .nz-block-cover {
+  background-color: rgba(3, 3, 3, 0.2);
+}
+
+.nz-block.theme-accent .nz-block-cover {
+  background-color: var(--accent-color);
+}
 
 .nz-block.theme-darker .nz-block-cover,
 .nz-block.theme-dark .nz-block-cover {
@@ -49,7 +59,6 @@ Styleguide: display.blocks
   --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
-  --cover-bg-color: rgba(3, 3, 3, 0.2);
   --fit-cover-bg-color: #000;
 
   --alt-border-color: #777;
@@ -61,7 +70,6 @@ Styleguide: display.blocks
   --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
-  --cover-bg-color: rgba(3, 3, 3, 0.2);
 
   --alt-border-color: #777;
   --separator-color: #666;
@@ -91,7 +99,6 @@ Styleguide: display.blocks
   --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #fff;
-  --cover-bg-color: var(--accent-color);
 
   --alt-border-color: #fff;
   --button-color: var(--accent-color);
