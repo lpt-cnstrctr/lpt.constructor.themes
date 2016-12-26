@@ -9,16 +9,24 @@ Styleguide: display.separator
 */
 
 .nz-separator {
-  background: var(--separator-color, #eee);
+  background-color: #eee;
   height: 2px;
   width: 430px;
   margin: 10px auto;
   position: relative;
 }
 
+.nz-block.theme-dark .nz-separator {
+  background-color: #666;
+}
+
+.nz-block.theme-darker .nz-separator {
+  background-color: #666;
+}
+
 .nz-separator:before {
   content: '\25CF';
-  color: var(--separator-color, #eee);
+  color: #eee;
   font-size: 32px;
   position: absolute;
   top: -19px;
@@ -26,6 +34,14 @@ Styleguide: display.separator
   width: 26px;
   text-align: center;
   margin-left: -13px;
+}
+
+.nz-block.theme-dark .nz-separator:before {
+  color: #666;
+}
+
+.nz-block.theme-darker .nz-separator:before {
+  color: #666;
 }
 
 .nz-block.theme-dark .nz-separator:before {

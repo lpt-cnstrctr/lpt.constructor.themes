@@ -28,9 +28,36 @@ Styleguide: display.blocks
 */
 
 .nz-block-cover {
-  background-color: var(--cover-bg-color);
-  border: 1px solid var(--base-border-color, #eee);
+  border: 1px solid #eee;
   border-radius: 3px;
+}
+
+.nz-block.theme-light .nz-block-cover {
+  background-color: #fff;
+}
+
+.nz-block.theme-gray .nz-block-cover {
+  background-color: #fff;
+}
+
+.nz-block.theme-darker .nz-block-cover {
+  background-color: rgba(3, 3, 3, 0.2);
+}
+
+.nz-block.theme-dark .nz-block-cover {
+  background-color: rgba(3, 3, 3, 0.2);
+}
+
+.nz-block.theme-accent .nz-block-cover {
+  background-color: var(--accent-color);
+}
+
+.nz-block.theme-darker .nz-block-cover {
+  border: 1px solid transparent;
+}
+
+.nz-block.theme-dark .nz-block-cover {
+  border: 1px solid transparent;
 }
 
 .nz-block {
@@ -40,58 +67,36 @@ Styleguide: display.blocks
 
 .nz-block.theme-dark {
   background-color: #444;
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
-  --cover-bg-color: rgba(3, 3, 3, 0.2);
-  --fit-cover-bg-color: #000;
 
-  --alt-border-color: #777;
-  --base-border-color: transparent;
   --separator-color: #666;
 }
 
 .nz-block.theme-darker {
   background-color: #292929;
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #999;
-  --cover-bg-color: rgba(3, 3, 3, 0.2);
 
-  --alt-border-color: #777;
-  --base-border-color: transparent;
   --separator-color: #666;
 }
 
 .nz-block.theme-gray {
   background-color: #f9f9f9;
-  --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
 }
 
 .nz-block.theme-light {
   background-color: #fff;
-  --base-color: #333;
   --lead-color: #777;
   --caption-color: #999;
-  --fit-cover-bg-color: #fff;
-
-  /* nested nz-blocks theme-ligth correction */
-  --button-color: #fff;
-  --button-bg-color: var(--accent-color);
 }
 
 .nz-block.theme-accent {
   background-color: var(--accent-color);
-  --base-color: #fff;
   --lead-color: #fff;
   --caption-color: #fff;
-  --cover-bg-color: var(--accent-color);
-
-  --alt-border-color: #fff;
-  --button-color: var(--accent-color);
-  --button-bg-color: #fff;
 }
 
 .nz-block-wrapper {
@@ -122,16 +127,52 @@ Styleguide: display.blocks
 
 /* using for services block */
 .nz-block-cover.alt-border {
-  border: 1px solid var(--alt-border-color, #eee);
+  border: 1px solid #eee;
+}
+
+.nz-block.theme-darker .nz-block-cover.alt-border {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-cover.alt-border {
+  border: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-cover.alt-border {
+  border: 1px solid #fff;
 }
 
 .nz-block-border-bottom {
-  border-bottom: 1px solid var(--alt-border-color, #eee);
+  border-bottom: 1px solid #eee;
+}
+
+.nz-block.theme-darker .nz-block-border-bottom {
+  border-bottom: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-border-bottom {
+  border-bottom: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-border-bottom {
+  border-bottom: 1px solid #fff;
 }
 
 .nz-block-border-top {
-  border-top: 1px solid var(--alt-border-color, #eee);
+  border-top: 1px solid #eee;
   padding-top: calc(1 / 1.4em);
+}
+
+.nz-block.theme-darker .nz-block-border-top {
+  border-top: 1px solid #777;
+}
+
+.nz-block.theme-dark .nz-block-border-top {
+  border-top: 1px solid #777;
+}
+
+.nz-block.theme-accent .nz-block-border-top {
+  border-top: 1px solid #fff;
 }
 
 .nz-fixed {
@@ -152,8 +193,12 @@ Styleguide: display.blocks
   width: 100% !important;
 }
 
-.nz-fit-cover {
-  background-color: var(--fit-cover-bg-color);
+.nz-block.theme-dark .nz-fit-cover {
+  background-color: #000;
+}
+
+.nz-block.theme-light .nz-fit-cover {
+  background-color: #fff;
 }
 
 /* all elements after fit-cover need place "over" fit-cover */

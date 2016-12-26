@@ -25,12 +25,12 @@ Styleguide: display.buttons
   padding: calc(1.2 / 1.6em) calc(3 / 1.6em);
   font-size: 1.6em;
   line-height: calc(2.5 / 1.6em);
-  color: var(--button-color, #fff);
+  color: #fff;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  background-color: var(--button-bg-color, var(--accent-color));
+  background-color: var(--accent-color);
   border-radius: 3px;
   border: 1px solid transparent;
   text-decoration: none;
@@ -38,6 +38,17 @@ Styleguide: display.buttons
   opacity: 0.85;
   margin: calc(2 / 1.6em);
   box-sizing: border-box;
+}
+
+.nz-block.theme-accent .nz-button {
+  color: var(--accent-color);
+  background-color: #fff;
+}
+
+/* nested nz-blocks theme-ligth correction */
+.nz-block.theme-light .nz-button {
+  color: #fff;
+  background-color: var(--accent-color);
 }
 
 /* small button */
@@ -79,9 +90,14 @@ Styleguide: display.buttons
 
 /* outline button */
 .nz-button.outline {
-  color: var(--button-bg-color, var(--accent-color));
-  border-color: var(--button-bg-color, var(--accent-color));
+  color: var(--accent-color);
+  border-color: var(--accent-color);
   background-color: transparent;
+}
+
+.nz-block.theme-accent .nz-button.outline {
+  color: #fff;
+  border-color: #fff;
 }
 
 .nz-button.outline:active {
